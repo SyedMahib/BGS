@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Brother's Global Sourcing (BGS) – Garments Buying House</title>
+  <link rel="icon" type="image/svg+xml" href="/Assets/Concept 2_BGS_Logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Brother's Global Sourcing (BGS) is a garments buying house in Bangladesh connecting global brands with reliable and compliant garment factories. Trust • Transparency • Committed Delivery." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/b740202a2d.js" crossorigin="anonymous"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bg-dark': '#1f1f1f',
+            'bg-darker': '#181818',
+            'bg-panel': '#2a2a2a',
+            'bg-panel-soft': '#2f2f2f',
+            'text-main': '#f4f4f4',
+            'text-muted': '#c3c3c3',
+            'accent-amber': '#D99E3F',
+            'accent-amber-dark': '#c78d35',
+            'border-soft': '#3a3a3a',
+            'danger': '#f15b5b',
+          },
+          fontFamily: {
+            'montserrat': ['Montserrat', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+            'inter': ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+          },
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+          },
+          animation: {
+            'float': 'float 3s ease-in-out infinite',
+            'pulse-soft': 'pulseSoft 2s infinite',
+            'typing': 'typing 3.5s steps(40, end)',
+            'blink': 'blink 1s infinite',
+            'slideInRight': 'slideInRight 0.3s ease-out',
+            'slideOutRight': 'slideOutRight 0.3s ease-out',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            pulseSoft: {
+              '0%, 100%': { opacity: '1' },
+              '50%': { opacity: '0.8' },
+            },
+            typing: {
+              'from': { width: '0' },
+              'to': { width: '100%' },
+            },
+            blink: {
+              'from, to': { 'border-color': 'transparent' },
+              '50%': { 'border-color': '#D99E3F' },
+            },
+            slideInRight: {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(0)' },
+            },
+            slideOutRight: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(100%)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .gradient-bg {
+      background: radial-gradient(circle at top left, #333 0, #1f1f1f 35%, #181818 100%);
+    }
+
+    .hero-card-bg {
+      background: radial-gradient(circle at top left, #3a3a3a 0, #2a2a2a 50%, #191919 100%);
+    }
+
+    .gradient-underline {
+      position: relative;
+      display: inline-block;
+    }
+
+    .gradient-underline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.4rem;
+      width: 42%;
+      height: 3px;
+      background: linear-gradient(to right, #D99E3F, transparent);
+      border-radius: 999px;
+    }
+
+    .timeline-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #fff, #D99E3F);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
+    }
+
+    .card-header-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.16), rgba(217, 158, 63, 0.35));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: #D99E3F;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 65%;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 120% -10%, rgba(217, 158, 63, 0.16), transparent 55%);
+      pointer-events: none;
+    }
+
+    /* Floating shapes animation */
+    .floating-shape {
+      position: absolute;
+      background: rgba(217, 158, 63, 0.1);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .shape-1 {
+      width: 100px;
+      height: 100px;
+      top: 10%;
+      left: 5%;
+      animation-delay: 0s;
+    }
+
+    .shape-2 {
+      width: 150px;
+      height: 150px;
+      top: 60%;
+      right: 10%;
+      animation-delay: 2s;
+    }
+
+    .shape-3 {
+      width: 80px;
+      height: 80px;
+      bottom: 20%;
+      left: 15%;
+      animation-delay: 4s;
+    }
+
+    /* Card hover effects */
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-hover::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(217, 158, 63, 0.1), transparent);
+      transition: left 0.5s;
+    }
+
+    .card-hover:hover::before {
+      left: 100%;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Button magnetic effect */
+    .btn-magnetic {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-magnetic::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+
+    .btn-magnetic:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+
+    /* Map point animations */
+    .map-point {
+      position: absolute;
+      cursor: pointer;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .point-pulse {
+      width: 12px;
+      height: 12px;
+      background: #D99E3F;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+      z-index: 3;
+    }
+
+    .point-dot {
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      border-radius: 50%;
+      border: 2px solid #D99E3F;
+      z-index: 4;
+    }
+
+    .point-tooltip {
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #2a2a2a;
+      padding: 0.6rem 0.8rem;
+      border-radius: 8px;
+      border: 1px solid #3a3a3a;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.2s ease;
+      min-width: 180px;
+      z-index: 10;
+      white-space: nowrap;
+      text-align: center;
+      font-size: 13px;
+    }
+
+    .map-point:hover .point-tooltip {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(-50%) translateY(-6px);
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(3);
+        opacity: 0;
+      }
+    }
+
+    /* Form enhancements */
+    .form-input:focus+label,
+    .form-input:not(:placeholder-shown)+label {
+      transform: translateY(-1.5rem) scale(0.85);
+      color: #D99E3F;
+    }
+
+    /* Theme toggle styles */
+    [data-theme="light"] {
+      --bg-dark: #f8f9fa;
+      --bg-darker: #e9ecef;
+      --bg-panel: #ffffff;
+      --text-main: #212529;
+      --text-muted: #6c757d;
+      --border-soft: #dee2e6;
+    }
+
+    .theme-toggle {
+      background: none;
+      border: 1px solid #3a3a3a;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      border-color: #D99E3F;
+      transform: rotate(15deg);
+    }
+
+    /* Skip link for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 6px;
+      background: #D99E3F;
+      color: #111;
+      padding: 8px;
+      z-index: 100;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .skip-link:focus {
+      top: 6px;
+    }
+
+    /* Loading animation */
+    .loader-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid transparent;
+      border-top: 3px solid #D99E3F;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1rem;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Mobile menu styles - UPDATED FOR SLIDER */
+    .mobile-slider-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 320px;
+      height: 100vh;
+      background: rgba(12, 12, 12, 0.98);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      transition: right 0.3s ease-out;
+      padding: 2rem 1.5rem;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-slider-menu.open {
+      right: 0;
+      animation: slideInRight 0.3s ease-out;
+    }
+
+    .mobile-slider-menu.closing {
+      animation: slideOutRight 0.3s ease-out;
+    }
+
+    .mobile-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-menu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-menu-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .mobile-menu-links a {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .mobile-menu-links a:hover {
+      color: #D99E3F;
+      padding-left: 0.5rem;
+    }
+
+    .mobile-menu-cta {
+      margin-top: auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .close-menu-btn {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .close-menu-btn:hover {
+      color: #D99E3F;
+    }
+
+    /* Desktop menu styles */
+    @media (min-width: 769px) {
+
+      .mobile-slider-menu,
+      .mobile-overlay {
+        display: none;
+      }
+    }
+
+    /* Other responsive styles */
+    @media (max-width: 768px) {
+      .hero-inner {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .grid-cols-2,
+      .grid-cols-3,
+      .grid-cols-4 {
+        grid-template-columns: 1fr;
+      }
+
+      .btn-row {
+        justify-content: center;
+      }
+
+      .timeline {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .floating-shape {
+        display: none;
+      }
+    }
+
+    /* Ensure timeline items wrap nicely on small screens */
+    @media (max-width: 1024px) {
+      .interactive-timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .interactive-timeline {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="gradient-bg text-text-main font-inter">
+  <!-- Skip to main content link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Page Loader -->
+  <div
+    class="page-loader fixed inset-0 bg-bg-darker flex justify-center items-center z-50 transition-opacity duration-500">
+    <div class="loader-content text-center">
+      <div class="loader-spinner"></div>
+      <p class="text-text-muted">Loading Brother's Global Sourcing</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="top"
+    class="sticky top-0 z-50 backdrop-blur-lg bg-gradient-to-b from-[rgba(12,12,12,0.9)] via-[rgba(12,12,12,0.75)] to-transparent border-b border-white/10">
+    <div class="container mx-auto px-4 sm:px-6">
+      <nav class="flex items-center justify-between py-3">
+        <div class="flex items-center gap-3">
+          <a href="/"
+            class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-radial from-gray-200 via-gray-300 to-gray-500 flex items-center justify-center overflow-hidden">
+            <img src="Assets/BGS logo.png" alt="Brother's Global Sourcing Logo"
+              class="w-full h-full object-contain" />
+          </a>
+          <div class="flex flex-col gap-0">
+            <span class="font-montserrat text-xs sm:text-sm tracking-wider uppercase">Brother's Global Sourcing (BGS)</span>
+            <span class="text-xs text-text-muted hidden sm:block">Garments Buying House – Bangladesh</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center gap-6" id="navMenu">
+            <div class="flex items-center gap-6 text-sm uppercase tracking-wider">
+              <a href="#home"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Home</a>
+              <a href="/index.html#about"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">About</a>
+              <a href="/services.html"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Services</a>
+              <a href="/Our Products.html"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Products</a>
+              <a href="#factories"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Factories</a>
+              <a href="#sustainability"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Sustainability</a>
+              <a href="/ContactUs.html"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Contact</a>
+            </div>
+            <a href="#contact"
+              class="px-4 py-2 rounded-full border border-accent-amber/50 flex items-center gap-2 text-xs uppercase tracking-widest text-accent-amber bg-accent-amber/6">
+              <i class="fa-regular fa-paper-plane text-sm"></i>
+              <span>Send Inquiry</span>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden text-white bg-transparent border-none text-xl" aria-label="Toggle navigation"
+            id="navToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Slider Menu -->
+  <div class="mobile-slider-menu" id="mobileSliderMenu">
+    <div class="mobile-menu-header">
+      <div class="flex items-center gap-3">
+        <a href="/"
+          class="w-10 h-10 rounded-xl bg-gradient-radial from-gray-200 via-gray-300 to-gray-500 flex items-center justify-center overflow-hidden">
+          <img src="/Assets/BGS logo.png" alt="Brother's Global Sourcing Logo"
+            class="w-full h-full object-contain" />
+        </a>
+        <div class="flex flex-col gap-0">
+          <span class="font-montserrat text-sm tracking-wider uppercase">Brother's Global Sourcing</span>
+          <span class="text-xs text-text-muted">Garments Buying House</span>
+        </div>
+      </div>
+      <button class="close-menu-btn" id="closeMenuBtn">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="mobile-menu-links">
+      <a href="#home" class="text-text-muted hover:text-white transition-colors">Home</a>
+      <a href="/About.html" class="text-text-muted hover:text-white transition-colors">About</a>
+      <a href="/services.html" class="text-text-muted hover:text-white transition-colors">Services</a>
+      <a href="/Our Products.html" class="text-text-muted hover:text-white transition-colors">Products</a>
+      <a href="#factories" class="text-text-muted hover:text-white transition-colors">Factories</a>
+      <a href="#sustainability" class="text-text-muted hover:text-white transition-colors">Sustainability</a>
+      <a href="/ContactUs.html" class="text-text-muted hover:text-white transition-colors">Contact</a>
+    </div>
+
+    <div class="mobile-menu-cta">
+      <a href="#contact"
+        class="w-full block text-center px-4 py-3 rounded-full border border-accent-amber/50  items-center justify-center gap-2 text-xs uppercase tracking-widest text-accent-amber bg-accent-amber/6">
+        <i class="fa-regular fa-paper-plane text-sm"></i>
+        <span>Send Inquiry</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section id="home" class="hero min-h-screen flex items-center relative overflow-hidden">
+      <!-- Animated background elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+      </div>
+
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 py-8 lg:py-12 items-center">
+          <div data-aos="fade-right" data-aos-duration="800">
+            <div class="text-accent-amber text-xs uppercase tracking-widest font-semibold mb-3">Garments Buying House ·
+              Bangladesh</div>
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold font-montserrat leading-tight mb-3">
+              <span class="typed-text">Your trusted partner in ready-made garments sourcing.</span>
+              <span class="cursor">&nbsp;</span>
+            </h1>
+            <p class="text-text-muted text-sm sm:text-base md:text-lg max-w-2xl mb-6">
+              Brothers Global Sourcing (BGS) directly sources high-quality garments from trusted and compliant
+              Bangladeshi factories and exports them to global brands, importers, and retailers — <strong>on Trust,
+                Transparency, and Committed Delivery.</strong>
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span
+                class="text-xs uppercase tracking-widest rounded-full border border-white/10 px-3 py-2 text-text-muted bg-white/5">Trust
+                • Transparency • Committed Delivery</span>
+              <span
+                class="text-xs uppercase tracking-widest rounded-full border border-white/10 px-3 py-2 text-text-muted bg-white/5">Knit
+                · Woven · Sweaters · Sportware · Workwear · Denim · Lingerie · Accessories</span>
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+              <a href="#products"
+                class="btn-primary rounded-full px-4 sm:px-6 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 shadow-lg hover:bg-accent-amber-dark hover:-translate-y-1 transition-all duration-300 btn-magnetic">
+                <span>Explore Products</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+              <a href="#contact"
+                class="rounded-full px-4 sm:px-6 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest border border-accent-amber text-accent-amber hover:bg-accent-amber/8 hover:text-white transition-all duration-300 btn-magnetic">
+                <span>Work With Us</span>
+              </a>
+            </div>
+          </div>
+
+          <aside data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+            <div
+              class="hero-card-bg rounded-3xl p-5 sm:p-7 border border-white/10 shadow-2xl relative overflow-hidden card-hover">
+              <span
+                class="inline-flex items-center gap-2 text-xs px-3 py-2 rounded-full bg-black/50 border border-white/10 text-text-muted">
+                <i class="fa-solid fa-globe text-accent-amber"></i>
+                Based in Dhaka · Serving global buyers
+              </span>
+              <h3 class="text-lg font-semibold mt-5 mb-2">
+                End-to-end sourcing support from idea to shipment.
+              </h3>
+              <p class="text-text-muted text-sm mb-6">
+                We act as your extended sourcing office in Bangladesh — managing product development, in-house factory
+                sourcing, production follow-up, quality assurance, and logistics coordination as your direct supplier.
+              </p>
+
+              <div class="grid grid-cols-2 gap-4 mt-6">
+                <a href="#products" class="bg-black/25 rounded-xl p-4 border border-white/10">
+                  <div class="text-xs uppercase tracking-widest text-text-muted mb-1">Product Range</div>
+                  <div class="text-sm font-semibold">Knit · Woven · Sweaters · Sportware · Workwear · Denim · Lingerie ·
+                    Accessories</div>
+                </a>
+                <a href="#factories" class="bg-black/25 rounded-xl p-4 border border-white/10">
+                  <div class="text-xs uppercase tracking-widest text-text-muted mb-1">Factory Network</div>
+                  <div class="text-sm font-semibold">Curated, compliance-focused units</div>
+                </a>
+                <a href="#steps" class="bg-black/25 rounded-xl p-4 border border-white/10">
+                  <div class="text-xs uppercase tracking-widest text-text-muted mb-1">Approach</div>
+                  <div class="text-sm font-semibold">Transparent & structured</div>
+                </a>
+                <div class="bg-black/25 rounded-xl p-4 border border-white/10">
+                  <div class="text-xs uppercase tracking-widest text-text-muted mb-1">Deliverables</div>
+                  <div class="text-sm font-semibold">Product Development, Quality Assurance, Delivery</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-16">
+      <div class="container mx-auto px-4 sm:px-6 ">
+        <!-- Centered Header -->
+        <div class="mb-12" data-aos="fade-up" data-aos-duration="800">
+          <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline inline-block">
+            About Brother's Global Sourcing
+          </h2>
+        </div>
+
+        <!-- Mission, Vision, Values Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <!-- Mission Card -->
+          <a href="/OurMission.html" class="block">
+            <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover h-full" data-aos="fade-up"
+              data-aos-duration="800" data-aos-delay="100">
+              <div class="card-header-icon mb-4">
+                <i class="fa-solid fa-bullseye text-gray-900"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Mission</h3>
+              <p class="text-text-muted text-sm">
+                To provide transparent, efficient, and high-quality garment sourcing services that empower global brands
+                to build strong, sustainable supply chains.
+              </p>
+            </div>
+          </a>
+
+          <!-- Vision Card -->
+          <a href="/OurVision.html" class="block">
+            <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover h-full" data-aos="fade-up"
+              data-aos-duration="800" data-aos-delay="200">
+              <div class="card-header-icon mb-4">
+                <i class="fa-solid fa-eye text-gray-900"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Vision</h3>
+              <p class="text-text-muted text-sm">
+                To become a trusted long-term sourcing partner for international brands through reliable service, strong
+                relationships, and an uncompromising commitment to quality.
+              </p>
+            </div>
+          </a>
+
+          <!-- Values Card -->
+          <a href="/OurValues.html" class="block">
+            <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover h-full" data-aos="fade-up"
+              data-aos-duration="800" data-aos-delay="300">
+              <div class="card-header-icon mb-4">
+                <i class="fa-solid fa-heart text-gray-900"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Values</h3>
+              <p class="text-text-muted text-sm">
+                Trust · Transparency · Quality · Collaboration · Continuous Improvement
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-duration="800"
+          data-aos-delay="400">
+          <a href="#services"
+            class="rounded-full px-4 sm:px-6 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 shadow-lg hover:bg-accent-amber-dark hover:-translate-y-1 transition-all duration-300 btn-magnetic">
+            <span>Our Services</span>
+          </a>
+          <a href="#contact"
+            class="rounded-full px-4 sm:px-6 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest border border-accent-amber text-accent-amber hover:bg-accent-amber/8 hover:text-white transition-all duration-300 btn-magnetic">
+            <span>Download Company Profile (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline" data-aos="fade-down"
+          data-aos-duration="800">Our Services</h2>
+        <p class="text-text-muted max-w-xl mb-10" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+          We provide end-to-end garments sourcing services, acting as your extended office on the ground in Bangladesh.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-duration="800" data-aos-delay="200">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-lightbulb text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Product Sourcing & Development</h3>
+            <p class="text-text-muted text-sm">
+              Trend-aligned product ideas, fabric and trims sourcing, sample development, fit refinement, and
+              competitive costing aligned with your target price points.
+            </p>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-duration="800" data-aos-delay="300">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-clipboard-check text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Factory Screening & Compliance</h3>
+            <p class="text-text-muted text-sm">
+              Comprehensive evaluation of factory capabilities, production capacity, technical strength, and operational
+              standards — including full assessment of social and environmental compliance frameworks such as BSCI,
+              SEDEX, WRAP, OEKO-TEX, and other globally recognized certifications.
+            </p>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-duration="800" data-aos-delay="400">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-diagram-project text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Production Planning & Follow-Up</h3>
+            <p class="text-text-muted text-sm">
+              Time & Action (T&amp;A) planning, production tracking, raw material follow-up, and risk management with
+              regular status updates to buyers.
+            </p>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-duration="800" data-aos-delay="500">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-shield-halved text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Quality Assurance & Inspections</h3>
+            <p class="text-text-muted text-sm">
+              Structured inline inspections, pre-final and final AQL checks, measurement verification, and detailed
+              inspection reports with photos.
+            </p>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-duration="800" data-aos-delay="600">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-truck text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Logistics & Documentation</h3>
+            <p class="text-text-muted text-sm">
+              Coordination with nominated forwarders, packing list and invoice review, and shipment follow-up through
+              ETD/ETA for a smoother logistics experience.
+            </p>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-duration="800" data-aos-delay="700">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-leaf text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Sustainability & Ethical Sourcing</h3>
+            <p class="text-text-muted text-sm">
+              Encouraging cleaner production, supporting factories on audits and improvement plans, and promoting
+              ethical and responsible manufacturing across the supply base.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline" data-aos="fade-down"
+          data-aos-duration="800">Product Categories</h2>
+        <p class="text-text-muted max-w-xl mb-10" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+          We support a wide range of ready-made garments for men, women, and kids across woven, knit, denim, sweaters,
+          sportswear, and workwear segments.
+        </p>
+
+        <div class="products-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- KNITWEAR -->
+          <a href="/knitWare.html"
+            class="bg-bg-panel-soft rounded-2xl p-5 border border-border-soft card-hover product-card"
+            data-category="knit" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="flex items-start justify-between mb-3">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full border border-white/10 text-text-muted">
+                <svg fill="#ffffff" width="16px" height="16px" viewBox="-1 0 19 19" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m15.867 7.593-1.534.967a.544.544 0 0 1-.698-.118l-.762-.957v7.256a.476.476 0 0 1-.475.475h-7.79a.476.476 0 0 1-.475-.475V7.477l-.769.965a.544.544 0 0 1-.697.118l-1.535-.967a.387.387 0 0 1-.083-.607l2.245-2.492a2.814 2.814 0 0 1 2.092-.932h.935a2.374 2.374 0 0 0 4.364 0h.934a2.816 2.816 0 0 1 2.093.933l2.24 2.49a.388.388 0 0 1-.085.608z" />
+                </svg>
+                KNITWEAR
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Knitwear</h3>
+            <p class="text-text-muted text-sm">
+              T-shirts, polos, tank tops, leggings, sweatshirts, and loungewear produced with single jersey, interlock,
+              rib, pique, French terry, and fleece.
+            </p>
+          </a>
+
+          <!-- WOVEN -->
+          <a href="/wovenApparel.html"
+            class="bg-bg-panel-soft rounded-2xl p-5 border border-border-soft card-hover product-card"
+            data-category="woven" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
+            <div class="flex items-start justify-between mb-3">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full border border-white/10 text-text-muted">
+                <svg fill="#ffffff" height="16px" width="16px" viewBox="0 0 512 512">
+                  <path
+                    d="M509.637,249.983l-97.399-168.71c-12.252-21.221-35.08-34.404-59.573-34.404h-0.644V21.121v-0.13
+                c0-10.544-9.221-18.762-19.736-17.495H179.7c-10.518-1.267-19.734,6.959-19.734,17.495v0.13V46.87h-0.631
+                c-24.495,0-47.321,13.183-59.573,34.404L2.363,249.983c-4.865,8.425-1.978,19.212,6.452,24.078L92.46,322.34
+                c6.424,3.708,14.218,2.913,19.714-1.411v170.079c0,9.734,7.892,17.626,17.626,17.626h252.4c9.734,0,17.626-7.892,17.626-17.626
+                V320.928c5.498,4.323,13.29,5.121,19.714,1.411l83.645-48.279C511.609,269.197,514.504,258.411,509.637,249.983z" />
+                </svg>
+                WOVEN
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Woven Apparel</h3>
+            <p class="text-text-muted text-sm">
+              Shirts, blouses, trousers, shorts, jackets, dresses, and skirts using cotton, twill, poplin, viscose, and
+              blended fabrics for both formal and casualwear.
+            </p>
+          </a>
+
+          <!-- SWEATERS -->
+          <a href="/sweater.html"
+            class="bg-bg-panel-soft rounded-2xl p-5 border border-border-soft card-hover product-card"
+            data-category="sweater" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <div class="flex items-start justify-between mb-3">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full border border-white/10 text-text-muted">
+                <svg fill="#ffffff" height="16px" width="16px" viewBox="0 0 290.094 290.094">
+                  <path d="M287.804,168.505L216.34,69.131c-4.957-6.893-12.929-10.98-21.42-10.98h-12.891V41.597c0-6.721-5.449-12.17-12.17-12.17
+              h-18.192v80.346c0,4.142-3.357,7.5-7.5,7.5c-4.143,0-7.5-3.358-7.5-7.5V29.427h-18.191c-6.721,0-12.17,5.449-12.17,12.17v16.554
+              h-11.13c-8.491,0-16.463,4.086-21.42,10.98L2.29,168.505c-3.708,5.157-2.827,12.298,2.023,16.399l13.14,11.109
+              c4.83,4.083,11.982,3.787,16.458-0.683l38.508-38.458l-5.373,57.454c-0.319,3.41,0.814,6.796,3.12,9.328
+              c2.271,2.494,5.475,3.924,8.843,3.967v20.876c0,6.721,5.449,12.17,12.17,12.17h107.735c6.721,0,12.17-5.449,12.17-12.17v-20.876
+              c3.368-0.043,6.572-1.473,8.844-3.967c2.306-2.532,3.439-5.918,3.12-9.328l-5.373-57.454l38.508,38.458
+              c4.475,4.469,11.628,4.766,16.458,0.683l13.14-11.109C290.632,180.803,291.513,173.661,287.804,168.505z" />
+                </svg>
+                SWEATERS
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Sweaters (Flat Knit)</h3>
+            <p class="text-text-muted text-sm">
+              Pullovers, cardigans, and knit tops using cotton, acrylic, and blended yarns across various gauges, from
+              basic to fashion styles.
+            </p>
+          </a>
+
+          <!-- SPORTSWEAR -->
+          <a href="/sportsWear.html"
+            class="bg-bg-panel-soft rounded-2xl p-5 border border-border-soft card-hover product-card"
+            data-category="sportswear" data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+            <div class="flex items-start justify-between mb-3">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full border border-white/10 text-text-muted">
+                <svg fill="#ffffff" height="16px" width="16px" viewBox="-47 -47 564.00 564.00">
+                  <g>
+                    <path d="M433.811,213.462l-41.945-5.802c-3.347-0.463-7.093-1.144-11.175-2.014c-0.074-0.016-0.147-0.033-0.222-0.047
+                  c-7.615-1.631-16.393-3.916-25.933-6.669l2.302-6.798c1.329-3.923-0.774-8.181-4.698-9.509c-3.924-1.331-8.18,0.774-9.509,4.698
+                  l-2.469,7.293c-6.578-2.044-13.396-4.247-20.344-6.559l2.391-7.063c1.329-3.923-0.774-8.181-4.698-9.509
+                  c-3.922-1.333-8.181,0.774-9.509,4.698l-2.391,7.062c-6.699-2.306-13.451-4.68-20.166-7.08l2.445-7.222
+                  c1.329-3.923-0.774-8.181-4.698-9.509c-3.926-1.333-8.182,0.774-9.509,4.698l-2.348,6.935c-6.826-2.492-13.542-4.979-20.052-7.417
+                  l2.483-7.334c1.329-3.923-0.774-8.181-4.698-9.509c-3.922-1.333-8.181,0.774-9.509,4.698l-2.318,6.846
+                  c-33.573-12.768-58.775-23.03-59.406-23.287c-3.613-1.476-7.754,0.067-9.521,3.547l-9.209,18.128
+                  c-5.07,9.98-3.992,22.708,1.994,32.28c-5.73,0.98-11.577,1.479-17.5,1.479c-32.514,0-63.427-15.678-82.694-41.937
+                  c-1.413-1.926-3.659-3.063-6.047-3.063h-30c-2.62,0-5.049,1.367-6.41,3.605C17.694,150.341,0,179.988,0,225.496
+                  c0,45.456,17.163,75.072,17.893,76.311c1.349,2.286,3.806,3.689,6.46,3.689h23.099l1.927,23.123
+                  c0.324,3.887,3.573,6.877,7.474,6.877h25c3.901,0,7.15-2.99,7.474-6.877l1.927-23.123h16.198l1.927,23.123
+                  c0.324,3.887,3.573,6.877,7.474,6.877h25c3.901,0,7.15-2.99,7.474-6.877l1.927-23.123h124.345l1.927,23.123
+                  c0.323,3.887,3.573,6.877,7.474,6.877h25c3.9,0,7.15-2.99,7.474-6.877l1.927-23.123h16.199l1.927,23.123
+                  c0.323,3.887,3.573,6.877,7.474,6.877h25c3.9,0,7.15-2.99,7.474-6.877l1.927-23.123h16.199l1.927,23.123
+                  c0.323,3.887,3.573,6.877,7.474,6.877h25c3.9,0,7.15-2.99,7.474-6.877l1.927-23.123H462.5c4.143,0,7.5-3.357,7.5-7.5v-42.995
+                  C470,234.855,453.766,216.221,433.811,213.462z" />
+                  </g>
+                </svg>
+                SPORTSWEAR
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Sportswear & Athleisure</h3>
+            <p class="text-text-muted text-sm">
+              Joggers, hoodies, tracksuits, and performance tops developed with comfort, movement, and modern athleisure
+              design in mind.
+            </p>
+          </a>
+
+          <!-- WORKWEAR -->
+          <a href="/workWare.html"
+            class="bg-bg-panel-soft rounded-2xl p-5 border border-border-soft card-hover product-card"
+            data-category="workwear" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+            <div class="flex items-start justify-between mb-3">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full border border-white/10 text-text-muted">
+                <svg fill="#ffffff" height="16px" width="16px" viewBox="0 0 470 470">
+                  <g>
+                    <path d="M433.081,94.348l-39.822-7.53V37.5c0-20.678-16.822-37.5-37.5-37.5H114.241c-20.678,0-37.5,16.822-37.5,37.5v49.318
+                l-39.843,7.535C19.111,97.768,4.64,115.282,4.64,133.394v302.455C4.64,454.68,19.959,470,38.791,470h392.418
+                c18.831,0,34.151-15.32,34.151-34.151V133.394C465.36,115.282,450.89,97.768,433.081,94.348z" />
+                  </g>
+                </svg>
+                WORKWEAR
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Workwear & Uniforms</h3>
+            <p class="text-text-muted text-sm">
+              Industrial uniforms, coveralls, medical scrubs, and corporate wear with durable stitching, functional
+              details, and reliable fabric performance.
+            </p>
+          </a>
+
+          <!-- DENIM -->
+          <a href="/denim.html"
+            class="bg-bg-panel-soft rounded-2xl p-5 border border-border-soft card-hover product-card"
+            data-category="denim" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+            <div class="flex items-start justify-between mb-3">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full border border-white/10 text-text-muted">
+                <svg height="16px" width="16px" viewBox="0 0 512 512">
+                  <path fill="#ffffff" d="M417.884,0H256H94.116L43.297,500.706L188.236,512l56.479-308.707H256h11.303L323.755,512l144.948-11.294
+              L417.884,0z" />
+                </svg>
+                DENIM
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Denim</h3>
+            <p class="text-text-muted text-sm">
+              Jeans, jackets, shorts, and fashion denim with a variety of washes and finishes, from basic 5-pocket jeans
+              to value-added denim.
+            </p>
+          </a>
+
+          <!-- LINGERIE -->
+          <a href="/Lingerie.html"
+            class="bg-bg-panel-soft rounded-2xl p-5 border border-border-soft card-hover product-card"
+            data-category="lingerie" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+            <div class="flex items-start justify-between mb-3">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full border border-white/10 text-text-muted">
+                <svg fill="#ffffff" height="16px" width="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8
+                s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
+                  <path d="M8.535,14.465l1.414,1.414c0.781,0.781,2.047,0.781,2.828,0l1.414-1.414c0.781-0.781,0.781-2.047,0-2.828l-1.414-1.414
+                c-0.781-0.781-2.047-0.781-2.828,0L8.535,11.637C7.754,12.418,7.754,13.684,8.535,14.465z" />
+                </svg>
+                LINGERIE
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Lingerie & Underwear</h3>
+            <p class="text-text-muted text-sm">
+              Bras, panties, shapewear, and intimate apparel crafted with precision, comfort fabrics, and detailed
+              finishing for everyday wear and special occasions.
+            </p>
+          </a>
+
+          <!-- ACCESSORIES -->
+          <a href="/Accessories.html"
+            class="bg-bg-panel-soft rounded-2xl p-5 border border-border-soft card-hover product-card"
+            data-category="accessories" data-aos="fade-up" data-aos-duration="800" data-aos-delay="550">
+            <div class="flex items-start justify-between mb-3">
+              <span
+                class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full border border-white/10 text-text-muted">
+                <svg fill="#ffffff" height="16px" width="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M21,5c-1.11-0.35-2.33-0.5-3.5-0.5c-1.95,0-4.05,0.4-5.5,1.5c-1.45-1.1-3.55-1.5-5.5-1.5S2.45,4.9,1,6v14.65
+                c0,0.25,0.25,0.5,0.5,0.5c0.1,0,0.15-0.05,0.25-0.05C3.1,20.45,5.05,20,6.5,20c1.95,0,4.05,0.4,5.5,1.5c1.35-0.85,3.8-1.5,5.5-1.5
+                c1.65,0,3.35,0.3,4.75,1.05c0.1,0.05,0.15,0.05,0.25,0.05c0.25,0,0.5-0.25,0.5-0.5V6C22.4,5.55,21.75,5.25,21,5z M21,18.5
+                c-1.1-0.35-2.3-0.5-3.5-0.5c-1.7,0-4.15,0.65-5.5,1.5V8c1.35-0.85,3.8-1.5,5.5-1.5c1.2,0,2.4,0.15,3.5,0.5V18.5z" />
+                </svg>
+                ACCESSORIES
+              </span>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Accessories</h3>
+            <p class="text-text-muted text-sm">
+              Hats, caps, bags, scarves, and other complementary accessories that complete the apparel collection with
+              attention to detail and brand consistency.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section id="steps" class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline" data-aos="fade-down"
+          data-aos-duration="800">How We Work</h2>
+        <p class="text-text-muted max-w-xl mb-10" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+          A simple, transparent, and structured process from idea to shipment ensures better planning, fewer surprises,
+          and smoother execution.
+        </p>
+
+        <div class="interactive-timeline grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 relative">
+
+          <!-- Step 1 -->
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div
+              class="relative h-full flex flex-col pt-6 z-10 rounded-xl p-4 bg-bg-panel-soft border border-border-soft transform-gpu transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-500/30">
+              <div class="timeline-circle mb-3 mx-auto md:mx-auto">
+                <span class="text-sm font-semibold text-black">1</span>
+              </div>
+              <h4 class="text-base font-semibold mb-1 text-center">Requirement Sharing</h4>
+              <p class="text-text-muted text-sm text-center">
+                Buyer shares tech packs, target prices, and delivery timelines for the collection or program.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
+            <div
+              class="relative h-full flex flex-col pt-6 z-10 rounded-xl p-4 bg-bg-panel-soft border border-border-soft transform-gpu transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-600/30">
+              <div class="timeline-circle mb-3 mx-auto md:mx-auto">
+                <span class="text-sm font-semibold text-black">2</span>
+              </div>
+              <h4 class="text-base font-semibold mb-1 text-center">Product Design & Development</h4>
+              <p class="text-text-muted text-sm text-center">
+                Our design team creates technical specifications, patterns, and prototypes based on initial
+                requirements.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <div
+              class="relative h-full flex flex-col pt-6 z-10 rounded-xl p-4 bg-bg-panel-soft border border-border-soft transform-gpu transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-600/30">
+              <div class="timeline-circle mb-3 mx-auto md:mx-auto">
+                <span class="text-sm font-semibold text-black">3</span>
+              </div>
+              <h4 class="text-base font-semibold mb-1 text-center">Factory & Fabric Matching</h4>
+              <p class="text-text-muted text-sm text-center">
+                We shortlist suitable factories and fabric sources based on product type, volume, and compliance needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">
+            <div
+              class="relative h-full flex flex-col pt-6 z-10 rounded-xl p-4 bg-bg-panel-soft border border-border-soft transform-gpu transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-600/30">
+              <div class="timeline-circle mb-3 mx-auto md:mx-auto">
+                <span class="text-sm font-semibold text-black">4</span>
+              </div>
+              <h4 class="text-base font-semibold mb-1 text-center">Sampling & Approvals</h4>
+              <p class="text-text-muted text-sm text-center">
+                Samples are developed, fits are refined, and final approvals are obtained before order confirmation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+            <div
+              class="relative h-full flex flex-col pt-6 z-10 rounded-xl p-4 bg-bg-panel-soft border border-border-soft transform-gpu transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-600/30">
+              <div class="timeline-circle mb-3 mx-auto md:mx-auto">
+                <span class="text-sm font-semibold text-black">5</span>
+              </div>
+              <h4 class="text-base font-semibold mb-1 text-center">Production & Quality Control</h4>
+              <p class="text-text-muted text-sm text-center">
+                Daily follow-up with inline and final AQL checks, along with measurement and finishing control.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+            <div
+              class="relative h-full flex flex-col pt-6 z-10 rounded-xl p-4 bg-bg-panel-soft border border-border-soft transform-gpu transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-600/30">
+              <div class="timeline-circle mb-3 mx-auto md:mx-auto">
+                <span class="text-sm font-semibold text-black">6</span>
+              </div>
+              <h4 class="text-base font-semibold mb-1 text-center">Shipment & Documentation</h4>
+              <p class="text-text-muted text-sm text-center">
+                Coordination with nominated forwarders, document review, and shipment status updates until dispatch.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FACTORY NETWORK SECTION (Bangladesh map with pins) -->
+    <section id="factories" class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline" data-aos="fade-down"
+          data-aos-duration="800">Our Factory Network</h2>
+        <p class="text-text-muted max-w-xl mb-10" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+          BGS partners with a curated network of woven, knitwear, denim, sweater, and workwear factories across key
+          production hubs in Bangladesh.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+          <div class="bg-bg-panel-soft rounded-xl p-4 border border-border-soft text-text-muted text-sm card-hover"
+            data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <span class="font-semibold text-white">Woven factories</span><br />
+            Specialised in shirts, trousers, jackets, and dresses — primarily located in Gazipur, Ashulia, and
+            Narayanganj.
+          </div>
+          <div class="bg-bg-panel-soft rounded-xl p-4 border border-border-soft text-text-muted text-sm card-hover"
+            data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <span class="font-semibold text-white">Knitwear factories</span><br />
+            High-capacity units producing t-shirts, polos, sweatshirts, and loungewear with strong compliance records.
+          </div>
+          <div class="bg-bg-panel-soft rounded-xl p-4 border border-border-soft text-text-muted text-sm card-hover"
+            data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+            <span class="font-semibold text-white">Denim units</span><br />
+            Denim factories with washing plants capable of various washes, treatments, and value-added finishes.
+          </div>
+          <div class="bg-bg-panel-soft rounded-xl p-4 border border-border-soft text-text-muted text-sm card-hover"
+            data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+            <span class="font-semibold text-white">Sweater & workwear units</span><br />
+            Flat-knit sweater factories and specialist factories for industrial garments and uniforms.
+          </div>
+        </div>
+
+        <p class="text-text-muted text-sm mt-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+          Compliance and certifications (such as BSCI, SEDEX, WRAP, OEKO-TEX, RSC/ACCORD) are considered based on buyer
+          requirements and factory profiles.
+        </p>
+      </div>
+    </section>
+
+    <!-- SUSTAINABILITY SECTION -->
+    <section id="sustainability" class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline" data-aos="fade-down"
+          data-aos-duration="800">Sustainability & Ethical Sourcing</h2>
+        <p class="text-text-muted max-w-xl mb-10" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+          We believe long-term success is only possible when products are made responsibly, respecting people,
+          communities, and the environment.
+        </p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+          <div>
+            <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover" data-aos="fade-up"
+              data-aos-duration="800" data-aos-delay="200">
+              <div class="card-header-icon mb-4">
+                <i class="fa-solid fa-people-group text-gray-900"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">People & Workplace</h3>
+              <p class="text-text-muted text-sm">
+                We prioritise factories with safe, fair, and respectful working conditions, and encourage continuous
+                improvement in worker welfare and social compliance.
+              </p>
+            </div>
+
+            <div class="h-4"></div>
+
+            <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover" data-aos="fade-up"
+              data-aos-duration="800" data-aos-delay="300">
+              <div class="card-header-icon mb-4">
+                <i class="fa-solid fa-droplet text-gray-900"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Process & Environment</h3>
+              <p class="text-text-muted text-sm">
+                Cleaner production, responsible use of chemicals, and reduced environmental impact are key focus areas
+                we encourage within our factory network.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-bg-panel rounded-2xl p-5 border border-border-soft card-hover" data-aos="fade-up"
+              data-aos-duration="800" data-aos-delay="400">
+              <div class="card-header-icon mb-4">
+                <i class="fa-solid fa-seedling text-gray-900"></i>
+              </div>
+              <h3 class="text-lg font-semibold mb-2">Long-Term Responsibility</h3>
+              <p class="text-text-muted text-sm">
+                Our sustainability approach is practical and improvement-oriented. We support factories with audit
+                preparation, corrective action plans, and long-term capability building rather than short-term fixes.
+              </p>
+              <p class="text-text-muted text-sm mt-3">
+                We believe that good business is sustainable business — and we strive to align sourcing decisions with
+                that belief.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="py-16 bg-gradient-to-br from-accent-amber to-[#f5c56d] text-gray-900">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8" data-aos="zoom-in"
+          data-aos-duration="800">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-2">Ready to start your next collection?
+            </h2>
+            <p class="text-[#3b2a0b] max-w-md">
+              Share your requirements with us and we'll propose suitable factories, timelines, and product options
+              tailored to your brand and market.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3 justify-center">
+            <a href="#contact"
+              class="rounded-full px-4 sm:px-6 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-white text-gray-900 hover:bg-gray-100 transition-all duration-300 btn-magnetic">
+              <span>Send Inquiry</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+            <a href="https://wa.me/+8801760698817?text=Hello%20BGS%20Team%2C%20I%20would%20like%20to%20discuss%20garments%20sourcing."
+              class="rounded-full px-4 sm:px-6 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest border border-gray-900 text-gray-900 hover:bg-gray-900/10 transition-all duration-300 btn-magnetic hover:bg-green-500 hover:text-white hover:border-green-500 hover:-translate-y-1 hover:duration-300 hoveease-in-out ">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-right"
+            data-aos-duration="1200">
+            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline">Contact Us</h2>
+            <p class="text-text-muted max-w-xl mb-6">
+              Whether you are a buyer exploring Bangladesh as a sourcing base or a factory looking for partnership, we'd
+              be happy to connect.
+            </p>
+
+            <ul class="space-y-3 mt-4 text-sm">
+              <li class="flex items-start gap-3 text-text-muted">
+                <i class="fa-solid fa-location-dot text-accent-amber mt-1 w-4"></i>
+                <span>
+                  Brother's Global Sourcing (BGS)<br>
+                  House 10, Road 1A, Sector 15<br>
+                  Uttara Model Town, Dhaka – 1230<br>
+                  Bangladesh
+                </span>
+              </li>
+              <li class="flex items-start gap-3 text-text-muted">
+                <i class="fa-solid fa-phone text-accent-amber mt-1 w-4"></i>
+                <span>Phone / WhatsApp: ++8801760698817</span>
+              </li>
+              <li class="flex items-start gap-3 text-text-muted">
+                <i class="fa-solid fa-envelope text-accent-amber mt-1 w-4"></i>
+                <span>Email: info@brothersglobalsourcing.com</span>
+              </li>
+            </ul>
+
+            <p class="text-xs text-text-muted mt-4">
+              We typically respond within 1–2 working days. For urgent queries, please use WhatsApp.
+            </p>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-left"
+            data-aos-duration="1200" data-aos-delay="200">
+            <h3 class="text-xl font-semibold mb-2">Send Us Your Inquiry</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Share a few details about your needs and we will get back to you with next steps.
+            </p>
+
+            <form class="contact-form grid grid-cols-1 md:grid-cols-2 gap-4 mt-2" action="mailto: syedmahib8@gmail.com"
+              method="post" enctype="text/plain">
+              <div class="flex flex-col gap-1 relative">
+                <input id="name" name="Name" type="text" required
+                  class="form-input bg-bg-panel-soft rounded-xl border border-border-soft px-3 py-3 text-text-main text-sm outline-none focus:border-accent-amber focus:ring-1 focus:ring-accent-amber/25"
+                  placeholder=" Name* " />
+                <!-- <label for="name" class="absolute left-3 top-3 text-text-muted text-sm transition-all duration-300 pointer-events-none">Name *</label> -->
+              </div>
+
+              <div class="flex flex-col gap-1 relative">
+                <input id="company" name="Company" type="text"
+                  class="form-input bg-bg-panel-soft rounded-xl border border-border-soft px-3 py-3 text-text-main text-sm outline-none focus:border-accent-amber focus:ring-1 focus:ring-accent-amber/25"
+                  placeholder=" Company " />
+                <!-- <label for="company" class="absolute left-3 top-3 text-text-muted text-sm transition-all duration-300 pointer-events-none">Company</label> -->
+              </div>
+
+              <div class="flex flex-col gap-1 relative">
+                <input id="email" name="Email" type="email" required
+                  class="form-input bg-bg-panel-soft rounded-xl border border-border-soft px-3 py-3 text-text-main text-sm outline-none focus:border-accent-amber focus:ring-1 focus:ring-accent-amber/25"
+                  placeholder=" Email * " />
+                <!-- <label for="email" class="absolute left-3 top-3 text-text-muted text-sm transition-all duration-300 pointer-events-none">Email *</label> -->
+              </div>
+
+              <div class="flex flex-col gap-1 relative">
+                <input id="phone" name="Phone" type="text"
+                  class="form-input bg-bg-panel-soft rounded-xl border border-border-soft px-3 py-3 text-text-main text-sm outline-none focus:border-accent-amber focus:ring-1 focus:ring-accent-amber/25"
+                  placeholder=" Phone / WhatsApp " />
+                <!-- <label for="phone" class="absolute left-3 top-3 text-text-muted text-sm transition-all duration-300 pointer-events-none">Phone / WhatsApp</label> -->
+              </div>
+
+              <div class="flex flex-col gap-1 relative">
+                <input id="country" name="Country" type="text"
+                  class="form-input bg-bg-panel-soft rounded-xl border border-border-soft px-3 py-3 text-text-main text-sm outline-none focus:border-accent-amber focus:ring-1 focus:ring-accent-amber/25"
+                  placeholder=" Country " />
+                <!-- <label for="country" class="absolute left-3 top-3 text-text-muted text-sm transition-all duration-300 pointer-events-none">Country</label> -->
+              </div>
+
+              <div class="flex flex-col gap-1 relative">
+                <select id="type" name="Inquiry Type"
+                  class="form-input bg-bg-panel-soft rounded-xl border border-border-soft px-3 py-3 text-text-main text-sm outline-none focus:border-accent-amber focus:ring-1 focus:ring-accent-amber/25 appearance-none">
+                  <option value="Buyer">Buyer</option>
+                  <option value="Factory">Factory</option>
+                  <option value="Other">Other</option>
+                </select>
+                <i class="fas fa-chevron-down absolute right-3 top-3 text-text-muted pointer-events-none"></i>
+              </div>
+
+              <div class="flex flex-col gap-1 md:col-span-2 relative">
+                <textarea id="message" name="Message" required rows="4"
+                  class="form-input bg-bg-panel-soft rounded-xl border border-border-soft px-3 py-3 text-text-main text-sm outline-none focus:border-accent-amber focus:ring-1 focus:ring-accent-amber/25 resize-none"
+                  placeholder=" Message * "></textarea>
+                <!-- <label for="message" class="absolute left-3 top-3 text-text-muted text-sm transition-all duration-300 pointer-events-none">Message *</label> -->
+              </div>
+
+              <div class="md:col-span-2 flex justify-end">
+                <button type="submit"
+                  class="rounded-full px-6 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 shadow-lg hover:bg-accent-amber-dark hover:-translate-y-1 transition-all duration-300 btn-magnetic">
+                  <span>Submit Inquiry</span>
+                  <i class="fa-regular fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+            <p class="text-xs text-text-muted mt-4">
+              Note: For more advanced forms (database / CRM integration), a developer can later connect this to a
+              backend.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="border-t border-white/10 bg-[#111111] py-10 mt-10">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm" data-aos="fade-up" data-aos-duration="800">
+        <div class="text-text-muted">
+          <h3 class="text-base font-semibold mb-2">Brother's Global Sourcing (BGS)</h3>
+          <p class="text-sm">
+            Garments buying house based in Dhaka, Bangladesh — connecting global buyers with reliable, compliant
+            factories through trust, transparency, and committed delivery.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold mb-2">Quick Links</h4>
+          <ul class="space-y-1">
+            <li><a href="#home" class="text-text-muted text-sm hover:text-white transition-colors">Home</a></li>
+            <li><a href="/index.html#about" class="text-text-muted text-sm hover:text-white transition-colors">About us</a></li>
+            <li><a href="#services" class="text-text-muted text-sm hover:text-white transition-colors">Services</a></li>
+            <li><a href="#products" class="text-text-muted text-sm hover:text-white transition-colors">Products</a></li>
+            <li><a href="#factories" class="text-text-muted text-sm hover:text-white transition-colors">Factory
+                network</a></li>
+            <li><a href="#sustainability"
+                class="text-text-muted text-sm hover:text-white transition-colors">Sustainability</a></li>
+            <li><a href="#contact" class="text-text-muted text-sm hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold mb-2">Connect</h4>
+          <ul class="space-y-1 text-text-muted text-sm">
+            <li>Email: info@brothersglobalsourcing.com</li>
+            <li>Phone / WhatsApp: ++8801760698817</li>
+          </ul>
+          <div class="flex gap-2 mt-2">
+            <!-- Replace # with your real social links -->
+            <a href="#"
+              class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-text-muted hover:bg-accent-amber hover:text-gray-900 hover:border-accent-amber transition-all duration-300">
+              <i class="fa-brands fa-linkedin-in text-xs"></i>
+            </a>
+            <a href="#"
+              class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-text-muted hover:bg-accent-amber hover:text-gray-900 hover:border-accent-amber transition-all duration-300">
+              <i class="fa-brands fa-facebook-f text-xs"></i>
+            </a>
+            <a href="#"
+              class="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-text-muted hover:bg-accent-amber hover:text-gray-900 hover:border-accent-amber transition-all duration-300">
+              <i class="fa-brands fa-instagram text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-8 text-xs text-text-muted">
+        © 2025 Brother's Global Sourcing. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a class="whatsapp-float fixed right-5 bottom-5 w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center text-white text-xl shadow-2xl z-40 animate-float"
+    href="https://wa.me/+8801760698817?text=Hello%20BGS%20Team%2C%20I%20would%20like%20to%20discuss%20garments%20sourcing."
+    target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+    });
+
+    // Page loader
+    window.addEventListener('load', function () {
+      const loader = document.querySelector('.page-loader');
+      if (loader) {
+        loader.style.opacity = '0';
+        setTimeout(() => {
+          loader.style.display = 'none';
+        }, 500);
+      }
+    });
+
+    // Mobile slider navigation toggle
+    const navToggleEl = document.getElementById('navToggle');
+    const mobileSliderMenu = document.getElementById('mobileSliderMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+
+    function openMobileMenu() {
+      mobileSliderMenu.classList.add('open');
+      mobileOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      mobileSliderMenu.classList.remove('open');
+      mobileOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (navToggleEl) {
+      navToggleEl.addEventListener('click', openMobileMenu);
+    }
+
+    if (closeMenuBtn) {
+      closeMenuBtn.addEventListener('click', closeMobileMenu);
+    }
+
+    if (mobileOverlay) {
+      mobileOverlay.addEventListener('click', closeMobileMenu);
+    }
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.mobile-menu-links a').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+
+    // Floating label behavior
+    document.querySelectorAll('.form-input').forEach(input => {
+      const label = input.previousElementSibling;
+      if (label && label.tagName === 'LABEL') {
+        input.addEventListener('focus', () => {
+          label.classList.add('active', 'focused');
+        });
+        input.addEventListener('blur', () => {
+          if (!input.value) {
+            label.classList.remove('active', 'focused');
+          }
+        });
+        if (input.value) {
+          label.classList.add('active', 'focused');
+        }
+      }
+    });
+
+    // Close any open tooltips when tapping outside (useful on mobile)
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.point-tooltip').forEach(t => {
+        t.style.visibility = 'hidden';
+        t.style.opacity = '0';
+        t.style.transform = 'translateX(-50%) translateY(0)';
+      });
+    });
+
+  </script>
+</body>
+
+</html>

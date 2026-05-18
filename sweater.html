@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sweaters - Brother's Global Sourcing (BGS) – Garments Buying House</title>
+  <link rel="icon" type="image/svg+xml" href="/Assets/Concept 2_BGS_Logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Premium sweaters including pullovers, cardigans, turtlenecks, cashmere sweaters, wool blends, and knitwear with various knitting techniques and finishes." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/b740202a2d.js" crossorigin="anonymous"></script>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bg-dark': '#1f1f1f',
+            'bg-darker': '#181818',
+            'bg-panel': '#2a2a2a',
+            'bg-panel-soft': '#2f2f2f',
+            'text-main': '#f4f4f4',
+            'text-muted': '#c3c3c3',
+            'accent-amber': '#D99E3F',
+            'accent-amber-dark': '#c78d35',
+            'border-soft': '#3a3a3a',
+            'danger': '#f15b5b',
+            'denim-blue': '#1560BD',
+            'denim-light': '#6F8FAF',
+            'primary': '#D99E3F',
+            'primary-dark': '#c78d35',
+            'sweater-maroon': '#800000',
+            'sweater-cream': '#FFFDD0',
+          },
+          fontFamily: {
+            'montserrat': ['Montserrat', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+            'inter': ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+          },
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+          },
+          animation: {
+            'float': 'float 3s ease-in-out infinite',
+            'pulse-soft': 'pulseSoft 2s infinite',
+            'typing': 'typing 3.5s steps(40, end)',
+            'blink': 'blink 1s infinite',
+            'slideInRight': 'slideInRight 0.3s ease-out',
+            'slideOutRight': 'slideOutRight 0.3s ease-out',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            pulseSoft: {
+              '0%, 100%': { opacity: '1' },
+              '50%': { opacity: '0.8' },
+            },
+            typing: {
+              'from': { width: '0' },
+              'to': { width: '100%' },
+            },
+            blink: {
+              'from, to': { 'border-color': 'transparent' },
+              '50%': { 'border-color': '#D99E3F' },
+            },
+            slideInRight: {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(0)' },
+            },
+            slideOutRight: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(100%)' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .gradient-bg {
+      background: radial-gradient(circle at top left, #333 0, #1f1f1f 35%, #181818 100%);
+    }
+
+    .hero-card-bg {
+      background: radial-gradient(circle at top left, #3a3a3a 0, #2a2a2a 50%, #191919 100%);
+    }
+
+    .gradient-underline {
+      position: relative;
+      display: inline-block;
+    }
+
+    .gradient-underline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.4rem;
+      width: 42%;
+      height: 3px;
+      background: linear-gradient(to right, #D99E3F, transparent);
+      border-radius: 999px;
+    }
+
+    .timeline-circle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #fff, #D99E3F);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.45);
+    }
+
+    .card-header-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.16), rgba(217, 158, 63, 0.35));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: #D99E3F;
+      transition: width 0.25s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 65%;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 120% -10%, rgba(217, 158, 63, 0.16), transparent 55%);
+      pointer-events: none;
+    }
+
+    /* Floating shapes animation */
+    .floating-shape {
+      position: absolute;
+      background: rgba(217, 158, 63, 0.1);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .shape-1 {
+      width: 100px;
+      height: 100px;
+      top: 10%;
+      left: 5%;
+      animation-delay: 0s;
+    }
+
+    .shape-2 {
+      width: 150px;
+      height: 150px;
+      top: 60%;
+      right: 10%;
+      animation-delay: 2s;
+    }
+
+    .shape-3 {
+      width: 80px;
+      height: 80px;
+      bottom: 20%;
+      left: 15%;
+      animation-delay: 4s;
+    }
+
+    /* Card hover effects */
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-hover::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(217, 158, 63, 0.1), transparent);
+      transition: left 0.5s;
+    }
+
+    .card-hover:hover::before {
+      left: 100%;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Button magnetic effect */
+    .btn-magnetic {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-magnetic::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+
+    .btn-magnetic:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+
+    /* Product category filter */
+    .category-filter {
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+      font-weight: 500;
+    }
+
+    .category-filter.active {
+      background: #D99E3F;
+      color: #000;
+      border-color: #D99E3F;
+    }
+
+    .category-filter:hover:not(.active) {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Product cards */
+    .product-card {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      height: 200px;
+      background: linear-gradient(135deg, #3a3a3a, #2a2a2a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-image::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      z-index: 2;
+    }
+
+    /* Mobile menu styles - UPDATED FOR SLIDER */
+    .mobile-slider-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 320px;
+      height: 100vh;
+      background: rgba(12, 12, 12, 0.98);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      transition: right 0.3s ease-out;
+      padding: 2rem 1.5rem;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-slider-menu.open {
+      right: 0;
+      animation: slideInRight 0.3s ease-out;
+    }
+
+    .mobile-slider-menu.closing {
+      animation: slideOutRight 0.3s ease-out;
+    }
+
+    .mobile-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-menu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-menu-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .mobile-menu-links a {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 1rem;
+      transition: all 0.2s ease;
+    }
+
+    .mobile-menu-links a:hover {
+      color: #D99E3F;
+      padding-left: 0.5rem;
+    }
+
+    .mobile-menu-cta {
+      margin-top: auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .close-menu-btn {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .close-menu-btn:hover {
+      color: #D99E3F;
+    }
+
+    /* Gallery Styles */
+    .category-tab.active {
+      box-shadow: 0 4px 12px rgba(217, 158, 63, 0.2);
+    }
+
+    .gallery-item {
+      transition: all 0.3s ease;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      border-color: #D99E3F;
+    }
+
+    /* Image loading state */
+    .gallery-item img {
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Ensure proper image display */
+    .aspect-square {
+      position: relative;
+    }
+
+    .aspect-square img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Desktop menu styles */
+    @media (min-width: 769px) {
+
+      .mobile-slider-menu,
+      .mobile-overlay {
+        display: none;
+      }
+    }
+
+    /* Tablet Landscape (1024px - 768px) */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      .product-hero {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+      }
+
+      .category-tabs {
+        gap: 0.5rem;
+      }
+
+      .category-tab {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+      }
+    }
+
+    /* Tablet Portrait (768px - 1024px) */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+      }
+
+      .category-tabs {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .category-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+      }
+    }
+
+    /* Mobile Landscape (568px - 767px) */
+    @media (min-width: 568px) and (max-width: 767px) and (orientation: landscape) {
+      .product-hero {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+      }
+
+      .category-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        gap: 0.25rem;
+      }
+
+      .category-tab {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.65rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+    }
+
+    /* Mobile Portrait (320px - 567px) */
+    @media (max-width: 567px) {
+      .product-hero {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .hero-title {
+        font-size: 1.75rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      .category-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem;
+      }
+
+      .category-tab {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+      }
+
+      .gallery-item {
+        max-height: 300px;
+      }
+
+      .mobile-slider-menu {
+        width: 85%;
+      }
+    }
+
+    /* Extra Small Mobile (below 320px) */
+    @media (max-width: 320px) {
+      .category-tabs {
+        gap: 0.25rem;
+      }
+
+      .category-tab {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.65rem;
+      }
+
+      .hero-title {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* Small Desktop (1025px - 1280px) */
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Large Desktop (1281px and above) */
+    @media (min-width: 1281px) {
+      .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* Touch device optimizations */
+    @media (hover: none) and (pointer: coarse) {
+      .gallery-item:hover {
+        transform: none;
+      }
+
+      .card-hover:hover {
+        transform: none;
+      }
+
+      .gallery-item:hover img {
+        transform: none;
+      }
+    }
+
+    /* High DPI screens */
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      .gallery-item img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+      }
+    }
+
+    /* Ensure proper spacing on all devices */
+    @media (max-width: 768px) {
+      .hero-inner {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .grid-cols-2,
+      .grid-cols-3,
+      .grid-cols-4 {
+        grid-template-columns: 1fr;
+      }
+
+      .btn-row {
+        justify-content: center;
+      }
+
+      .timeline {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .floating-shape {
+        display: none;
+      }
+
+      .category-filters {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .category-filter {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+      }
+    }
+
+    /* Ensure timeline items wrap nicely on small screens */
+    @media (max-width: 1024px) {
+      .interactive-timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .interactive-timeline {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Sweaters Page Specific Styles */
+    .product-hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1574180045827-681f8a1a9622?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .fabric-card {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .fabric-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .fabric-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(217, 158, 63, 0.1), transparent);
+      transition: left 0.5s;
+    }
+
+    .fabric-card:hover::before {
+      left: 100%;
+    }
+
+    .product-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .product-feature:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-3px);
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.16), rgba(217, 158, 63, 0.35));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .spec-table tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .spec-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .spec-table td {
+      padding: 1rem 0.5rem;
+    }
+
+    .spec-table td:first-child {
+      font-weight: 500;
+      width: 40%;
+    }
+
+    .spec-table td:last-child {
+      color: #c3c3c3;
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+      padding: 1rem;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      transform: translateY(0);
+    }
+
+    .yarn-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: rgba(128, 0, 0, 0.2);
+      border: 1px solid rgba(128, 0, 0, 0.3);
+      border-radius: 20px;
+      font-size: 0.75rem;
+      color: #800000;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .sweater-gradient {
+      background: linear-gradient(135deg, #2a1a1a 0%, #1a0a0a 100%);
+    }
+
+    .sweater-feature-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.16), rgba(128, 0, 0, 0.35));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    /* Loader styles */
+    .page-loader {
+      backdrop-filter: blur(10px);
+    }
+
+    .loader-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(217, 158, 63, 0.3);
+      border-top-color: #D99E3F;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1rem;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body class="gradient-bg text-text-main font-inter">
+
+  <!-- Page Loader -->
+  <div
+    class="page-loader fixed inset-0 bg-bg-darker flex justify-center items-center z-50 transition-opacity duration-500">
+    <div class="loader-content text-center">
+      <div class="loader-spinner"></div>
+      <p class="text-text-muted">Loading Brother's Global Sourcing</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="top"
+    class="sticky top-0 z-50 backdrop-blur-lg bg-gradient-to-b from-[rgba(12,12,12,0.9)] via-[rgba(12,12,12,0.75)] to-transparent border-b border-white/10">
+    <div class="container mx-auto px-4 sm:px-6">
+      <nav class="flex items-center justify-between py-3">
+        <div class="flex items-center gap-3">
+          <a href="/"
+            class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-radial from-gray-200 via-gray-300 to-gray-500 flex items-center justify-center overflow-hidden">
+            <img src="/Assets/BGS logo.png" alt="Brother's Global Sourcing Logo" class="w-full h-full object-contain" />
+          </a>
+          <div class="flex flex-col gap-0">
+            <span class="font-montserrat text-xs sm:text-sm tracking-wider uppercase">Brother's Global Sourcing</span>
+            <span class="text-xs text-text-muted hidden sm:block">Garments Buying House – Bangladesh</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center gap-6" id="navMenu">
+            <div class="flex items-center gap-6 text-sm uppercase tracking-wider">
+              <a href="/index.html"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Home</a>
+              <a href="/index.html#about"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">About</a>
+              <a href="/services.html"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Services</a>
+              <a href="/Our Products.html"
+                class="nav-link relative pb-1 text-white font-medium transition-colors">Products</a>
+              <a href="index.html#factories"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Factories</a>
+              <a href="index.html#sustainability"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Sustainability</a>
+              <a href="/ContactUs.html"
+                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Contact</a>
+            </div>
+            <a href="index.html#contact"
+              class="px-4 py-2 rounded-full border border-accent-amber/50 flex items-center gap-2 text-xs uppercase tracking-widest text-accent-amber bg-accent-amber/6">
+              <i class="fa-regular fa-paper-plane text-sm"></i>
+              <span>Send Inquiry</span>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden text-white bg-transparent border-none text-xl" aria-label="Toggle navigation"
+            id="navToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Slider Menu -->
+  <div class="mobile-slider-menu" id="mobileSliderMenu">
+    <div class="mobile-menu-header">
+      <div class="flex items-center gap-3">
+        <a href="/"
+          class="w-10 h-10 rounded-xl bg-gradient-radial from-gray-200 via-gray-300 to-gray-500 flex items-center justify-center overflow-hidden">
+          <img src="/Assets/BGS logo.png" alt="Brother's Global Sourcing Logo" class="w-full h-full object-contain" />
+        </a>
+        <div class="flex flex-col gap-0">
+          <span class="font-montserrat text-sm tracking-wider uppercase">Brother's Global Sourcing</span>
+          <span class="text-xs text-text-muted">Garments Buying House</span>
+        </div>
+      </div>
+      <button class="close-menu-btn" id="closeMenuBtn">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <div class="mobile-menu-links">
+      <a href="index.html" class="text-text-muted hover:text-white transition-colors">Home</a>
+      <a href="/index.html#about" class="text-text-muted hover:text-white transition-colors">About</a>
+      <a href="/services.html" class="text-text-muted hover:text-white transition-colors">Services</a>
+      <a href="/Our Products.html" class="text-white transition-colors">Products</a>
+      <a href="index.html#factories" class="text-text-muted hover:text-white transition-colors">Factories</a>
+      <a href="index.html#sustainability" class="text-text-muted hover:text-white transition-colors">Sustainability</a>
+      <a href="/ContactUs.html" class="text-text-muted hover:text-white transition-colors">Contact</a>
+    </div>
+
+    <div class="mobile-menu-cta">
+      <a href="index.html#contact"
+        class="w-full block text-center px-4 py-3 rounded-full border border-accent-amber/50 items-center justify-center gap-2 text-xs uppercase tracking-widest text-accent-amber bg-accent-amber/6">
+        <i class="fa-regular fa-paper-plane text-sm"></i>
+        <span>Send Inquiry</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Mobile Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="product-hero py-20 relative overflow-hidden">
+      <!-- Animated background elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+      </div>
+
+      <div class="container mx-auto px-4 sm:px-6 relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+          <div
+            class="inline-block mb-4 px-4 py-1 rounded-full bg-sweater-maroon/20 border border-sweater-maroon/30 text-sweater-maroon text-sm font-medium">
+            SWEATERS
+          </div>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold font-montserrat leading-tight mb-4"
+            data-aos="fade-up">
+            Sweater Collection
+          </h1>
+          <p class="text-text-muted text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+            Pullovers, cardigans, turtlenecks, cashmere sweaters, wool blends, and knitwear with various knitting
+            techniques and luxurious finishes.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="#inquiry"
+              class="rounded-full px-6 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
+              <span>Request Quote</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+            <a href="#products"
+              class="rounded-full px-6 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest border border-white/30 text-white hover:bg-white/10 transition-all duration-300 btn-magnetic">
+              <span>View Products</span>
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT OVERVIEW -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Left Column - Only Text Content -->
+          <div data-aos="fade-right">
+            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-6 gradient-underline">Crafting Sweaters
+            </h2>
+            <p class="text-text-muted mb-6">
+              Our sweater collection represents the perfect blend of warmth, comfort, and style. We specialize in
+              producing quality sweaters using required yarns, advanced knitting techniques, and meticulous
+              craftsmanship.
+            </p>
+            <p class="text-text-muted">
+              From cozy wool blends to luxurious cashmere, we create sweaters that offer exceptional comfort,
+              durability, and timeless design for discerning customers worldwide
+            </p>
+          </div>
+
+          <!-- Right Column - Only the 4 Feature Cards -->
+          <div data-aos="fade-left">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="product-feature">
+                <div class="sweater-feature-icon">
+                  <i class="fa-solid fa-wool text-sweater-maroon"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-1">Premium Yarns</h4>
+                  <p class="text-text-muted text-sm">Cashmere, merino wool, alpaca, blends</p>
+                </div>
+              </div>
+              <div class="product-feature">
+                <div class="sweater-feature-icon">
+                  <i class="fa-solid fa-knot text-sweater-maroon"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-1">Advanced Knitting</h4>
+                  <p class="text-text-muted text-sm">Flat knitting, circular knitting, linking</p>
+                </div>
+              </div>
+              <div class="product-feature">
+                <div class="sweater-feature-icon">
+                  <i class="fa-solid fa-ruler-combined text-sweater-maroon"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-1">Perfect Fit</h4>
+                  <p class="text-text-muted text-sm">Multiple fits from slim to oversized</p>
+                </div>
+              </div>
+              <div class="product-feature">
+                <div class="sweater-feature-icon">
+                  <i class="fa-solid fa-snowflake text-sweater-maroon"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-1">Winter Essentials</h4>
+                  <p class="text-text-muted text-sm">Warm, cozy designs for cold seasons</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT CATEGORIES GALLERY -->
+    <section id="products" class="py-16 bg-bg-panel-soft">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center"
+          data-aos="fade-down">Sweater Product Gallery</h2>
+        <p class="text-text-muted max-w-2xl mx-auto text-center mb-8 md:mb-12" data-aos="fade-down"
+          data-aos-delay="100">
+          Browse our premium sweater collection through our categorized visual gallery
+        </p>
+
+        <!-- Category Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 md:mb-10 category-tabs" data-aos="fade-up">
+          <button
+            class="category-tab active px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-primary text-white hover:bg-primary-dark"
+            data-category="all">
+            All
+          </button>
+          <button
+            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
+            data-category="pullovers">
+            Pullovers
+          </button>
+          <button
+            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
+            data-category="cardigans">
+            Cardigans
+          </button>
+          <button
+            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
+            data-category="turtlenecks">
+            Turtlenecks
+          </button>
+          <button
+            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
+            data-category="cashmere">
+            Cashmere
+          </button>
+          <button
+            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
+            data-category="wool">
+            Wool Blends
+          </button>
+          <button
+            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
+            data-category="fashion">
+            Fashion
+          </button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+          <!-- Pullovers Category -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
+            data-category="pullovers" data-aos="fade-up" data-aos-delay="200">
+            <div class="aspect-square overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1574180045827-681f8a1a9622?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Crew Neck Pullover"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Crew Neck Pullover</h3>
+              <p class="text-white/80 text-xs sm:text-sm">Classic crew neck, medium weight, versatile styling</p>
+            </div>
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <span
+                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Pullovers</span>
+            </div>
+          </div>
+
+          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
+            data-category="pullovers" data-aos="fade-up" data-aos-delay="250">
+            <div class="aspect-square overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="V-Neck Pullover"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">V-Neck Pullover</h3>
+              <p class="text-white/80 text-xs sm:text-sm">Elegant V-neck design, perfect for layering</p>
+            </div>
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <span
+                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Pullovers</span>
+            </div>
+          </div>
+
+          <!-- Cardigans Category -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
+            data-category="cardigans" data-aos="fade-up" data-aos-delay="300">
+            <div class="aspect-square overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Button-Up Cardigan"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Button-Up Cardigan</h3>
+              <p class="text-white/80 text-xs sm:text-sm">Full button front, pockets, versatile layering piece</p>
+            </div>
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <span
+                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Cardigans</span>
+            </div>
+          </div>
+
+          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
+            data-category="cardigans" data-aos="fade-up" data-aos-delay="350">
+            <div class="aspect-square overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1521369850278-0a9a4bfe6b9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Open Front Cardigan"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Open Front Cardigan</h3>
+              <p class="text-white/80 text-xs sm:text-sm">Lightweight, open front design for casual wear</p>
+            </div>
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <span
+                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Cardigans</span>
+            </div>
+          </div>
+
+          <!-- Turtlenecks Category -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
+            data-category="turtlenecks" data-aos="fade-up" data-aos-delay="400">
+            <div class="aspect-square overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Classic Turtleneck"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Classic Turtleneck</h3>
+              <p class="text-white/80 text-xs sm:text-sm">High neck, slim fit, premium fabric</p>
+            </div>
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <span
+                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Turtlenecks</span>
+            </div>
+          </div>
+
+          <!-- Cashmere Category -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
+            data-category="cashmere" data-aos="fade-up" data-aos-delay="450">
+            <div class="aspect-square overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Luxury Cashmere Sweater"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Luxury Cashmere Sweater</h3>
+              <p class="text-white/80 text-xs sm:text-sm">100% cashmere, ultra-soft, premium quality</p>
+            </div>
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <span
+                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Cashmere</span>
+            </div>
+          </div>
+
+          <!-- Wool Blends Category -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
+            data-category="wool" data-aos="fade-up" data-aos-delay="500">
+            <div class="aspect-square overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Merino Wool Sweater"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Merino Wool Sweater</h3>
+              <p class="text-white/80 text-xs sm:text-sm">Fine merino wool, breathable, temperature regulating</p>
+            </div>
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <span
+                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Wool</span>
+            </div>
+          </div>
+
+          <!-- Fashion Sweaters Category -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
+            data-category="fashion" data-aos="fade-up" data-aos-delay="550">
+            <div class="aspect-square overflow-hidden bg-gray-100">
+              <img
+                src="https://images.unsplash.com/photo-1511193311914-034c8c8a8f16?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Cable Knit Sweater"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            </div>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Cable Knit Sweater</h3>
+              <p class="text-white/80 text-xs sm:text-sm">Intricate cable patterns, chunky knit, winter classic</p>
+            </div>
+            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
+              <span
+                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Fashion</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-8 sm:mt-12" data-aos="fade-up">
+          <button
+            class="view-all-btn px-6 py-2 sm:px-8 sm:py-3 rounded-full font-medium bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 text-sm sm:text-base">
+            View All Products
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- INQUIRY SECTION -->
+    <section id="inquiry" class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-bg-panel rounded-2xl p-6 sm:p-8 border border-border-soft" data-aos="fade-up">
+            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center">Request
+              Sweater Quote</h2>
+            <p class="text-text-muted text-center mb-6 sm:mb-8">
+              Share your sweater requirements and we'll provide factory options, samples, and competitive pricing.
+            </p>
+
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+              <div>
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="name">Full Name</label>
+                <input type="text" id="name"
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm"
+                  placeholder="Your full name">
+              </div>
+              <div>
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="email">Email
+                  Address</label>
+                <input type="email" id="email"
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm"
+                  placeholder="Your email address">
+              </div>
+              <div>
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="company">Company
+                  Name</label>
+                <input type="text" id="company"
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm"
+                  placeholder="Your company name">
+              </div>
+              <div>
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="phone">Phone
+                  Number</label>
+                <input type="tel" id="phone"
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm"
+                  placeholder="Your phone number">
+              </div>
+              <div class="md:col-span-2">
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="product">Product
+                  Interest</label>
+                <select id="product"
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm">
+                  <option value="">Select product category</option>
+                  <option value="pullovers">Pullovers</option>
+                  <option value="cardigans">Cardigans</option>
+                  <option value="turtlenecks">Turtlenecks</option>
+                  <option value="cashmere">Cashmere Sweaters</option>
+                  <option value="wool">Wool Blend Sweaters</option>
+                  <option value="fashion">Fashion Sweaters</option>
+                  <option value="multiple">Multiple Categories</option>
+                </select>
+              </div>
+              <div class="md:col-span-2">
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="yarn">Preferred Yarn
+                  Type</label>
+                <select id="yarn"
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm">
+                  <option value="">Select yarn type</option>
+                  <option value="cashmere">Cashmere</option>
+                  <option value="merino">Merino Wool</option>
+                  <option value="wool">Wool Blend</option>
+                  <option value="alpaca">Alpaca</option>
+                  <option value="cotton">Cotton Blend</option>
+                  <option value="acrylic">Acrylic Blend</option>
+                  <option value="custom">Custom Specification</option>
+                </select>
+              </div>
+              <div class="md:col-span-2">
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="knitting">Knitting
+                  Technique</label>
+                <select id="knitting"
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm">
+                  <option value="">Select knitting technique</option>
+                  <option value="flat">Flat Knitting</option>
+                  <option value="circular">Circular Knitting</option>
+                  <option value="fullyfashioned">Fully Fashioned</option>
+                  <option value="intarsia">Intarsia Patterns</option>
+                  <option value="jacquard">Jacquard</option>
+                  <option value="custom">Custom Technique</option>
+                </select>
+              </div>
+              <div class="md:col-span-2">
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="message">Project
+                  Details</label>
+                <textarea id="message" rows="4"
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm"
+                  placeholder="Please provide details about your project, including quantity, yarn weight preferences, gauge requirements, color options, size breakdown, fit requirements (slim, regular, oversized), knitting technique preferences, finishing details, timeline, and any specific requirements..."></textarea>
+              </div>
+              <div class="md:col-span-2 flex justify-center">
+                <button type="submit"
+                  class="rounded-full px-6 py-2 sm:px-8 sm:py-3 flex items-center gap-2 text-xs sm:text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
+                  <span>Submit Inquiry</span>
+                  <i class="fa-regular fa-paper-plane"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-12 sm:py-16 bg-gradient-to-br from-accent-amber to-[#f5c56d] text-gray-900">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8" data-aos="zoom-in"
+          data-aos-duration="800">
+          <div class="text-center md:text-left">
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold font-montserrat mb-2">Ready to source quality
+              sweaters?</h2>
+            <p class="text-[#3b2a0b] max-w-md text-sm sm:text-base">
+              Contact us today to discuss your sweater requirements and get started with samples and pricing.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 sm:gap-3 justify-center">
+            <a href="#inquiry"
+              class="rounded-full px-3 sm:px-4 py-2 sm:py-3 flex items-center gap-2 text-xs sm:text-sm font-semibold font-montserrat uppercase tracking-widest bg-white text-gray-900 hover:bg-gray-100 transition-all duration-300 btn-magnetic">
+              <span>Request Samples</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+            <a href="https://wa.me/+8801760698817?text=Hello%20BGS%20Team%2C%20I%20would%20like%20to%20discuss%20sweater%20products."
+              class="rounded-full px-3 sm:px-4 py-2 sm:py-3 flex items-center gap-2 text-xs sm:text-sm font-semibold font-montserrat uppercase tracking-widest border border-gray-900 text-gray-900 hover:bg-gray-900/10 transition-all duration-300 btn-magnetic hover:bg-green-500 hover:text-white hover:border-green-500 hover:-translate-y-1 hover:duration-300 hoveease-in-out">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="border-t border-white/10 bg-[#111111] py-8 sm:py-10">
+    <div class="container mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-sm" data-aos="fade-up" data-aos-duration="800">
+        <div class="text-text-muted">
+          <h3 class="text-base font-semibold mb-2">Brother's Global Sourcing (BGS)</h3>
+          <p class="text-xs sm:text-sm">
+            Garments buying house based in Dhaka, Bangladesh — connecting global buyers with reliable, compliant
+            factories through trust, transparency, and committed delivery.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold mb-2">Quick Links</h4>
+          <ul class="space-y-1">
+            <li><a href="index.html"
+                class="text-text-muted text-xs sm:text-sm hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-text-muted text-xs sm:text-sm hover:text-white transition-colors">About
+                us</a></li>
+            <li><a href="services.html"
+                class="text-text-muted text-xs sm:text-sm hover:text-white transition-colors">Services</a></li>
+            <li><a href="products.html"
+                class="text-text-muted text-xs sm:text-sm hover:text-white transition-colors">Products</a></li>
+            <li><a href="index.html#factories"
+                class="text-text-muted text-xs sm:text-sm hover:text-white transition-colors">Factory network</a></li>
+            <li><a href="index.html#sustainability"
+                class="text-text-muted text-xs sm:text-sm hover:text-white transition-colors">Sustainability</a></li>
+            <li><a href="index.html#contact"
+                class="text-text-muted text-xs sm:text-sm hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold mb-2">Connect</h4>
+          <ul class="space-y-1 text-text-muted text-xs sm:text-sm">
+            <li>Email: info@bdbgs.com</li>
+            <li>Phone / WhatsApp: +8801760698817</li>
+          </ul>
+          <div class="flex gap-2 mt-2">
+            <a href="https://www.linkedin.com/company/brothers-global-sourcing/"
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-white/30 flex items-center justify-center text-text-muted hover:bg-accent-amber hover:text-gray-900 hover:border-accent-amber transition-all duration-300">
+              <i class="fa-brands fa-linkedin-in text-xs"></i>
+            </a>
+            <a href="#"
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-white/30 flex items-center justify-center text-text-muted hover:bg-accent-amber hover:text-gray-900 hover:border-accent-amber transition-all duration-300">
+              <i class="fa-brands fa-facebook-f text-xs"></i>
+            </a>
+            <a href="#"
+              class="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-white/30 flex items-center justify-center text-text-muted hover:bg-accent-amber hover:text-gray-900 hover:border-accent-amber transition-all duration-300">
+              <i class="fa-brands fa-instagram text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-6 sm:mt-8 text-xs text-text-muted">
+        © 2026 Brother's Global Sourcing. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a class="whatsapp-float fixed right-4 bottom-4 sm:right-5 sm:bottom-5 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] flex items-center justify-center text-white text-lg sm:text-xl shadow-2xl z-40 animate-float"
+    href="https://wa.me/+8801760698817?text=Hello%20BGS%20Team%2C%20I%20would%20like%20to%20discuss%20sweater%20products."
+    target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 50,
+    });
+
+    // Page loader
+    window.addEventListener('load', function () {
+      const loader = document.querySelector('.page-loader');
+      if (loader) {
+        loader.style.opacity = '0';
+        setTimeout(() => {
+          loader.style.display = 'none';
+        }, 500);
+      }
+    });
+
+    // Mobile slider navigation toggle
+    const navToggleEl = document.getElementById('navToggle');
+    const mobileSliderMenu = document.getElementById('mobileSliderMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+
+    function openMobileMenu() {
+      mobileSliderMenu.classList.add('open');
+      mobileOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      mobileSliderMenu.classList.remove('open');
+      mobileOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    if (navToggleEl) {
+      navToggleEl.addEventListener('click', openMobileMenu);
+    }
+
+    if (closeMenuBtn) {
+      closeMenuBtn.addEventListener('click', closeMobileMenu);
+    }
+
+    if (mobileOverlay) {
+      mobileOverlay.addEventListener('click', closeMobileMenu);
+    }
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.mobile-menu-links a').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Gallery filtering functionality
+    const tabs = document.querySelectorAll('.category-tab');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const viewAllBtn = document.querySelector('.view-all-btn');
+
+    // Filter function
+    function filterGallery(category) {
+      galleryItems.forEach(item => {
+        if (category === 'all' || item.dataset.category === category) {
+          item.style.display = 'block';
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+          }, 50);
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.8)';
+          setTimeout(() => {
+            item.style.display = 'none';
+          }, 300);
+        }
+      });
+    }
+
+    // Tab click event
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function () {
+        const category = this.dataset.category;
+
+        // Update active tab
+        tabs.forEach(t => {
+          t.classList.remove('active');
+          t.classList.add('bg-bg-panel', 'border', 'border-border-soft', 'text-text');
+          t.classList.remove('bg-primary', 'text-white');
+        });
+
+        this.classList.add('active');
+        this.classList.remove('bg-bg-panel', 'border-border-soft', 'text-text');
+        this.classList.add('bg-primary', 'text-white');
+
+        // Filter gallery
+        filterGallery(category);
+      });
+    });
+
+    // View All button event
+    if (viewAllBtn) {
+      viewAllBtn.addEventListener('click', function () {
+        // Reset to "All Products"
+        tabs.forEach(t => {
+          t.classList.remove('active');
+          t.classList.add('bg-bg-panel', 'border', 'border-border-soft', 'text-text');
+          t.classList.remove('bg-primary', 'text-white');
+        });
+
+        tabs[0].classList.add('active');
+        tabs[0].classList.remove('bg-bg-panel', 'border-border-soft', 'text-text');
+        tabs[0].classList.add('bg-primary', 'text-white');
+
+        filterGallery('all');
+      });
+    }
+
+    // Form submission handling
+    document.querySelector('form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Thank you for your inquiry! We will get back to you shortly.');
+      this.reset();
+    });
+
+    // Touch device optimization
+    if ('ontouchstart' in window) {
+      document.body.classList.add('touch-device');
+    }
+  </script>
+</body>
+
+</html>

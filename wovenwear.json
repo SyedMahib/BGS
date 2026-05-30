@@ -1,0 +1,348 @@
+{
+  "categories": [
+    {
+      "id": "tshirts",
+      "label": "T-Shirts"
+    },
+    {
+      "id": "polos",
+      "label": "Polo Shirts"
+    },
+    {
+      "id": "tank",
+      "label": "Tank Tops"
+    },
+    {
+      "id": "sweatshirts",
+      "label": "Sweatshirts"
+    },
+    {
+      "id": "hoodies",
+      "label": "Hoodies"
+    },
+    {
+      "id": "joggers",
+      "label": "Joggers"
+    },
+    {
+      "id": "shorts",
+      "label": "Shorts"
+    },
+    {
+      "id": "sleepware",
+      "label": "Sleepware"
+    },
+    {
+      "id": "dress",
+      "label": "Dress"
+    },
+    {
+      "id": "leggings",
+      "label": "Leggings"
+    },
+    {
+      "id": "maternity",
+      "label": "Maternity"
+    },
+    {
+      "id": "kids",
+      "label": "Kids"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "tshirts",
+      "title": "Men's Casual Shirt",
+      "description": "100% combed cotton, 180 GSM, ring-spun fabric",
+      "image": "https://i.ibb.co.com/MDfNXQsW/01-MENS-SS-BASIC-TEE.png"
+    },
+    {
+      "id": 2,
+      "category": "tshirts",
+      "title": "Men's Casual Shirt",
+      "description": "GOTS certified organic cotton, sustainable production",
+      "image": "https://i.ibb.co.com/pv06XNQ9/02-MENS-SS-GRAPHIC-TEE.png"
+    },
+    {
+      "id": 3,
+      "category": "tshirts",
+      "title": "Men's Flannel Shirt",
+      "description": "Moisture-wicking polyester blend, athletic cut",
+      "image": "https://i.ibb.co.com/gFjtJb6M/03-MENS-SS-YD-TEE.png"
+    },
+    {
+      "id": 4,
+      "category": "tshirts",
+      "title": "Men's Formal Shirt",
+      "description": "Pique knit fabric, ribbed collar, three-button placket",
+      "image": "https://i.ibb.co.com/bR6JW0NV/04-MENS-SS-AOP-TEE.png"
+    },
+    {
+      "id": 5,
+      "category": "tshirts",
+      "title": "Men's Denim Shirt",
+      "description": "Moisture-wicking fabric, UV protection, athletic fit",
+      "image": "https://i.ibb.co.com/1Y15NHGN/05-LADIES-SS-GRAPHIC-TEE.png"
+    },
+    {
+      "id": 6,
+      "category": "tshirts",
+      "title": "Ladies' Casual Shirt",
+      "description": "Structured pique knit, embroidery-ready, office-suitable fit",
+      "image": "https://i.ibb.co.com/Dgw940P6/06-LADIES-SS-AOP-TEE.png"
+    },
+    {
+      "id": 7,
+      "category": "tshirts",
+      "title": "Ladies' Formal Shirt",
+      "description": "280 GSM French terry, brushed interior for warmth",
+      "image": "https://i.ibb.co.com/93mYyhmx/07-LADIES-SS-TIE-DYE-TEE.png"
+    },
+    {
+      "id": 8,
+      "category": "polos",
+      "title": "Ladies' Flannel Shirt",
+      "description": "Classic crewneck, 300 GSM cotton-polyester blend",
+      "image": "https://i.ibb.co.com/jv2LW9KG/08-MENS-SS-YD-POLO.png"
+    },
+    {
+      "id": 9,
+      "category": "polos",
+      "title": "Ladies' Sleeveless Shirt",
+      "description": "Cotton-polyester blend, kangaroo pocket, adjustable drawstrings",
+      "image": "https://i.ibb.co.com/gMdXHhHh/09-MENS-SS-SOLID-POLO.png"
+    },
+    {
+      "id": 10,
+      "category": "polos",
+      "title": "Ladies' Denim Shirt",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/Kjz3sDzP/10-MENS-SS-AOP-POLO.png"
+    },
+    {
+      "id": 11,
+      "category": "polos",
+      "title": "Men's Chino Pant",
+      "description": "Jersey knit, feminine cut, various sleeve lengths",
+      "image": "https://i.ibb.co.com/wFM1ySdD/11-LADIES-SS-AOP-POLO.png"
+    },
+    {
+      "id": 12,
+      "category": "polos",
+      "title": "Men's Chino Pant",
+      "description": "Fine rib knit, stretchy fit, premium viscose blend",
+      "image": "https://i.ibb.co.com/3YNkdNFS/12-LADIES-SS-SOLID-POLO.png"
+    },
+    {
+      "id": 13,
+      "category": "polos",
+      "title": "Men's Shino Shorts",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/60zZ34Xj/12-LADIES-SS-YD-POLO.png"
+    },
+    {
+      "id": 14,
+      "category": "tank",
+      "title": "Men's Shino Shorts",
+      "description": "Cozy fleece, playful colors, durable construction",
+      "image": "https://i.ibb.co.com/h1YYJQsF/14-MENS-AOP-TANK-TOP.png"
+    },
+    {
+      "id": 15,
+      "category": "tank",
+      "title": "Men's Cargo Pant",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/gZqTtJd6/13-MENS-PRINT-TANK-TOP.png"
+    },
+    {
+      "id": 16,
+      "category": "tank",
+      "title": "Men's Cargo Shorts",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/B5H73NbV/15-LADIES-SOLID-TANK-TOP.png"
+    },
+    {
+      "id": 17,
+      "category": "tank",
+      "title": "Ladies' Cargo Shorts",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/4wmsB6z0/15-LADIES-PRINT-TANK-TOP.png"
+    },
+    {
+      "id": 18,
+      "category": "sweatshirts",
+      "title": "Men's Padded Jacket",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/CKrHHZ9S/16-MENS-HENLEY.png"
+    },
+    {
+      "id": 19,
+      "category": "sweatshirts",
+      "title": "Men's Padded Vest",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/LdqNCxfd/17-MENS-HENLEY.png"
+    },
+    {
+      "id": 20,
+      "category": "sweatshirts",
+      "title": "Men's Tafeta Jacket",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/zcBhW9L/18-MENS-SWEATSHIRT.png"
+    },
+    {
+      "id": 21,
+      "category": "sweatshirts",
+      "title": "Men's Pajama",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/4nj04kMK/19-MENS-SWEATSHIRT.png"
+    },
+    {
+      "id": 22,
+      "category": "sweatshirts",
+      "title": "Ladies' Pajama Shorts",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/67bT9Hm1/20-MENS-SWEATSHIRT.png"
+    },
+    {
+      "id": 23,
+      "category": "sweatshirts",
+      "title": "Ladies' Pajama",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/kVHysCQb/21-LADIES-SWEATSHIRT.png"
+    },
+    {
+      "id": 24,
+      "category": "sweatshirts",
+      "title": "Ladies' Blouse",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/kVJdLMTJ/22-LADIES-SWEATSHIRT.png"
+    },
+    {
+      "id": 25,
+      "category": "sweatshirts",
+      "title": "Ladies' Shirt",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/QvT2VZ8L/23-LADIES-SWEATSHIRT.png"
+    },
+    {
+      "id": 26,
+      "category": "hoodies",
+      "title": "Ladies' Tops",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/WN9krf0Y/24-LADIES-HOODY.png"
+    },
+    {
+      "id": 27,
+      "category": "hoodies",
+      "title": "Ladies' Light Denim Tops",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/SDQnt2Mz/25-LADIES-HOODY.png"
+    },
+    {
+      "id": 28,
+      "category": "hoodies",
+      "title": "Ladies' Tops",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/3y5krT0k/26-LADIES-HOODY.png"
+    },
+    {
+      "id": 29,
+      "category": "hoodies",
+      "title": "Ladies' Dress",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/4RfGbXJb/27-MENS-HOODY.png"
+    },
+    {
+      "id": 30,
+      "category": "hoodies",
+      "title": "Ladies' Dress",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/vCxCqVDj/28-MENS-HOODY.png"
+    },
+    {
+      "id": 31,
+      "category": "hoodies",
+      "title": "Ladies' Dress",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/DPqVhxdy/29-MENS-HOODY.png"
+    },
+    {
+      "id": 32,
+      "category": "joggers",
+      "title": "Ladies' Skirt",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/0j02VDLW/30-MENS-JOGGERS.png"
+    },
+    {
+      "id": 33,
+      "category": "joggers",
+      "title": "Ladies' Burgundy Midi",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/tpKq0cRP/31-MENS-JOGGERS.png"
+    },
+    {
+      "id": 34,
+      "category": "joggers",
+      "title": "Ladies' Maxi Skirt with Floral",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/XxGRQW2C/32-MENS-JOGGERS.png"
+    },
+    {
+      "id": 35,
+      "category": "joggers",
+      "title": "Ladies' Pant",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/tpKq0cRP/31-MENS-JOGGERS.png"
+    },
+    {
+      "id": 36,
+      "category": "joggers",
+      "title": "Ladies' Pant",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/tpKq0cRP/31-MENS-JOGGERS.png"
+    },
+    {
+      "id": 37,
+      "category": "joggers",
+      "title": "Ladies' Denim",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/tpKq0cRP/31-MENS-JOGGERS.png"
+    },
+    {
+      "id": 38,
+      "category": "joggers",
+      "title": "Ladies' Jacket",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/tpKq0cRP/31-MENS-JOGGERS.png"
+    },
+    {
+      "id": 39,
+      "category": "joggers",
+      "title": "Ladies' Jacket",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/tpKq0cRP/31-MENS-JOGGERS.png"
+    },
+    {
+      "id": 40,
+      "category": "joggers",
+      "title": "Boys' Shirt",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/tpKq0cRP/31-MENS-JOGGERS.png"
+    },
+    {
+      "id": 41,
+      "category": "joggers",
+      "title": "Boys' Jacket",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/tpKq0cRP/31-MENS-JOGGERS.png"
+    },
+    {
+      "id": 42,
+      "category": "joggers",
+      "title": "Girls' Dress",
+      "description": "Soft cotton, fun prints, sizes 2-14 years",
+      "image": "https://i.ibb.co.com/tpKq0cRP/31-MENS-JOGGERS.png"
+    }
+]
+}

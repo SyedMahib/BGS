@@ -53,464 +53,142 @@
     {
       "id": 1,
       "category": "tshirts",
-      "title": "Premium Cotton T-Shirt",
+      "title": "Men's Pullover",
       "description": "100% combed cotton, 180 GSM, ring-spun fabric",
       "image": "https://i.ibb.co.com/MDfNXQsW/01-MENS-SS-BASIC-TEE.png"
     },
     {
       "id": 2,
       "category": "tshirts",
-      "title": "Organic Cotton T-Shirt",
+      "title": "Men's Cardigan",
       "description": "GOTS certified organic cotton, sustainable production",
       "image": "https://i.ibb.co.com/pv06XNQ9/02-MENS-SS-GRAPHIC-TEE.png"
     },
     {
       "id": 3,
       "category": "tshirts",
-      "title": "Performance T-Shirt",
+      "title": "Men's V-Neck",
       "description": "Moisture-wicking polyester blend, athletic cut",
       "image": "https://i.ibb.co.com/gFjtJb6M/03-MENS-SS-YD-TEE.png"
     },
     {
       "id": 4,
       "category": "tshirts",
-      "title": "Classic Polo Shirt",
+      "title": "Men's Crew Neck Sweater",
       "description": "Pique knit fabric, ribbed collar, three-button placket",
       "image": "https://i.ibb.co.com/bR6JW0NV/04-MENS-SS-AOP-TEE.png"
     },
     {
       "id": 5,
       "category": "tshirts",
-      "title": "Performance Polo",
+      "title": "Men's Zip Sweater",
       "description": "Moisture-wicking fabric, UV protection, athletic fit",
       "image": "https://i.ibb.co.com/1Y15NHGN/05-LADIES-SS-GRAPHIC-TEE.png"
     },
     {
       "id": 6,
       "category": "tshirts",
-      "title": "Corporate Polo",
+      "title": "Men's Hoodie Sweater",
       "description": "Structured pique knit, embroidery-ready, office-suitable fit",
       "image": "https://i.ibb.co.com/Dgw940P6/06-LADIES-SS-AOP-TEE.png"
     },
     {
       "id": 7,
       "category": "tshirts",
-      "title": "Fleece Sweatshirt",
+      "title": "Men's Crew Neck Sweater",
       "description": "280 GSM French terry, brushed interior for warmth",
       "image": "https://i.ibb.co.com/93mYyhmx/07-LADIES-SS-TIE-DYE-TEE.png"
     },
     {
       "id": 8,
       "category": "polos",
-      "title": "Crewneck Sweatshirt",
+      "title": "Ladies' Crew Neck Sweater",
       "description": "Classic crewneck, 300 GSM cotton-polyester blend",
       "image": "https://i.ibb.co.com/jv2LW9KG/08-MENS-SS-YD-POLO.png"
     },
     {
       "id": 9,
       "category": "polos",
-      "title": "Pullover Hoodie",
+      "title": "Ladies' V-Neck Sweater",
       "description": "Cotton-polyester blend, kangaroo pocket, adjustable drawstrings",
       "image": "https://i.ibb.co.com/gMdXHhHh/09-MENS-SS-SOLID-POLO.png"
     },
     {
       "id": 10,
       "category": "polos",
-      "title": "Zip-Up Hoodie",
+      "title": "Ladies' Cardigan Sweater",
       "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
       "image": "https://i.ibb.co.com/Kjz3sDzP/10-MENS-SS-AOP-POLO.png"
     },
     {
       "id": 11,
       "category": "polos",
-      "title": "Women's Knit Top",
+      "title": "Ladies' Cardigan Sweater",
       "description": "Jersey knit, feminine cut, various sleeve lengths",
       "image": "https://i.ibb.co.com/wFM1ySdD/11-LADIES-SS-AOP-POLO.png"
     },
     {
       "id": 12,
       "category": "polos",
-      "title": "Ribbed Knit Top",
+      "title": "Ladies' Cardigan Sweater",
       "description": "Fine rib knit, stretchy fit, premium viscose blend",
       "image": "https://i.ibb.co.com/3YNkdNFS/12-LADIES-SS-SOLID-POLO.png"
     },
     {
       "id": 13,
       "category": "polos",
-      "title": "Kids Printed T-Shirt",
+      "title": "Ladies' Turtle Neck Sweater",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
       "image": "https://i.ibb.co.com/60zZ34Xj/12-LADIES-SS-YD-POLO.png"
     },
     {
       "id": 14,
       "category": "tank",
-      "title": "Kids Hoodie",
+      "title": "Boys' Sweater",
       "description": "Cozy fleece, playful colors, durable construction",
       "image": "https://i.ibb.co.com/h1YYJQsF/14-MENS-AOP-TANK-TOP.png"
     },
     {
       "id": 15,
       "category": "tank",
-      "title": "Kids Printed T-Shirt",
+      "title": "Boys' Sweater",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
       "image": "https://i.ibb.co.com/gZqTtJd6/13-MENS-PRINT-TANK-TOP.png"
     },
     {
       "id": 16,
       "category": "tank",
-      "title": "Kids Printed T-Shirt",
+      "title": "Girls' Sweater",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
       "image": "https://i.ibb.co.com/B5H73NbV/15-LADIES-SOLID-TANK-TOP.png"
     },
     {
       "id": 17,
       "category": "tank",
-      "title": "Kids Printed T-Shirt",
+      "title": "Girls' Sweater",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
       "image": "https://i.ibb.co.com/4wmsB6z0/15-LADIES-PRINT-TANK-TOP.png"
     },
     {
       "id": 18,
       "category": "sweatshirts",
-      "title": "Kids Printed T-Shirt",
+      "title": "Baby Romper",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
       "image": "https://i.ibb.co.com/CKrHHZ9S/16-MENS-HENLEY.png"
     },
     {
       "id": 19,
       "category": "sweatshirts",
-      "title": "Kids Printed T-Shirt",
+      "title": "Baby Girl Sweater",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
       "image": "https://i.ibb.co.com/LdqNCxfd/17-MENS-HENLEY.png"
     },
     {
       "id": 20,
       "category": "sweatshirts",
-      "title": "Kids Printed T-Shirt",
+      "title": "Baby Boy Sweater",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
       "image": "https://i.ibb.co.com/zcBhW9L/18-MENS-SWEATSHIRT.png"
-    },
-    {
-      "id": 21,
-      "category": "sweatshirts",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/4nj04kMK/19-MENS-SWEATSHIRT.png"
-    },
-    {
-      "id": 22,
-      "category": "sweatshirts",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/67bT9Hm1/20-MENS-SWEATSHIRT.png"
-    },
-    {
-      "id": 23,
-      "category": "sweatshirts",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/kVHysCQb/21-LADIES-SWEATSHIRT.png"
-    },
-    {
-      "id": 24,
-      "category": "sweatshirts",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/kVJdLMTJ/22-LADIES-SWEATSHIRT.png"
-    },
-    {
-      "id": 25,
-      "category": "sweatshirts",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/QvT2VZ8L/23-LADIES-SWEATSHIRT.png"
-    },
-    {
-      "id": 26,
-      "category": "hoodies",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/WN9krf0Y/24-LADIES-HOODY.png"
-    },
-    {
-      "id": 27,
-      "category": "hoodies",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/SDQnt2Mz/25-LADIES-HOODY.png"
-    },
-    {
-      "id": 28,
-      "category": "hoodies",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/3y5krT0k/26-LADIES-HOODY.png"
-    },
-    {
-      "id": 29,
-      "category": "hoodies",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/4RfGbXJb/27-MENS-HOODY.png"
-    },
-    {
-      "id": 30,
-      "category": "hoodies",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/vCxCqVDj/28-MENS-HOODY.png"
-    },
-    {
-      "id": 31,
-      "category": "hoodies",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/DPqVhxdy/29-MENS-HOODY.png"
-    },
-    {
-      "id": 32,
-      "category": "joggers",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/0j02VDLW/30-MENS-JOGGERS.png"
-    },
-    {
-      "id": 33,
-      "category": "joggers",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/tpKq0cRP/31-MENS-JOGGERS.png"
-    },
-    {
-      "id": 34,
-      "category": "joggers",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/XxGRQW2C/32-MENS-JOGGERS.png"
-    },
-    {
-      "id": 35,
-      "category": "joggers",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/fdj28RfG/33-LADIES-JOGGERS.png"
-    },
-    {
-      "id": 36,
-      "category": "joggers",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/r2KmHLRW/34-LADIES-JOGGERS.png"
-    },
-    {
-      "id": 37,
-      "category": "joggers",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/CNCT0cL/35-LADIES-JOGGERS.png"
-    },
-    {
-      "id": 38,
-      "category": "shorts",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/PzbV0Bch/36-MEN-S-SHORT.png"
-    },
-    {
-      "id": 39,
-      "category": "shorts",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/LDTJrbST/37-MEN-S-SHORT.png"
-    },
-    {
-      "id": 40,
-      "category": "shorts",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/Fb1wzd4p/38-MEN-S-SHORT.png"
-    },
-    {
-      "id": 41,
-      "category": "sleepware",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/G3BjqQTN/39-MEN-S-SLEEPWEAR.png"
-    },
-    {
-      "id": 42,
-      "category": "sleepware",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/LXyfffgV/40-MEN-S-SLEEPWEAR.png"
-    },
-    {
-      "id": 43,
-      "category": "sleepware",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/nq7zZ5hJ/41-LADIE-S-SLEEPWEAR.png"
-    },
-    {
-      "id": 44,
-      "category": "sleepware",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/SLcFq0w/42-LADIES-SLEEPWEAR.png"
-    },
-    {
-      "id": 45,
-      "category": "sleepware",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/v6CZn6kN/51-MENS-SLEEPWEAR.png"
-    },
-    {
-      "id": 46,
-      "category": "sleepware",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/cPTD0KY/52-MENS-SLEEPWEAR.png"
-    },
-    {
-      "id": 47,
-      "category": "sleepware",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/xSg6NYLq/53-LADIES-SLEEPWEAR.png"
-    },
-    {
-      "id": 48,
-      "category": "sleepware",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/fGFbtGhK/54-LADIES-SLEEPWEAR.png"
-    },
-    {
-      "id": 49,
-      "category": "dress",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/hRGyWRK0/43-LADIES-DRESS.png"
-    },
-    {
-      "id": 50,
-      "category": "dress",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/6RWp19j4/44-LADIES-DRESS.png"
-    },
-    {
-      "id": 51,
-      "category": "dress",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/r2W361hH/45-LADIES-DRESS.png"
-    },
-    {
-      "id": 52,
-      "category": "dress",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/ZRpLhL0w/46-LADIES-DRESS.png"
-    },
-    {
-      "id": 53,
-      "category": "leggings",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/0ptTL8JV/47-LADIES-LEGGING.png"
-    },
-    {
-      "id": 54,
-      "category": "leggings",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/20yLDn0n/48-LADIES-LEGGING.png"
-    },
-    {
-      "id": 55,
-      "category": "leggings",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/n86GDCy6/49-LADIES-LEGGING.png"
-    },
-    {
-      "id": 56,
-      "category": "leggings",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/bw72DB7/50-LADIES-LEGGING.png"
-    },
-    {
-      "id": 57,
-      "category": "maternity",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/B2SbtbYw/53-LADIES-MATERNITY-WEAR.png"
-    },
-    {
-      "id": 58,
-      "category": "kids",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/GvMvrvpy/55-BOYS.png"
-    },
-    {
-      "id": 59,
-      "category": "kids",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/LzWnKYST/56-BOYS.png"
-    },
-    {
-      "id": 60,
-      "category": "kids",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/7ddCckQW/57-BOYS.png"
-    },
-    {
-      "id": 61,
-      "category": "kids",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/5XYtnK48/58-GIRLS.png"
-    },
-    {
-      "id": 62,
-      "category": "kids",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/3YkrBqMS/59-GIRLS.png"
-    },
-    {
-      "id": 63,
-      "category": "kids",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/MxVVf7bc/60-GIRLS.png"
-    },
-    {
-      "id": 64,
-      "category": "kids",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/jkzWD3fr/61-BABY.jpg"
-    },
-    {
-      "id": 65,
-      "category": "kids",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/Md3FbNK/62-BABY.jpg"
-    },
-    {
-      "id": 66,
-      "category": "kids",
-      "title": "Kids Printed T-Shirt",
-      "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/Y43vvkWW/9e94fdfd-63a6-4f26-8fea-cba0f98a3655.jpg"
     }
   ]
 }

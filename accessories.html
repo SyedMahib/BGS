@@ -44,6 +44,8 @@
             'danger': '#f15b5b',
             'accessory-gold': '#FFD700',
             'accessory-brown': '#8B4513',
+            'primary': '#D99E3F',
+            'primary-dark': '#c78d35',
           },
           fontFamily: {
             'montserrat': ['Montserrat', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
@@ -561,44 +563,14 @@
       color: #c3c3c3;
     }
 
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-
     .gallery-item {
-      border-radius: 12px;
-      overflow: hidden;
-      position: relative;
-      height: 200px;
-      background: #2a2a2a;
       transition: all 0.3s ease;
     }
 
     .gallery-item:hover {
-      transform: scale(1.03);
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .gallery-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-      padding: 1rem;
-      transform: translateY(100%);
-      transition: transform 0.3s ease;
-    }
-
-    .gallery-item:hover .gallery-overlay {
-      transform: translateY(0);
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      border-color: #D99E3F;
     }
 
     .accessory-badge {
@@ -626,6 +598,61 @@
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
+    }
+
+    /* Loader styles */
+    .page-loader { backdrop-filter: blur(10px); }
+
+    .loader-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(217, 158, 63, 0.3);
+      border-top-color: #D99E3F;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1rem;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Dynamic Gallery Styles */
+    .category-tab.active {
+      box-shadow: 0 4px 12px rgba(217, 158, 63, 0.2);
+    }
+
+    .gallery-item {
+      transition: all 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      border-color: #D99E3F;
+    }
+
+    /* Tablet Landscape */
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      .category-tabs { gap: 0.5rem; }
+      .category-tab { padding: 0.4rem 0.8rem; font-size: 0.7rem; }
+    }
+
+    /* Mobile Landscape */
+    @media (min-width: 568px) and (max-width: 767px) and (orientation: landscape) {
+      .category-tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.5rem; gap: 0.25rem; }
+      .category-tab { padding: 0.3rem 0.6rem; font-size: 0.65rem; white-space: nowrap; flex-shrink: 0; }
+    }
+
+    /* Mobile Portrait */
+    @media (max-width: 567px) {
+      .category-tabs { flex-wrap: wrap; justify-content: center; gap: 0.4rem; }
+      .category-tab { padding: 0.4rem 0.8rem; font-size: 0.7rem; }
+      .mobile-slider-menu { width: 85%; }
+    }
+
+    /* Touch device optimizations */
+    @media (hover: none) and (pointer: coarse) {
+      .gallery-item:hover { transform: none; }
+      .card-hover:hover { transform: none; }
     }
   </style>
 </head>
@@ -858,128 +885,45 @@
       </div>
     </section>
 
-    <!-- PRODUCT CATEGORIES -->
+    <!-- PRODUCT CATEGORIES GALLERY -->
     <section id="products" class="py-16 bg-bg-panel-soft">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Accessories Product Range</h2>
-        <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
-          Explore our comprehensive range of fashion accessories to complement your apparel collections.
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center"
+          data-aos="fade-down">Accessories Product Gallery</h2>
+        <p class="text-text-muted max-w-2xl mx-auto text-center mb-8 md:mb-12" data-aos="fade-down"
+          data-aos-delay="100">
+          Browse our fashion accessories collection through our categorized visual gallery
         </p>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="product-card bg-bg-panel rounded-2xl overflow-hidden border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="200">
-            <div class="product-image">
-              <div class="text-5xl text-white/30 z-10">
-                <i class="fa-solid fa-hat-cowboy"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Hats & Caps</h3>
-              <p class="text-text-muted text-sm mb-4">
-                Baseball caps, beanies, bucket hats, sun hats, and fashion headwear in various materials and styles.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Baseball Caps</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Beanies</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Bucket Hats</span>
-              </div>
-            </div>
-          </div>
+        <!-- Category Tabs — rendered dynamically from accessories.json -->
+        <div id="categoryTabs" class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 md:mb-10 category-tabs"
+          data-aos="fade-up">
+          <!-- Tabs injected by JS -->
+        </div>
 
-          <div class="product-card bg-bg-panel rounded-2xl overflow-hidden border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="300">
-            <div class="product-image">
-              <div class="text-5xl text-white/30 z-10">
-                <i class="fa-solid fa-bag-shopping"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Bags & Totes</h3>
-              <p class="text-text-muted text-sm mb-4">
-                Tote bags, backpacks, drawstring bags, duffle bags, and shopping bags for various uses.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Tote Bags</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Backpacks</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Drawstring Bags</span>
-              </div>
-            </div>
-          </div>
+        <!-- Gallery Grid — rendered dynamically from accessories.json -->
+        <div id="galleryGrid"
+          class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+          <!-- Skeleton loaders shown while fetching -->
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+        </div>
 
-          <div class="product-card bg-bg-panel rounded-2xl overflow-hidden border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="400">
-            <div class="product-image">
-              <div class="text-5xl text-white/30 z-10">
-                <i class="fa-solid fa-scarf"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Scarves & Wraps</h3>
-              <p class="text-text-muted text-sm mb-4">
-                Fashion scarves, winter scarves, wraps, and shawls in various fabrics and patterns.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Winter Scarves</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Fashion Scarves</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Infinity Scarves</span>
-              </div>
-            </div>
-          </div>
+        <!-- Empty state -->
+        <div id="galleryEmpty" class="hidden text-center py-16 text-text-muted">
+          <i class="fa-solid fa-image text-4xl mb-4 opacity-30"></i>
+          <p class="text-sm">No products found in this category yet.</p>
+        </div>
 
-          <div class="product-card bg-bg-panel rounded-2xl overflow-hidden border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="500">
-            <div class="product-image">
-              <div class="text-5xl text-white/30 z-10">
-                <i class="fa-solid fa-belt"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Belts & Wallets</h3>
-              <p class="text-text-muted text-sm mb-4">
-                Fashion belts, leather belts, canvas belts, and coordinating wallets or card holders.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Leather Belts</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Canvas Belts</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Fashion Belts</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card bg-bg-panel rounded-2xl overflow-hidden border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="600">
-            <div class="product-image">
-              <div class="text-5xl text-white/30 z-10">
-                <i class="fa-solid fa-mitten"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Gloves & Socks</h3>
-              <p class="text-text-muted text-sm mb-4">
-                Fashion gloves, winter gloves, athletic socks, fashion socks, and coordinating accessories.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Winter Gloves</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Fashion Gloves</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Athletic Socks</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card bg-bg-panel rounded-2xl overflow-hidden border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="700">
-            <div class="product-image">
-              <div class="text-5xl text-white/30 z-10">
-                <i class="fa-solid fa-vest"></i>
-              </div>
-            </div>
-            <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Seasonal & Special</h3>
-              <p class="text-text-muted text-sm mb-4">
-                Seasonal accessories, holiday-themed items, and special occasion accessories.
-              </p>
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Seasonal</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Holiday Themes</span>
-                <span class="text-xs px-2 py-1 rounded-full bg-bg-panel-soft text-text-muted">Special Occasion</span>
-              </div>
-            </div>
-          </div>
+        <!-- View All Button -->
+        <div class="text-center mt-8 sm:mt-12" data-aos="fade-up">
+          <button
+            class="view-all-btn px-6 py-2 sm:px-8 sm:py-3 rounded-full font-medium bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 text-sm sm:text-base">
+            View All Products
+            <i class="fa-solid fa-arrow-right ml-2"></i>
+          </button>
         </div>
       </div>
     </section>
@@ -1082,51 +1026,6 @@
             <p class="text-text-muted text-sm">
               Custom packaging, tags, labels, and branding materials.
             </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GALLERY SECTION -->
-    <section class="py-16">
-      <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Accessories Gallery</h2>
-        <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
-          Browse through some of our accessories products and craftsmanship details.
-        </p>
-
-        <div class="gallery-grid">
-          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-            <div class="w-full h-full bg-gradient-to-br from-accent-amber/20 to-bg-panel flex items-center justify-center">
-              <i class="fa-solid fa-hat-cowboy text-4xl text-accent-amber/50"></i>
-            </div>
-            <div class="gallery-overlay">
-              <h4 class="font-semibold">Hats & Headwear</h4>
-            </div>
-          </div>
-          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-            <div class="w-full h-full bg-gradient-to-br from-accent-amber/20 to-bg-panel flex items-center justify-center">
-              <i class="fa-solid fa-bag-shopping text-4xl text-accent-amber/50"></i>
-            </div>
-            <div class="gallery-overlay">
-              <h4 class="font-semibold">Bags & Totes</h4>
-            </div>
-          </div>
-          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
-            <div class="w-full h-full bg-gradient-to-br from-accent-amber/20 to-bg-panel flex items-center justify-center">
-              <i class="fa-solid fa-scarf text-4xl text-accent-amber/50"></i>
-            </div>
-            <div class="gallery-overlay">
-              <h4 class="font-semibold">Scarves & Wraps</h4>
-            </div>
-          </div>
-          <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
-            <div class="w-full h-full bg-gradient-to-br from-accent-amber/20 to-bg-panel flex items-center justify-center">
-              <i class="fa-solid fa-belt text-4xl text-accent-amber/50"></i>
-            </div>
-            <div class="gallery-overlay">
-              <h4 class="font-semibold">Belts & Wallets</h4>
-            </div>
           </div>
         </div>
       </div>
@@ -1346,6 +1245,117 @@
     document.querySelectorAll('.mobile-menu-links a').forEach(link => {
       link.addEventListener('click', closeMobileMenu);
     });
+
+    // =============================================
+    // DYNAMIC GALLERY — powered by accessories.json
+    // =============================================
+
+    let allProducts = [];
+    let allCategories = [];
+    let activeCategory = 'all';
+
+    const tabsContainer = document.getElementById('categoryTabs');
+    const galleryGrid = document.getElementById('galleryGrid');
+    const galleryEmpty = document.getElementById('galleryEmpty');
+    const viewAllBtn = document.querySelector('.view-all-btn');
+
+    function buildCard(product) {
+      const catLabel = allCategories.find(c => c.id === product.category)?.label || product.category;
+      return `
+        <div class="gallery-item group rounded-2xl border border-border-soft overflow-hidden flex flex-col"
+             data-category="${product.category}"
+             data-aos="fade-up">
+          <div class="relative w-full bg-white" style="height: 320px;">
+            <img
+              src="${product.image}"
+              alt="${product.title}"
+              loading="lazy"
+              style="width:100%; height:100%; object-fit:contain; display:block; padding: 8px;"
+            >
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-1 rounded-full bg-primary/90 text-white text-xs font-medium">${catLabel}</span>
+            </div>
+          </div>
+          <div class="bg-bg-panel px-4 py-3 flex flex-col gap-1">
+            <h3 class="text-text-main font-semibold text-sm">${product.title}</h3>
+          </div>
+        </div>`;
+    }
+
+    function renderGallery(category) {
+      const filtered = category === 'all'
+        ? allProducts
+        : allProducts.filter(p => p.category === category);
+
+      if (filtered.length === 0) {
+        galleryGrid.innerHTML = '';
+        galleryEmpty.classList.remove('hidden');
+      } else {
+        galleryEmpty.classList.add('hidden');
+        galleryGrid.innerHTML = filtered.map(buildCard).join('');
+        if (typeof AOS !== 'undefined') AOS.refreshHard();
+      }
+    }
+
+    function setActiveTab(category) {
+      activeCategory = category;
+      document.querySelectorAll('.category-tab').forEach(tab => {
+        const isActive = tab.dataset.category === category;
+        tab.classList.toggle('active', isActive);
+        tab.classList.toggle('bg-primary', isActive);
+        tab.classList.toggle('text-white', isActive);
+        tab.classList.toggle('bg-bg-panel', !isActive);
+        tab.classList.toggle('border', !isActive);
+        tab.classList.toggle('border-border-soft', !isActive);
+      });
+    }
+
+    function renderTabs(categories) {
+      const allBtn = `
+        <button class="category-tab active px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-primary text-white hover:bg-primary-dark" data-category="all">
+          All
+        </button>`;
+      const catBtns = categories.map(cat => `
+        <button class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary" data-category="${cat.id}">
+          ${cat.label}
+        </button>`).join('');
+
+      tabsContainer.innerHTML = allBtn + catBtns;
+
+      tabsContainer.querySelectorAll('.category-tab').forEach(tab => {
+        tab.addEventListener('click', function () {
+          setActiveTab(this.dataset.category);
+          renderGallery(this.dataset.category);
+        });
+      });
+    }
+
+    fetch('/accessories.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Could not load accessories.json — status ' + res.status);
+        return res.json();
+      })
+      .then(data => {
+        allProducts = data.products || [];
+        allCategories = data.categories || [];
+        renderTabs(allCategories);
+        renderGallery('all');
+      })
+      .catch(err => {
+        console.error('Gallery load error:', err);
+        galleryGrid.innerHTML = `
+          <div class="col-span-full text-center py-16 text-text-muted">
+            <i class="fa-solid fa-triangle-exclamation text-3xl mb-4 text-accent-amber opacity-70"></i>
+            <p class="text-sm">Gallery could not be loaded. Please check that <code class="bg-bg-panel px-1 rounded">accessories.json</code> is in the root of your site.</p>
+          </div>`;
+      });
+
+    if (viewAllBtn) {
+      viewAllBtn.addEventListener('click', function () {
+        setActiveTab('all');
+        renderGallery('all');
+      });
+    }
 
     // Form submission handling
     document.querySelector('form').addEventListener('submit', function(e) {

@@ -425,15 +425,6 @@
       border-color: #D99E3F;
     }
 
-    /* Image loading state */
-    .gallery-item img {
-      transition: transform 0.5s ease;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.1);
-    }
-
     /* Ensure proper image display */
     .aspect-square {
       position: relative;
@@ -602,10 +593,6 @@
       }
 
       .card-hover:hover {
-        transform: none;
-      }
-
-      .gallery-item:hover img {
         transform: none;
       }
     }
@@ -1046,228 +1033,26 @@
           Browse our premium sweater collection through our categorized visual gallery
         </p>
 
-        <!-- Category Tabs -->
-        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 md:mb-10 category-tabs" data-aos="fade-up">
-          <button
-            class="category-tab active px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-primary text-white hover:bg-primary-dark"
-            data-category="all">
-            All
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="pullovers">
-            Pullovers
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="cardigans">
-            Cardigans
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="turtlenecks">
-            Turtlenecks
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="cashmere">
-            Cashmere
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="wool">
-            Wool Blends
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="fashion">
-            Fashion
-          </button>
+        <!-- Category Tabs — rendered dynamically from sweater.json -->
+        <div id="categoryTabs" class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 md:mb-10 category-tabs"
+          data-aos="fade-up">
+          <!-- Tabs injected by JS -->
         </div>
 
-        <!-- Gallery Grid -->
-        <div class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
-          <!-- Pullovers Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="pullovers" data-aos="fade-up" data-aos-delay="200">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1574180045827-681f8a1a9622?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Crew Neck Pullover"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Crew Neck Pullover</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Classic crew neck, medium weight, versatile styling</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Pullovers</span>
-            </div>
-          </div>
+        <!-- Gallery Grid — rendered dynamically from sweater.json -->
+        <div id="galleryGrid"
+          class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+          <!-- Skeleton loaders shown while fetching -->
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+        </div>
 
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="pullovers" data-aos="fade-up" data-aos-delay="250">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="V-Neck Pullover"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">V-Neck Pullover</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Elegant V-neck design, perfect for layering</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Pullovers</span>
-            </div>
-          </div>
-
-          <!-- Cardigans Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="cardigans" data-aos="fade-up" data-aos-delay="300">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Button-Up Cardigan"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Button-Up Cardigan</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Full button front, pockets, versatile layering piece</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Cardigans</span>
-            </div>
-          </div>
-
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="cardigans" data-aos="fade-up" data-aos-delay="350">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1521369850278-0a9a4bfe6b9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Open Front Cardigan"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Open Front Cardigan</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Lightweight, open front design for casual wear</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Cardigans</span>
-            </div>
-          </div>
-
-          <!-- Turtlenecks Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="turtlenecks" data-aos="fade-up" data-aos-delay="400">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Classic Turtleneck"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Classic Turtleneck</h3>
-              <p class="text-white/80 text-xs sm:text-sm">High neck, slim fit, premium fabric</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Turtlenecks</span>
-            </div>
-          </div>
-
-          <!-- Cashmere Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="cashmere" data-aos="fade-up" data-aos-delay="450">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Luxury Cashmere Sweater"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Luxury Cashmere Sweater</h3>
-              <p class="text-white/80 text-xs sm:text-sm">100% cashmere, ultra-soft, premium quality</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Cashmere</span>
-            </div>
-          </div>
-
-          <!-- Wool Blends Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="wool" data-aos="fade-up" data-aos-delay="500">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Merino Wool Sweater"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Merino Wool Sweater</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Fine merino wool, breathable, temperature regulating</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Wool</span>
-            </div>
-          </div>
-
-          <!-- Fashion Sweaters Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="fashion" data-aos="fade-up" data-aos-delay="550">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1511193311914-034c8c8a8f16?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Cable Knit Sweater"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Cable Knit Sweater</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Intricate cable patterns, chunky knit, winter classic</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Fashion</span>
-            </div>
-          </div>
+        <!-- Empty state -->
+        <div id="galleryEmpty" class="hidden text-center py-16 text-text-muted">
+          <i class="fa-solid fa-image text-4xl mb-4 opacity-30"></i>
+          <p class="text-sm">No products found in this category yet.</p>
         </div>
 
         <!-- View More Button -->
@@ -1537,66 +1322,118 @@
       link.addEventListener('click', closeMobileMenu);
     });
 
-    // Gallery filtering functionality
-    const tabs = document.querySelectorAll('.category-tab');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    // =============================================
+    // DYNAMIC GALLERY — powered by sweater.json
+    // =============================================
+
+    let allProducts = [];
+    let allCategories = [];
+
+    const tabsContainer = document.getElementById('categoryTabs');
+    const galleryGrid = document.getElementById('galleryGrid');
+    const galleryEmpty = document.getElementById('galleryEmpty');
     const viewAllBtn = document.querySelector('.view-all-btn');
 
-    // Filter function
-    function filterGallery(category) {
-      galleryItems.forEach(item => {
-        if (category === 'all' || item.dataset.category === category) {
-          item.style.display = 'block';
-          setTimeout(() => {
-            item.style.opacity = '1';
-            item.style.transform = 'scale(1)';
-          }, 50);
-        } else {
-          item.style.opacity = '0';
-          item.style.transform = 'scale(0.8)';
-          setTimeout(() => {
-            item.style.display = 'none';
-          }, 300);
-        }
+    // Build a single card's HTML
+    function buildCard(product) {
+      const catLabel = allCategories.find(c => c.id === product.category)?.label || product.category;
+      return `
+        <div class="gallery-item group rounded-2xl border border-border-soft overflow-hidden flex flex-col"
+             data-category="${product.category}"
+             data-aos="fade-up">
+          <div class="relative w-full bg-white" style="height: 320px;">
+            <img
+              src="${product.image}"
+              alt="${product.title}"
+              loading="lazy"
+              style="width:100%; height:100%; object-fit:contain; display:block; padding: 8px;"
+            >
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-1 rounded-full bg-primary/90 text-white text-xs font-medium">${catLabel}</span>
+            </div>
+          </div>
+          <div class="bg-bg-panel px-4 py-3 flex flex-col gap-1">
+            <h3 class="text-text font-semibold text-sm">${product.title}</h3>
+          </div>
+        </div>`;
+    }
+
+    // Render gallery filtered by category
+    function renderGallery(category) {
+      const filtered = category === 'all'
+        ? allProducts
+        : allProducts.filter(p => p.category === category);
+
+      if (filtered.length === 0) {
+        galleryGrid.innerHTML = '';
+        galleryEmpty.classList.remove('hidden');
+      } else {
+        galleryEmpty.classList.add('hidden');
+        galleryGrid.innerHTML = filtered.map(buildCard).join('');
+        if (typeof AOS !== 'undefined') AOS.refreshHard();
+      }
+    }
+
+    // Set active tab styling
+    function setActiveTab(category) {
+      document.querySelectorAll('.category-tab').forEach(tab => {
+        const isActive = tab.dataset.category === category;
+        tab.classList.toggle('active', isActive);
+        tab.classList.toggle('bg-primary', isActive);
+        tab.classList.toggle('text-white', isActive);
+        tab.classList.toggle('bg-bg-panel', !isActive);
+        tab.classList.toggle('border', !isActive);
+        tab.classList.toggle('border-border-soft', !isActive);
       });
     }
 
-    // Tab click event
-    tabs.forEach(tab => {
-      tab.addEventListener('click', function () {
-        const category = this.dataset.category;
+    // Build tabs from JSON categories
+    function renderTabs(categories) {
+      const allBtn = `
+        <button class="category-tab active px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-primary text-white hover:bg-primary-dark" data-category="all">
+          All
+        </button>`;
+      const catBtns = categories.map(cat => `
+        <button class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary" data-category="${cat.id}">
+          ${cat.label}
+        </button>`).join('');
 
-        // Update active tab
-        tabs.forEach(t => {
-          t.classList.remove('active');
-          t.classList.add('bg-bg-panel', 'border', 'border-border-soft', 'text-text');
-          t.classList.remove('bg-primary', 'text-white');
+      tabsContainer.innerHTML = allBtn + catBtns;
+
+      tabsContainer.querySelectorAll('.category-tab').forEach(tab => {
+        tab.addEventListener('click', function () {
+          setActiveTab(this.dataset.category);
+          renderGallery(this.dataset.category);
         });
-
-        this.classList.add('active');
-        this.classList.remove('bg-bg-panel', 'border-border-soft', 'text-text');
-        this.classList.add('bg-primary', 'text-white');
-
-        // Filter gallery
-        filterGallery(category);
       });
-    });
+    }
 
-    // View All button event
+    // Fetch sweater.json and initialise
+    fetch('/sweater.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Could not load sweater.json — status ' + res.status);
+        return res.json();
+      })
+      .then(data => {
+        allProducts = data.products || [];
+        allCategories = data.categories || [];
+        renderTabs(allCategories);
+        renderGallery('all');
+      })
+      .catch(err => {
+        console.error('Gallery load error:', err);
+        galleryGrid.innerHTML = `
+          <div class="col-span-full text-center py-16 text-text-muted">
+            <i class="fa-solid fa-triangle-exclamation text-3xl mb-4 text-accent-amber opacity-70"></i>
+            <p class="text-sm">Gallery could not be loaded. Please check that <code class="bg-bg-panel px-1 rounded">sweater.json</code> is in the root of your site.</p>
+          </div>`;
+      });
+
+    // "View All Products" button
     if (viewAllBtn) {
       viewAllBtn.addEventListener('click', function () {
-        // Reset to "All Products"
-        tabs.forEach(t => {
-          t.classList.remove('active');
-          t.classList.add('bg-bg-panel', 'border', 'border-border-soft', 'text-text');
-          t.classList.remove('bg-primary', 'text-white');
-        });
-
-        tabs[0].classList.add('active');
-        tabs[0].classList.remove('bg-bg-panel', 'border-border-soft', 'text-text');
-        tabs[0].classList.add('bg-primary', 'text-white');
-
-        filterGallery('all');
+        setActiveTab('all');
+        renderGallery('all');
       });
     }
 

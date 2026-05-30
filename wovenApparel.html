@@ -426,13 +426,13 @@
     }
 
     /* Image loading state */
-    .gallery-item img {
+    /* .gallery-item img {
       transition: transform 0.5s ease;
     }
 
     .gallery-item:hover img {
       transform: scale(1.1);
-    }
+    } */
 
     /* Ensure proper image display */
     .aspect-square {
@@ -1046,228 +1046,30 @@
           Browse our premium woven apparel collection through our categorized visual gallery
         </p>
 
-        <!-- Category Tabs -->
-        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 md:mb-10 category-tabs" data-aos="fade-up">
-          <button
-            class="category-tab active px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-primary text-white hover:bg-primary-dark"
-            data-category="all">
-            All
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="shirts">
-            Shirts
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="blouses">
-            Blouses
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="trousers">
-            Trousers
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="skirts">
-            Skirts
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="dresses">
-            Dresses
-          </button>
-          <button
-            class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary"
-            data-category="formal">
-            Formal Wear
-          </button>
+        <!-- Category Tabs — rendered dynamically from woven.json -->
+        <div id="categoryTabs" class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 md:mb-10 category-tabs"
+          data-aos="fade-up">
+          <!-- Tabs injected by JS -->
         </div>
 
-        <!-- Gallery Grid -->
-        <div class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
-          <!-- Shirts Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="shirts" data-aos="fade-up" data-aos-delay="200">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Classic Dress Shirt"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Classic Dress Shirt</h3>
-              <p class="text-white/80 text-xs sm:text-sm">100% cotton broadcloth, single needle stitching</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Shirts</span>
-            </div>
+        <!-- Gallery Grid — rendered dynamically from woven.json -->
+        <div id="galleryGrid"
+          class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+          <!-- Skeleton loaders shown while fetching -->
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square">
           </div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square">
+          </div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square">
+          </div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square">
+          </div>
+        </div>
 
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="shirts" data-aos="fade-up" data-aos-delay="250">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1607344645866-009c320d5d30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Oxford Button-Down"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Oxford Button-Down</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Premium oxford cloth, button-down collar</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Shirts</span>
-            </div>
-          </div>
-
-          <!-- Blouses Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="blouses" data-aos="fade-up" data-aos-delay="300">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Silk Blouse"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Silk Blouse</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Pure silk fabric, French seams, delicate details</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Blouses</span>
-            </div>
-          </div>
-
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="blouses" data-aos="fade-up" data-aos-delay="350">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Ruffle Detail Blouse"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Ruffle Detail Blouse</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Cotton voile with delicate ruffle accents</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Blouses</span>
-            </div>
-          </div>
-
-          <!-- Trousers Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="trousers" data-aos="fade-up" data-aos-delay="400">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Tailored Trousers"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Tailored Trousers</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Wool-blend fabric, flat front, precision tailoring</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Trousers</span>
-            </div>
-          </div>
-
-          <!-- Skirts Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="skirts" data-aos="fade-up" data-aos-delay="450">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="A-Line Skirt"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">A-Line Skirt</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Medium-weight fabric, invisible zipper, lined</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Skirts</span>
-            </div>
-          </div>
-
-          <!-- Dresses Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="dresses" data-aos="fade-up" data-aos-delay="500">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1569760142069-bc6838de16c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Midi Dress"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Midi Dress</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Cotton poplin, hidden zipper, elegant silhouette</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Dresses</span>
-            </div>
-          </div>
-
-          <!-- Formal Wear Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel"
-            data-category="formal" data-aos="fade-up" data-aos-delay="550">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Business Suit"
-                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            </div>
-            <div
-              class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Business Suit</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Wool blend, fully lined, premium construction</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span
-                class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Formal</span>
-            </div>
-          </div>
+        <!-- Empty state (shown if a filtered category has 0 items) -->
+        <div id="galleryEmpty" class="hidden text-center py-16 text-text-muted">
+          <i class="fa-solid fa-image text-4xl mb-4 opacity-30"></i>
+          <p class="text-sm">No products found in this category yet.</p>
         </div>
 
         <!-- View More Button -->
@@ -1536,75 +1338,129 @@
       link.addEventListener('click', closeMobileMenu);
     });
 
-    // Gallery filtering functionality
-    const tabs = document.querySelectorAll('.category-tab');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    // =============================================
+    // DYNAMIC GALLERY — powered by woven.json
+    // =============================================
+
+    let allProducts = [];
+    let allCategories = [];
+    let activeCategory = 'all';
+
+    const tabsContainer = document.getElementById('categoryTabs');
+    const galleryGrid = document.getElementById('galleryGrid');
+    const galleryEmpty = document.getElementById('galleryEmpty');
     const viewAllBtn = document.querySelector('.view-all-btn');
 
-    // Filter function
-    function filterGallery(category) {
-      galleryItems.forEach(item => {
-        if (category === 'all' || item.dataset.category === category) {
-          item.style.display = 'block';
-          setTimeout(() => {
-            item.style.opacity = '1';
-            item.style.transform = 'scale(1)';
-          }, 50);
-        } else {
-          item.style.opacity = '0';
-          item.style.transform = 'scale(0.8)';
-          setTimeout(() => {
-            item.style.display = 'none';
-          }, 300);
-        }
+    // Build a single card's HTML
+    function buildCard(product) {
+      const catLabel = allCategories.find(c => c.id === product.category)?.label || product.category;
+      return `
+        <div class="gallery-item group rounded-2xl border border-border-soft overflow-hidden flex flex-col"
+             data-category="${product.category}"
+             data-aos="fade-up">
+
+          <!-- Image box: fixed height, white bg, object-contain = full image, no crop, no black gap -->
+          <div class="relative w-full bg-white" style="height: 320px;">
+            <img
+              src="${product.image}"
+              alt="${product.title}"
+              loading="lazy"
+              style="width:100%; height:100%; object-fit:contain; display:block; padding: 8px;"
+            >
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-1 rounded-full bg-primary/90 text-white text-xs font-medium">${catLabel}</span>
+            </div>
+          </div>
+
+          <!-- Info panel -->
+          <div class="bg-bg-panel px-4 py-3 flex flex-col gap-1">
+            <h3 class="text-text font-semibold text-sm">${product.title}</h3>
+          </div>
+
+        </div>`;
+    }
+
+    // Render gallery filtered by category
+    function renderGallery(category) {
+      const filtered = category === 'all'
+        ? allProducts
+        : allProducts.filter(p => p.category === category);
+
+      if (filtered.length === 0) {
+        galleryGrid.innerHTML = '';
+        galleryEmpty.classList.remove('hidden');
+      } else {
+        galleryEmpty.classList.add('hidden');
+        galleryGrid.innerHTML = filtered.map(buildCard).join('');
+        // Re-trigger AOS on newly injected elements
+        if (typeof AOS !== 'undefined') AOS.refreshHard();
+      }
+    }
+
+    // Set active tab styling
+    function setActiveTab(category) {
+      activeCategory = category;
+      document.querySelectorAll('.category-tab').forEach(tab => {
+        const isActive = tab.dataset.category === category;
+        tab.classList.toggle('active', isActive);
+        tab.classList.toggle('bg-primary', isActive);
+        tab.classList.toggle('text-white', isActive);
+        tab.classList.toggle('bg-bg-panel', !isActive);
+        tab.classList.toggle('border', !isActive);
+        tab.classList.toggle('border-border-soft', !isActive);
       });
     }
 
-    // Tab click event
-    tabs.forEach(tab => {
-      tab.addEventListener('click', function () {
-        const category = this.dataset.category;
+    // Build tabs from JSON categories
+    function renderTabs(categories) {
+      const allBtn = `
+        <button class="category-tab active px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-primary text-white hover:bg-primary-dark" data-category="all">
+          All
+        </button>`;
+      const catBtns = categories.map(cat => `
+        <button class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary" data-category="${cat.id}">
+          ${cat.label}
+        </button>`).join('');
 
-        // Update active tab
-        tabs.forEach(t => {
-          t.classList.remove('active');
-          t.classList.add('bg-bg-panel', 'border', 'border-border-soft', 'text-text');
-          t.classList.remove('bg-primary', 'text-white');
+      tabsContainer.innerHTML = allBtn + catBtns;
+
+      // Attach click events
+      tabsContainer.querySelectorAll('.category-tab').forEach(tab => {
+        tab.addEventListener('click', function () {
+          setActiveTab(this.dataset.category);
+          renderGallery(this.dataset.category);
         });
-
-        this.classList.add('active');
-        this.classList.remove('bg-bg-panel', 'border-border-soft', 'text-text');
-        this.classList.add('bg-primary', 'text-white');
-
-        // Filter gallery
-        filterGallery(category);
       });
-    });
+    }
 
-    // View All button event
+    // Fetch woven.json and initialise
+    fetch('/woven.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Could not load woven.json — status ' + res.status);
+        return res.json();
+      })
+      .then(data => {
+        allProducts = data.products || [];
+        allCategories = data.categories || [];
+        renderTabs(allCategories);
+        renderGallery('all');
+      })
+      .catch(err => {
+        console.error('Gallery load error:', err);
+        galleryGrid.innerHTML = `
+          <div class="col-span-full text-center py-16 text-text-muted">
+            <i class="fa-solid fa-triangle-exclamation text-3xl mb-4 text-accent-amber opacity-70"></i>
+            <p class="text-sm">Gallery could not be loaded. Please check that <code class="bg-bg-panel px-1 rounded">woven.json</code> is in the root of your site.</p>
+          </div>`;
+      });
+
+    // "View All Products" button
     if (viewAllBtn) {
       viewAllBtn.addEventListener('click', function () {
-        // Reset to "All Products"
-        tabs.forEach(t => {
-          t.classList.remove('active');
-          t.classList.add('bg-bg-panel', 'border', 'border-border-soft', 'text-text');
-          t.classList.remove('bg-primary', 'text-white');
-        });
-
-        tabs[0].classList.add('active');
-        tabs[0].classList.remove('bg-bg-panel', 'border-border-soft', 'text-text');
-        tabs[0].classList.add('bg-primary', 'text-white');
-
-        filterGallery('all');
+        setActiveTab('all');
+        renderGallery('all');
       });
     }
-
-    // Form submission handling
-    document.querySelector('form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Thank you for your inquiry! We will get back to you shortly.');
-      this.reset();
-    });
 
     // Touch device optimization
     if ('ontouchstart' in window) {

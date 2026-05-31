@@ -23,14 +23,33 @@
       return res.text();
     })
     .then(function (html) {
-      placeholder.innerHTML = html;
+      // Strip <script> tags from injected HTML, collect their content
+      const scriptContents = [];
+      const htmlWithoutScripts = html.replace(/<script[\s\S]*?>([\s\S]*?)<\/script>/gi, function (match, scriptContent) {
+        scriptContents.push(scriptContent);
+        return '';
+      });
 
-      // Re-run any <script> tags inside the injected HTML
-      placeholder.querySelectorAll('script').forEach(function (oldScript) {
-        const newScript = document.createElement('script');
-        newScript.textContent = oldScript.textContent;
-        document.body.appendChild(newScript);
-        oldScript.remove();
+      // Inject the HTML (no scripts)
+      placeholder.innerHTML = htmlWithoutScripts;
+
+      // Re-run each script by creating a new <script> element
+      // This ensures the JS executes AFTER the HTML is in the DOM
+      scriptContents.forEach(function (content) {
+        const script = document.createElement('script');
+        script.textContent = content;
+        document.body.appendChild(script);
+      });
+
+      // Highlight active nav link based on current page
+      const currentPath = window.location.pathname;
+      document.querySelectorAll('#bgs-navbar .nav-link, #bgs-navbar .mobile-menu-links a').forEach(function (link) {
+        try {
+          const linkPath = new URL(link.href, window.location.origin).pathname;
+          if (linkPath === currentPath) {
+            link.style.color = '#D99E3F';
+          }
+        } catch (e) {}
       });
     })
     .catch(function (err) {

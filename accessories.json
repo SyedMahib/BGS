@@ -1,173 +1,149 @@
 {
   "categories": [
     {
-      "id": "tshirts",
-      "label": "T-Shirts"
+      "id": "cap",
+      "label": "Caps"
     },
     {
-      "id": "polos",
-      "label": "Polo Shirts"
+      "id": "juteBag",
+      "label": "Jute Bags"
     },
     {
-      "id": "tank",
-      "label": "Tank Tops"
+      "id": "toteBag",
+      "label": "Tote Bags"
     },
     {
-      "id": "sweatshirts",
-      "label": "Sweatshirts"
+      "id": "backpack",
+      "label": "Backpacks"
     },
     {
-      "id": "hoodies",
-      "label": "Hoodies"
+      "id": "boot",
+      "label": "Boots"
     },
     {
-      "id": "joggers",
-      "label": "Joggers"
-    },
-    {
-      "id": "shorts",
-      "label": "Shorts"
-    },
-    {
-      "id": "sleepware",
-      "label": "Sleepware"
-    },
-    {
-      "id": "dress",
-      "label": "Dress"
-    },
-    {
-      "id": "leggings",
-      "label": "Leggings"
-    },
-    {
-      "id": "maternity",
-      "label": "Maternity"
-    },
-    {
-      "id": "kids",
-      "label": "Kids"
+      "id": "sneaker",
+      "label": "Sneakers"
     }
   ],
   "products": [
     {
       "id": 1,
-      "category": "tshirts",
+      "category": "cap",
       "title": "Cap",
       "description": "100% combed cotton, 180 GSM, ring-spun fabric",
-      "image": "https://i.ibb.co.com/MDfNXQsW/01-MENS-SS-BASIC-TEE.png"
+      "image": "https://i.ibb.co.com/GfNGbXXZ/01-CAP.png"
     },
     {
       "id": 2,
-      "category": "tshirts",
+      "category": "cap",
       "title": "Cap",
       "description": "GOTS certified organic cotton, sustainable production",
-      "image": "https://i.ibb.co.com/pv06XNQ9/02-MENS-SS-GRAPHIC-TEE.png"
+      "image": "https://i.ibb.co.com/7d7ZZQvb/02-CAP.png"
     },
     {
       "id": 3,
-      "category": "tshirts",
+      "category": "cap",
       "title": "Cap",
       "description": "Moisture-wicking polyester blend, athletic cut",
-      "image": "https://i.ibb.co.com/gFjtJb6M/03-MENS-SS-YD-TEE.png"
+      "image": "https://i.ibb.co.com/CgHV0Xk/03-CAP.png"
     },
     {
       "id": 4,
-      "category": "tshirts",
+      "category": "cap",
       "title": "Cap",
       "description": "Pique knit fabric, ribbed collar, three-button placket",
-      "image": "https://i.ibb.co.com/bR6JW0NV/04-MENS-SS-AOP-TEE.png"
+      "image": "https://i.ibb.co.com/Fbqk2GgK/04-CAP.png"
     },
     {
       "id": 5,
-      "category": "tshirts",
+      "category": "cap",
       "title": "Cap",
       "description": "Moisture-wicking fabric, UV protection, athletic fit",
-      "image": "https://i.ibb.co.com/1Y15NHGN/05-LADIES-SS-GRAPHIC-TEE.png"
+      "image": "https://i.ibb.co.com/hRyTYv2k/05-CAP.png"
     },
     {
       "id": 6,
-      "category": "tshirts",
+      "category": "cap",
       "title": "Cap",
       "description": "Structured pique knit, embroidery-ready, office-suitable fit",
-      "image": "https://i.ibb.co.com/Dgw940P6/06-LADIES-SS-AOP-TEE.png"
+      "image": "https://i.ibb.co.com/6JZrJ6Py/06-CAP.png"
     },
     {
       "id": 7,
-      "category": "tshirts",
+      "category": "juteBag",
       "title": "Jute Bag",
       "description": "280 GSM French terry, brushed interior for warmth",
-      "image": "https://i.ibb.co.com/93mYyhmx/07-LADIES-SS-TIE-DYE-TEE.png"
+      "image": "https://i.ibb.co.com/hRGqPMwj/07-JUIT-BAG.png"
     },
     {
       "id": 8,
-      "category": "polos",
+      "category": "juteBag",
       "title": "Jute Bag",
       "description": "Classic crewneck, 300 GSM cotton-polyester blend",
-      "image": "https://i.ibb.co.com/jv2LW9KG/08-MENS-SS-YD-POLO.png"
+      "image": "https://i.ibb.co.com/5gS8TBpX/08-JUIT-BAG.png"
     },
     {
       "id": 9,
-      "category": "polos",
+      "category": "toteBag",
       "title": "Tote Bag",
       "description": "Cotton-polyester blend, kangaroo pocket, adjustable drawstrings",
-      "image": "https://i.ibb.co.com/gMdXHhHh/09-MENS-SS-SOLID-POLO.png"
+      "image": "https://i.ibb.co.com/kgtbYD02/09-TOTE-BAG.png"
     },
     {
       "id": 10,
-      "category": "polos",
+      "category": "toteBag",
       "title": "Tote Bag",
       "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
-      "image": "https://i.ibb.co.com/Kjz3sDzP/10-MENS-SS-AOP-POLO.png"
+      "image": "https://i.ibb.co.com/FfcpPj2/10-TOTE-BAG.png"
     },
     {
       "id": 11,
-      "category": "polos",
+      "category": "backpack",
       "title": "Backpack",
       "description": "Jersey knit, feminine cut, various sleeve lengths",
-      "image": "https://i.ibb.co.com/wFM1ySdD/11-LADIES-SS-AOP-POLO.png"
+      "image": "https://i.ibb.co.com/jvzQPjv5/11-BAG-PACK.png"
     },
     {
       "id": 12,
-      "category": "polos",
+      "category": "backpack",
       "title": "Backpack",
       "description": "Fine rib knit, stretchy fit, premium viscose blend",
-      "image": "https://i.ibb.co.com/3YNkdNFS/12-LADIES-SS-SOLID-POLO.png"
+      "image": "https://i.ibb.co.com/MyqrCQPG/12-BAG-PACK.png"
     },
     {
       "id": 13,
-      "category": "polos",
+      "category": "boot",
       "title": "Hiking Boot",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/60zZ34Xj/12-LADIES-SS-YD-POLO.png"
+      "image": "https://i.ibb.co.com/DHpKhd81/13-HIKING-BOOT.png"
     },
     {
       "id": 14,
-      "category": "tank",
+      "category": "boot",
       "title": "Work Boot",
       "description": "Cozy fleece, playful colors, durable construction",
-      "image": "https://i.ibb.co.com/h1YYJQsF/14-MENS-AOP-TANK-TOP.png"
+      "image": "https://i.ibb.co.com/svHbp9J6/14-WORK-BOOT.png"
     },
     {
       "id": 15,
-      "category": "tank",
+      "category": "boot",
       "title": "Chelsea Boot",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/gZqTtJd6/13-MENS-PRINT-TANK-TOP.png"
+      "image": "https://i.ibb.co.com/fVT6KJg2/15-CHELSEA-BOOT.png"
     },
     {
       "id": 16,
-      "category": "tank",
+      "category": "sneaker",
       "title": "Sneaker",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/B5H73NbV/15-LADIES-SOLID-TANK-TOP.png"
+      "image": "https://i.ibb.co.com/kkcfvFw/16-SKEAKER.png"
     },
     {
       "id": 17,
-      "category": "tank",
+      "category": "sneaker",
       "title": "Low Top Sneaker",
       "description": "Soft cotton, fun prints, sizes 2-14 years",
-      "image": "https://i.ibb.co.com/4wmsB6z0/15-LADIES-PRINT-TANK-TOP.png"
+      "image": "https://i.ibb.co.com/yBpbvQZS/17-LOW-TOP-SNEAKER.png"
     }
   ]
 }

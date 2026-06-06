@@ -4,6 +4,8 @@
  * Fetches /components/navbar.html and injects it into
  * any element with id="bgs-navbar".
  *
+ * Works on both localhost (Live Server) and GitHub Pages (/BGS/).
+ *
  * HOW TO USE — add these 2 lines inside <body>, before your page content:
  *
  *   <div id="bgs-navbar"></div>
@@ -17,7 +19,13 @@
     return;
   }
 
-  fetch('/components/navbar.html')
+  // Auto-detect base path: works for localhost AND GitHub Pages (/BGS/)
+  const scriptTag = document.querySelector('script[src*="navbar-loader.js"]');
+  const basePath = scriptTag
+    ? scriptTag.src.replace('navbar-loader.js', '')
+    : '/components/';
+
+  fetch(basePath + 'navbar.html')
     .then(function (res) {
       if (!res.ok) throw new Error('Could not load navbar: ' + res.status);
       return res.text();

@@ -668,98 +668,9 @@
     </div>
   </div>
 
-  <!-- NAVBAR -->
-  <header id="top"
-    class="sticky top-0 z-50 backdrop-blur-lg bg-gradient-to-b from-[rgba(12,12,12,0.9)] via-[rgba(12,12,12,0.75)] to-transparent border-b border-white/10">
-    <div class="container mx-auto px-4 sm:px-6">
-      <nav class="flex items-center justify-between py-3">
-        <div class="flex items-center gap-3">
-          <a href="/"
-            class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-radial from-gray-200 via-gray-300 to-gray-500 flex items-center justify-center overflow-hidden">
-            <img src="/Assets/BGS logo.png" alt="Brother's Global Sourcing Logo"
-              class="w-full h-full object-contain" />
-          </a>
-          <div class="flex flex-col gap-0">
-            <span class="font-montserrat text-xs sm:text-sm tracking-wider uppercase">Brother's Global Sourcing</span>
-            <span class="text-xs text-text-muted hidden sm:block">Garments Buying House – Bangladesh</span>
-          </div>
-        </div>
-
-        <div class="flex items-center gap-4">
-          <!-- Desktop Navigation -->
-          <div class="hidden md:flex items-center gap-6" id="navMenu">
-            <div class="flex items-center gap-6 text-sm uppercase tracking-wider">
-              <a href="/index.html"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Home</a>
-              <a href="/index.html#about"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">About</a>
-              <a href="/services.html"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Services</a>
-              <a href="/Our Products.html"
-                class="nav-link relative pb-1 text-white font-medium transition-colors">Products</a>
-              <a href="index.html#factories"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Factories</a>
-              <a href="index.html#sustainability"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Sustainability</a>
-              <a href="/ContactUs.html"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Contact</a>
-            </div>
-            <a href="index.html#contact"
-              class="px-4 py-2 rounded-full border border-accent-amber/50 flex items-center gap-2 text-xs uppercase tracking-widest text-accent-amber bg-accent-amber/6">
-              <i class="fa-regular fa-paper-plane text-sm"></i>
-              <span>Send Inquiry</span>
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <button class="md:hidden text-white bg-transparent border-none text-xl" aria-label="Toggle navigation"
-            id="navToggle">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Mobile Slider Menu -->
-  <div class="mobile-slider-menu" id="mobileSliderMenu">
-    <div class="mobile-menu-header">
-      <div class="flex items-center gap-3">
-        <a href="/"
-          class="w-10 h-10 rounded-xl bg-gradient-radial from-gray-200 via-gray-300 to-gray-500 flex items-center justify-center overflow-hidden">
-          <img src="/Assets/BGS logo.png" alt="Brother's Global Sourcing Logo" class="w-full h-full object-contain" />
-        </a>
-        <div class="flex flex-col gap-0">
-          <span class="font-montserrat text-sm tracking-wider uppercase">Brother's Global Sourcing</span>
-          <span class="text-xs text-text-muted">Garments Buying House</span>
-        </div>
-      </div>
-      <button class="close-menu-btn" id="closeMenuBtn">
-        <i class="fas fa-times"></i>
-      </button>
-    </div>
-
-    <div class="mobile-menu-links">
-      <a href="index.html" class="text-text-muted hover:text-white transition-colors">Home</a>
-      <a href="/index.html#about" class="text-text-muted hover:text-white transition-colors">About</a>
-      <a href="/services.html" class="text-text-muted hover:text-white transition-colors">Services</a>
-      <a href="/Our Products.html" class="text-white transition-colors">Products</a>
-      <a href="index.html#factories" class="text-text-muted hover:text-white transition-colors">Factories</a>
-      <a href="index.html#sustainability" class="text-text-muted hover:text-white transition-colors">Sustainability</a>
-      <a href="/ContactUs.html" class="text-text-muted hover:text-white transition-colors">Contact</a>
-    </div>
-
-    <div class="mobile-menu-cta">
-      <a href="index.html#contact"
-        class="w-full block text-center px-4 py-3 rounded-full border border-accent-amber/50  items-center justify-center gap-2 text-xs uppercase tracking-widest text-accent-amber bg-accent-amber/6">
-        <i class="fa-regular fa-paper-plane text-sm"></i>
-        <span>Send Inquiry</span>
-      </a>
-    </div>
-  </div>
-
-  <!-- Mobile Overlay -->
-  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <!-- NAVBAR (loaded from /components/navbar.html) -->
+  <div id="bgs-navbar"></div>
+  <script src="components/navbar-loader.js"></script>
 
   <!-- MAIN CONTENT -->
   <main id="main-content">
@@ -1041,26 +952,26 @@
               Share your accessories requirements and we'll provide factory options, samples, and competitive pricing.
             </p>
 
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6" id="accessoriesForm" enctype="multipart/form-data">
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="name">Full Name</label>
-                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your full name">
+                <input type="text" id="name" name="Name" required class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your full name">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="email">Email Address</label>
-                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your email address">
+                <input type="email" id="email" name="Email" required class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your email address">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="company">Company Name</label>
-                <input type="text" id="company" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your company name">
+                <input type="text" id="company" name="Company" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your company name">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="phone">Phone Number</label>
-                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your phone number">
+                <input type="tel" id="phone" name="Phone" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your phone number">
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="product">Product Interest</label>
-                <select id="product" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
+                <select id="product" name="Product Interest" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
                   <option value="">Select product category</option>
                   <option value="hats">Hats & Caps</option>
                   <option value="bags">Bags & Totes</option>
@@ -1073,7 +984,7 @@
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="material">Preferred Material</label>
-                <select id="material" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
+                <select id="material" name="Preferred Material" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
                   <option value="">Select material type</option>
                   <option value="cotton">Cotton/Canvas</option>
                   <option value="denim">Denim</option>
@@ -1086,12 +997,19 @@
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="message">Project Details</label>
-                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Please provide details about your project, including quantity, specific accessories needed, material preferences, customization requirements (logo, colors, printing), packaging needs, timeline, and any specific requirements..."></textarea>
+                <textarea id="message" name="Message" rows="4" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Please provide details about your project, including quantity, specific accessories needed, material preferences, customization requirements (logo, colors, printing), packaging needs, timeline, and any specific requirements..."></textarea>
               </div>
-              <div class="md:col-span-2 flex justify-center">
-                <button type="submit" class="rounded-full px-8 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
-                  <span>Submit Inquiry</span>
-                  <i class="fa-regular fa-paper-plane"></i>
+              <div class="md:col-span-2">
+                <label class="block text-text-muted text-sm font-medium mb-2" for="attachment">Attach Files <span class="font-normal">(Tech packs, spec sheets, images — optional)</span></label>
+                <input type="file" id="attachment" name="Attachment" multiple
+                  accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.zip"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main text-sm file:mr-3 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-accent-amber file:text-gray-900 hover:file:bg-accent-amber-dark">
+              </div>
+              <div class="md:col-span-2 flex flex-col items-center gap-3">
+                <span id="accessoriesFormStatus" class="text-sm hidden"></span>
+                <button type="submit" id="accessoriesSubmitBtn" class="rounded-full px-8 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
+                  <span id="accessoriesSubmitText">Submit Inquiry</span>
+                  <i class="fa-regular fa-paper-plane" id="accessoriesSubmitIcon"></i>
                 </button>
               </div>
             </form>
@@ -1358,10 +1276,58 @@
     }
 
     // Form submission handling
-    document.querySelector('form').addEventListener('submit', function(e) {
+    document.getElementById('accessoriesForm').addEventListener('submit', async function (e) {
       e.preventDefault();
-      alert('Thank you for your accessories inquiry! We will get back to you shortly.');
-      this.reset();
+
+      const btn = document.getElementById('accessoriesSubmitBtn');
+      const submitText = document.getElementById('accessoriesSubmitText');
+      const submitIcon = document.getElementById('accessoriesSubmitIcon');
+      const statusEl = document.getElementById('accessoriesFormStatus');
+
+      btn.disabled = true;
+      submitText.textContent = 'Sending...';
+      submitIcon.className = 'fa-solid fa-spinner fa-spin';
+      statusEl.classList.add('hidden');
+
+      try {
+        const formData = new FormData(this);
+
+        const response = await fetch('/.netlify/functions/submit-form', {
+          method: 'POST',
+          body: formData,
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          submitText.textContent = 'Inquiry Sent!';
+          submitIcon.className = 'fa-solid fa-check';
+          btn.classList.remove('bg-accent-amber');
+          btn.classList.add('bg-green-500');
+          statusEl.textContent = "We'll get back to you within 1–2 working days.";
+          statusEl.className = 'text-sm text-green-500';
+          statusEl.classList.remove('hidden');
+          this.reset();
+
+          setTimeout(() => {
+            btn.disabled = false;
+            submitText.textContent = 'Submit Inquiry';
+            submitIcon.className = 'fa-regular fa-paper-plane';
+            btn.classList.add('bg-accent-amber');
+            btn.classList.remove('bg-green-500');
+            statusEl.classList.add('hidden');
+          }, 5000);
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (err) {
+        btn.disabled = false;
+        submitText.textContent = 'Submit Inquiry';
+        submitIcon.className = 'fa-regular fa-paper-plane';
+        statusEl.textContent = 'Something went wrong. Please email us directly at info@bdbgs.com';
+        statusEl.className = 'text-sm text-red-500';
+        statusEl.classList.remove('hidden');
+      }
     });
   </script>
 </body>

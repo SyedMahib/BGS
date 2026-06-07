@@ -826,97 +826,9 @@
     </div>
   </div>
 
-  <!-- NAVBAR -->
-  <header id="top"
-    class="sticky top-0 z-50 backdrop-blur-lg bg-gradient-to-b from-[rgba(12,12,12,0.9)] via-[rgba(12,12,12,0.75)] to-transparent border-b border-white/10">
-    <div class="container mx-auto px-4 sm:px-6">
-      <nav class="flex items-center justify-between py-3">
-        <div class="flex items-center gap-3">
-          <a href="/"
-            class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-gradient-radial from-gray-200 via-gray-300 to-gray-500 flex items-center justify-center overflow-hidden">
-            <img src="/Assets/BGS logo.png" alt="Brother's Global Sourcing Logo" class="w-full h-full object-contain" />
-          </a>
-          <div class="flex flex-col gap-0">
-            <span class="font-montserrat text-xs sm:text-sm tracking-wider uppercase">Brother's Global Sourcing</span>
-            <span class="text-xs text-text-muted hidden sm:block">Garments Buying House – Bangladesh</span>
-          </div>
-        </div>
-
-        <div class="flex items-center gap-4">
-          <!-- Desktop Navigation -->
-          <div class="hidden md:flex items-center gap-6" id="navMenu">
-            <div class="flex items-center gap-6 text-sm uppercase tracking-wider">
-              <a href="/index.html"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Home</a>
-              <a href="/index.html#about"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">About</a>
-              <a href="/services.html"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Services</a>
-              <a href="/Our Products.html"
-                class="nav-link relative pb-1 text-white font-medium transition-colors">Products</a>
-              <a href="index.html#factories"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Factories</a>
-              <a href="index.html#sustainability"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Sustainability</a>
-              <a href="/ContactUs.html"
-                class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Contact</a>
-            </div>
-            <a href="index.html#contact"
-              class="px-4 py-2 rounded-full border border-accent-amber/50 flex items-center gap-2 text-xs uppercase tracking-widest text-accent-amber bg-accent-amber/6">
-              <i class="fa-regular fa-paper-plane text-sm"></i>
-              <span>Send Inquiry</span>
-            </a>
-          </div>
-
-          <!-- Mobile Menu Button -->
-          <button class="md:hidden text-white bg-transparent border-none text-xl" aria-label="Toggle navigation"
-            id="navToggle">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Mobile Slider Menu -->
-  <div class="mobile-slider-menu" id="mobileSliderMenu">
-    <div class="mobile-menu-header">
-      <div class="flex items-center gap-3">
-        <a href="/"
-          class="w-10 h-10 rounded-xl bg-gradient-radial from-gray-200 via-gray-300 to-gray-500 flex items-center justify-center overflow-hidden">
-          <img src="/Assets/BGS logo.png" alt="Brother's Global Sourcing Logo" class="w-full h-full object-contain" />
-        </a>
-        <div class="flex flex-col gap-0">
-          <span class="font-montserrat text-sm tracking-wider uppercase">Brother's Global Sourcing</span>
-          <span class="text-xs text-text-muted">Garments Buying House</span>
-        </div>
-      </div>
-      <button class="close-menu-btn" id="closeMenuBtn">
-        <i class="fas fa-times"></i>
-      </button>
-    </div>
-
-    <div class="mobile-menu-links">
-      <a href="index.html" class="text-text-muted hover:text-white transition-colors">Home</a>
-      <a href="/index.html#about" class="text-text-muted hover:text-white transition-colors">About</a>
-      <a href="/services.html" class="text-text-muted hover:text-white transition-colors">Services</a>
-      <a href="/Our Products.html" class="text-white transition-colors">Products</a>
-      <a href="index.html#factories" class="text-text-muted hover:text-white transition-colors">Factories</a>
-      <a href="index.html#sustainability" class="text-text-muted hover:text-white transition-colors">Sustainability</a>
-      <a href="/ContactUs.html" class="text-text-muted hover:text-white transition-colors">Contact</a>
-    </div>
-
-    <div class="mobile-menu-cta">
-      <a href="index.html#contact"
-        class="w-full block text-center px-4 py-3 rounded-full border border-accent-amber/50 items-center justify-center gap-2 text-xs uppercase tracking-widest text-accent-amber bg-accent-amber/6">
-        <i class="fa-regular fa-paper-plane text-sm"></i>
-        <span>Send Inquiry</span>
-      </a>
-    </div>
-  </div>
-
-  <!-- Mobile Overlay -->
-  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <!-- NAVBAR (loaded from /components/navbar.html) -->
+  <div id="bgs-navbar"></div>
+  <script src="components/navbar-loader.js"></script>
 
   <!-- MAIN CONTENT -->
   <main id="main-content">
@@ -1077,38 +989,34 @@
               Share your sweater requirements and we'll provide factory options, samples, and competitive pricing.
             </p>
 
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6" id="sweaterForm" enctype="multipart/form-data">
               <div>
                 <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="name">Full Name</label>
-                <input type="text" id="name"
+                <input type="text" id="name" name="Name" required
                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm"
                   placeholder="Your full name">
               </div>
               <div>
-                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="email">Email
-                  Address</label>
-                <input type="email" id="email"
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="email">Email Address</label>
+                <input type="email" id="email" name="Email" required
                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm"
                   placeholder="Your email address">
               </div>
               <div>
-                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="company">Company
-                  Name</label>
-                <input type="text" id="company"
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="company">Company Name</label>
+                <input type="text" id="company" name="Company"
                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm"
                   placeholder="Your company name">
               </div>
               <div>
-                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="phone">Phone
-                  Number</label>
-                <input type="tel" id="phone"
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="Phone"
                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm"
                   placeholder="Your phone number">
               </div>
               <div class="md:col-span-2">
-                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="product">Product
-                  Interest</label>
-                <select id="product"
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="product">Product Interest</label>
+                <select id="product" name="Product Interest"
                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm">
                   <option value="">Select product category</option>
                   <option value="pullovers">Pullovers</option>
@@ -1121,9 +1029,8 @@
                 </select>
               </div>
               <div class="md:col-span-2">
-                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="yarn">Preferred Yarn
-                  Type</label>
-                <select id="yarn"
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="yarn">Preferred Yarn Type</label>
+                <select id="yarn" name="Preferred Yarn"
                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm">
                   <option value="">Select yarn type</option>
                   <option value="cashmere">Cashmere</option>
@@ -1136,9 +1043,8 @@
                 </select>
               </div>
               <div class="md:col-span-2">
-                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="knitting">Knitting
-                  Technique</label>
-                <select id="knitting"
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="knitting">Knitting Technique</label>
+                <select id="knitting" name="Knitting Technique"
                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm">
                   <option value="">Select knitting technique</option>
                   <option value="flat">Flat Knitting</option>
@@ -1150,17 +1056,23 @@
                 </select>
               </div>
               <div class="md:col-span-2">
-                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="message">Project
-                  Details</label>
-                <textarea id="message" rows="4"
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="message">Project Details</label>
+                <textarea id="message" name="Message" rows="4"
                   class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent text-sm"
                   placeholder="Please provide details about your project, including quantity, yarn weight preferences, gauge requirements, color options, size breakdown, fit requirements (slim, regular, oversized), knitting technique preferences, finishing details, timeline, and any specific requirements..."></textarea>
               </div>
-              <div class="md:col-span-2 flex justify-center">
-                <button type="submit"
+              <div class="md:col-span-2">
+                <label class="block text-text-muted text-xs sm:text-sm font-medium mb-2" for="attachment">Attach Files <span class="font-normal">(Tech packs, spec sheets, images — optional)</span></label>
+                <input type="file" id="attachment" name="Attachment" multiple
+                  accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.zip"
+                  class="w-full px-3 sm:px-4 py-2 sm:py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main text-sm file:mr-3 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-accent-amber file:text-gray-900 hover:file:bg-accent-amber-dark">
+              </div>
+              <div class="md:col-span-2 flex flex-col items-center gap-3">
+                <span id="sweaterFormStatus" class="text-sm hidden"></span>
+                <button type="submit" id="sweaterSubmitBtn"
                   class="rounded-full px-6 py-2 sm:px-8 sm:py-3 flex items-center gap-2 text-xs sm:text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
-                  <span>Submit Inquiry</span>
-                  <i class="fa-regular fa-paper-plane"></i>
+                  <span id="sweaterSubmitText">Submit Inquiry</span>
+                  <i class="fa-regular fa-paper-plane" id="sweaterSubmitIcon"></i>
                 </button>
               </div>
             </form>
@@ -1187,7 +1099,7 @@
               <span>Request Samples</span>
               <i class="fa-regular fa-paper-plane"></i>
             </a>
-            <a href="https://wa.me/+8801760698817?text=Hello%20BGS%20Team%2C%20I%20would%20like%20to%20discuss%20sweater%20products."
+            <a href="https://wa.me/+8801717156302?text=Hello%20BGS%20Team%2C%20I%20would%20like%20to%20discuss%20sweater%20products."
               class="rounded-full px-3 sm:px-4 py-2 sm:py-3 flex items-center gap-2 text-xs sm:text-sm font-semibold font-montserrat uppercase tracking-widest border border-gray-900 text-gray-900 hover:bg-gray-900/10 transition-all duration-300 btn-magnetic hover:bg-green-500 hover:text-white hover:border-green-500 hover:-translate-y-1 hover:duration-300 hoveease-in-out">
               <i class="fa-brands fa-whatsapp"></i>
               <span>WhatsApp Us</span>
@@ -1234,7 +1146,7 @@
           <h4 class="text-sm font-semibold mb-2">Connect</h4>
           <ul class="space-y-1 text-text-muted text-xs sm:text-sm">
             <li>Email: info@bdbgs.com</li>
-            <li>Phone / WhatsApp: +8801760698817</li>
+            <li>Phone / WhatsApp: +8801717156302</li>
           </ul>
           <div class="flex gap-2 mt-2">
             <a href="https://www.linkedin.com/company/brothers-global-sourcing/"
@@ -1261,7 +1173,7 @@
 
   <!-- WHATSAPP FLOATING BUTTON -->
   <a class="whatsapp-float fixed right-4 bottom-4 sm:right-5 sm:bottom-5 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] flex items-center justify-center text-white text-lg sm:text-xl shadow-2xl z-40 animate-float"
-    href="https://wa.me/+8801760698817?text=Hello%20BGS%20Team%2C%20I%20would%20like%20to%20discuss%20sweater%20products."
+    href="https://wa.me/+8801717156302?text=Hello%20BGS%20Team%2C%20I%20would%20like%20to%20discuss%20sweater%20products."
     target="_blank" aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
@@ -1438,10 +1350,58 @@
     }
 
     // Form submission handling
-    document.querySelector('form').addEventListener('submit', function (e) {
+    document.getElementById('sweaterForm').addEventListener('submit', async function (e) {
       e.preventDefault();
-      alert('Thank you for your inquiry! We will get back to you shortly.');
-      this.reset();
+
+      const btn = document.getElementById('sweaterSubmitBtn');
+      const submitText = document.getElementById('sweaterSubmitText');
+      const submitIcon = document.getElementById('sweaterSubmitIcon');
+      const statusEl = document.getElementById('sweaterFormStatus');
+
+      btn.disabled = true;
+      submitText.textContent = 'Sending...';
+      submitIcon.className = 'fa-solid fa-spinner fa-spin';
+      statusEl.classList.add('hidden');
+
+      try {
+        const formData = new FormData(this);
+
+        const response = await fetch('/.netlify/functions/submit-form', {
+          method: 'POST',
+          body: formData,
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          submitText.textContent = 'Inquiry Sent!';
+          submitIcon.className = 'fa-solid fa-check';
+          btn.classList.remove('bg-accent-amber');
+          btn.classList.add('bg-green-500');
+          statusEl.textContent = "We'll get back to you within 1–2 working days.";
+          statusEl.className = 'text-sm text-green-500';
+          statusEl.classList.remove('hidden');
+          this.reset();
+
+          setTimeout(() => {
+            btn.disabled = false;
+            submitText.textContent = 'Submit Inquiry';
+            submitIcon.className = 'fa-regular fa-paper-plane';
+            btn.classList.add('bg-accent-amber');
+            btn.classList.remove('bg-green-500');
+            statusEl.classList.add('hidden');
+          }, 5000);
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (err) {
+        btn.disabled = false;
+        submitText.textContent = 'Submit Inquiry';
+        submitIcon.className = 'fa-regular fa-paper-plane';
+        statusEl.textContent = 'Something went wrong. Please email us directly at info@bdbgs.com';
+        statusEl.className = 'text-sm text-red-500';
+        statusEl.classList.remove('hidden');
+      }
     });
 
     // Touch device optimization

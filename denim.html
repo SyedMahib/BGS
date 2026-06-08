@@ -428,9 +428,9 @@
       transition: transform 0.5s ease;
     }
 
-    .gallery-item:hover img {
+    /* .gallery-item:hover img {
       transform: scale(1.1);
-    }
+    } */
 
     /* Ensure proper image display */
     .aspect-square {
@@ -943,169 +943,27 @@
           Browse our premium denim collection through our categorized visual gallery
         </p>
 
-        <!-- Category Tabs -->
-        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 md:mb-10 category-tabs" data-aos="fade-up">
-          <button class="category-tab active px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-primary text-white hover:bg-primary-dark" data-category="all">
-            All
-          </button>
-          <button class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary" data-category="jeans">
-            Jeans
-          </button>
-          <button class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary" data-category="jackets">
-            Jackets
-          </button>
-          <button class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary" data-category="shorts">
-            Shorts
-          </button>
-          <button class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary" data-category="shirts">
-            Shirts
-          </button>
-          <button class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary" data-category="fashion">
-            Fashion
-          </button>
-          <button class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft text-text hover:border-primary hover:text-primary" data-category="kids">
-            Kids
-          </button>
+        <!-- Category Tabs — injected by JS from denim.json -->
+        <div id="categoryTabs" class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 md:mb-10 category-tabs" data-aos="fade-up">
+          <!-- Tabs injected by JS -->
         </div>
 
-        <!-- Gallery Grid -->
-        <div class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
-          <!-- Jeans Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel" data-category="jeans" data-aos="fade-up" data-aos-delay="200">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                   alt="5-Pocket Jeans" 
-                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">5-Pocket Jeans</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Classic jeans in various fits including skinny, slim, and regular</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Jeans</span>
-            </div>
-          </div>
-
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel" data-category="jeans" data-aos="fade-up" data-aos-delay="250">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                   alt="Slim Fit Jeans" 
-                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Slim Fit Jeans</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Modern slim fit design with premium stretch fabric</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Jeans</span>
-            </div>
-          </div>
-
-          <!-- Jackets Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel" data-category="jackets" data-aos="fade-up" data-aos-delay="300">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                   alt="Classic Trucker Jacket" 
-                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Classic Trucker Jacket</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Iconic denim jacket with metal buttons and chest pockets</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Jackets</span>
-            </div>
-          </div>
-
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel" data-category="jackets" data-aos="fade-up" data-aos-delay="350">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                   alt="Oversized Denim Jacket" 
-                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Oversized Denim Jacket</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Fashion-forward oversized fit with distressed details</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Jackets</span>
-            </div>
-          </div>
-
-          <!-- Shorts Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel" data-category="shorts" data-aos="fade-up" data-aos-delay="400">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1582418702059-97ebafb35d09?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                   alt="Denim Bermuda Shorts" 
-                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Denim Bermuda Shorts</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Knee-length shorts perfect for casual summer wear</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Shorts</span>
-            </div>
-          </div>
-
-          <!-- Shirts Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel" data-category="shirts" data-aos="fade-up" data-aos-delay="450">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                   alt="Western Denim Shirt" 
-                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Western Denim Shirt</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Classic western style with pearl snap buttons</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Shirts</span>
-            </div>
-          </div>
-
-          <!-- Fashion Denim Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel" data-category="fashion" data-aos="fade-up" data-aos-delay="500">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1511193311914-034c8c8a8f16?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                   alt="Embroidered Denim" 
-                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Embroidered Denim</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Artistic embroidered patterns on premium denim</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Fashion</span>
-            </div>
-          </div>
-
-          <!-- Kids Denim Category -->
-          <div class="gallery-item group relative overflow-hidden rounded-2xl border border-border-soft bg-bg-panel" data-category="kids" data-aos="fade-up" data-aos-delay="550">
-            <div class="aspect-square overflow-hidden bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1519241675-7b8a8accf1ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                   alt="Kids Denim Overalls" 
-                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-            </div>
-            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="absolute bottom-0 left-0 right-0 p-3 sm:p-5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <h3 class="text-white font-semibold text-sm sm:text-lg mb-1">Kids Denim Overalls</h3>
-              <p class="text-white/80 text-xs sm:text-sm">Durable and playful overalls for children</p>
-            </div>
-            <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
-              <span class="px-2 py-1 sm:px-3 sm:py-1 rounded-full bg-primary/90 text-white text-xs font-medium">Kids</span>
-            </div>
-          </div>
+        <!-- Gallery Grid — injected by JS from denim.json -->
+        <div id="galleryGrid" class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+          <!-- Skeleton loaders -->
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
         </div>
 
-        <!-- View More Button -->
+        <!-- Empty state -->
+        <div id="galleryEmpty" class="hidden text-center py-16 text-text-muted">
+          <i class="fa-solid fa-image text-4xl mb-4 opacity-30"></i>
+          <p class="text-sm">No products found in this category yet.</p>
+        </div>
+
+        <!-- View All Button -->
         <div class="text-center mt-8 sm:mt-12" data-aos="fade-up">
           <button class="view-all-btn px-6 py-2 sm:px-8 sm:py-3 rounded-full font-medium bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 text-sm sm:text-base">
             View All Products
@@ -1437,66 +1295,112 @@
       link.addEventListener('click', closeMobileMenu);
     });
 
-    // Gallery filtering functionality
-    const tabs = document.querySelectorAll('.category-tab');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+    // =============================================
+    // DYNAMIC GALLERY — powered by denim.json
+    // =============================================
+
+    let allProducts = [];
+    let allCategories = [];
+
+    const tabsContainer = document.getElementById('categoryTabs');
+    const galleryGrid = document.getElementById('galleryGrid');
+    const galleryEmpty = document.getElementById('galleryEmpty');
     const viewAllBtn = document.querySelector('.view-all-btn');
 
-    // Filter function
-    function filterGallery(category) {
-      galleryItems.forEach(item => {
-        if (category === 'all' || item.dataset.category === category) {
-          item.style.display = 'block';
-          setTimeout(() => {
-            item.style.opacity = '1';
-            item.style.transform = 'scale(1)';
-          }, 50);
-        } else {
-          item.style.opacity = '0';
-          item.style.transform = 'scale(0.8)';
-          setTimeout(() => {
-            item.style.display = 'none';
-          }, 300);
-        }
+    function buildCard(product) {
+      const catLabel = allCategories.find(c => c.id === product.category)?.label || product.category;
+      return `
+        <div class="gallery-item group rounded-2xl border border-border-soft overflow-hidden flex flex-col"
+             data-category="${product.category}"
+             data-aos="fade-up">
+          <div class="relative w-full bg-white" style="height: 320px;">
+            <img
+              src="${product.image}"
+              alt="${product.title}"
+              loading="lazy"
+              style="width:100%; height:100%; object-fit:contain; display:block; padding: 8px;"
+            >
+            <div class="absolute top-3 right-3">
+              <span class="px-2 py-1 rounded-full bg-primary/90 text-white text-xs font-medium">${catLabel}</span>
+            </div>
+          </div>
+          <div class="bg-bg-panel px-4 py-3">
+            <h3 class="text-text-main font-semibold text-sm">${product.title}</h3>
+          </div>
+        </div>`;
+    }
+
+    function renderGallery(category) {
+      const filtered = category === 'all'
+        ? allProducts
+        : allProducts.filter(p => p.category === category);
+
+      if (filtered.length === 0) {
+        galleryGrid.innerHTML = '';
+        galleryEmpty.classList.remove('hidden');
+      } else {
+        galleryEmpty.classList.add('hidden');
+        galleryGrid.innerHTML = filtered.map(buildCard).join('');
+        if (typeof AOS !== 'undefined') AOS.refreshHard();
+      }
+    }
+
+    function setActiveTab(category) {
+      document.querySelectorAll('.category-tab').forEach(tab => {
+        const isActive = tab.dataset.category === category;
+        tab.classList.toggle('active', isActive);
+        tab.classList.toggle('bg-primary', isActive);
+        tab.classList.toggle('text-white', isActive);
+        tab.classList.toggle('bg-bg-panel', !isActive);
+        tab.classList.toggle('border', !isActive);
+        tab.classList.toggle('border-border-soft', !isActive);
       });
     }
 
-    // Tab click event
-    tabs.forEach(tab => {
-      tab.addEventListener('click', function() {
-        const category = this.dataset.category;
-        
-        // Update active tab
-        tabs.forEach(t => {
-          t.classList.remove('active');
-          t.classList.add('bg-bg-panel', 'border', 'border-border-soft', 'text-text');
-          t.classList.remove('bg-primary', 'text-white');
-        });
-        
-        this.classList.add('active');
-        this.classList.remove('bg-bg-panel', 'border-border-soft', 'text-text');
-        this.classList.add('bg-primary', 'text-white');
-        
-        // Filter gallery
-        filterGallery(category);
-      });
-    });
+    function renderTabs(categories) {
+      const allBtn = `
+        <button class="category-tab active px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-primary text-white hover:bg-primary-dark" data-category="all">
+          All
+        </button>`;
+      const catBtns = categories.map(cat => `
+        <button class="category-tab px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-medium text-xs sm:text-sm transition-all duration-300 bg-bg-panel border border-border-soft hover:border-primary hover:text-white" data-category="${cat.id}">
+          ${cat.label}
+        </button>`).join('');
 
-    // View All button event
-    if (viewAllBtn) {
-      viewAllBtn.addEventListener('click', function() {
-        // Reset to "All Products"
-        tabs.forEach(t => {
-          t.classList.remove('active');
-          t.classList.add('bg-bg-panel', 'border', 'border-border-soft', 'text-text');
-          t.classList.remove('bg-primary', 'text-white');
+      tabsContainer.innerHTML = allBtn + catBtns;
+
+      tabsContainer.querySelectorAll('.category-tab').forEach(tab => {
+        tab.addEventListener('click', function () {
+          setActiveTab(this.dataset.category);
+          renderGallery(this.dataset.category);
         });
-        
-        tabs[0].classList.add('active');
-        tabs[0].classList.remove('bg-bg-panel', 'border-border-soft', 'text-text');
-        tabs[0].classList.add('bg-primary', 'text-white');
-        
-        filterGallery('all');
+      });
+    }
+
+    fetch('/denim.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Could not load denim.json — status ' + res.status);
+        return res.json();
+      })
+      .then(data => {
+        allProducts = data.products || [];
+        allCategories = data.categories || [];
+        renderTabs(allCategories);
+        renderGallery('all');
+      })
+      .catch(err => {
+        console.error('Gallery load error:', err);
+        galleryGrid.innerHTML = `
+          <div class="col-span-full text-center py-16 text-text-muted">
+            <i class="fa-solid fa-triangle-exclamation text-3xl mb-4 text-accent-amber opacity-70"></i>
+            <p class="text-sm">Gallery could not be loaded. Please check that <code class="bg-bg-panel px-1 rounded">denim.json</code> is in the root of your site.</p>
+          </div>`;
+      });
+
+    if (viewAllBtn) {
+      viewAllBtn.addEventListener('click', function () {
+        setActiveTab('all');
+        renderGallery('all');
       });
     }
 

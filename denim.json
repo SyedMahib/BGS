@@ -1,0 +1,116 @@
+{
+  "categories": [
+    {
+      "id": "denimAccessories",
+      "label": "Accessories"
+    },
+    {
+      "id": "denimDresses",
+      "label": "Dresses"
+    },
+    {
+      "id": "denimJackets",
+      "label": "Jackets"
+    },
+    {
+      "id": "denimJeans",
+      "label": "Jeans"
+    },
+    {
+      "id": "denimOverallsDungarees",
+      "label": "Overalls & Dungarees"
+    },
+    {
+      "id": "denimPantsTrousers",
+      "label": "Pants & Trousers"
+    },
+    {
+      "id": "denimShirts",
+      "label": "Shirts"
+    },
+    {
+      "id": "denimShorts",
+      "label": "Shorts"
+    },
+    {
+      "id": "denimSkirts",
+      "label": "Skirts"
+    },
+    {
+      "id": "denimWorkWears",
+      "label": "Work Wears"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "denimAccessories",
+      "title": "Denim Accessories",
+      "description": "100% combed cotton, 180 GSM, ring-spun fabric",
+      "image": "https://i.ibb.co.com/HDpKxpy4/Denim-Accessories.png"
+    },
+    {
+      "id": 2,
+      "category": "denimDresses",
+      "title": "Denim Dresses",
+      "description": "GOTS certified organic cotton, sustainable production",
+      "image": "https://i.ibb.co.com/gMX7CR9C/Denim-Dresses.png"
+    },
+    {
+      "id": 3,
+      "category": "denimJackets",
+      "title": "Denim Jackets",
+      "description": "Moisture-wicking polyester blend, athletic cut",
+      "image": "https://i.ibb.co.com/ZzHtv98m/Denim-Jackets.png"
+    },
+    {
+      "id": 4,
+      "category": "denimJeans",
+      "title": "Denim Jeans",
+      "description": "Pique knit fabric, ribbed collar, three-button placket",
+      "image": "https://i.ibb.co.com/LdXrXdq1/Denim-Jeans.png"
+    },
+    {
+      "id": 5,
+      "category": "denimOverallsDungarees",
+      "title": "Denim Overalls & Dungarees",
+      "description": "Moisture-wicking fabric, UV protection, athletic fit",
+      "image": "https://i.ibb.co.com/Tx0gP5YW/Denim-Overalls-Dungarees.png"
+    },
+    {
+      "id": 6,
+      "category": "denimPantsTrousers",
+      "title": "Denim Pants & Trousers",
+      "description": "Structured pique knit, embroidery-ready, office-suitable fit",
+      "image": "https://i.ibb.co.com/yBmtgkb0/Denim-Pants-Trousers.png"
+    },
+    {
+      "id": 7,
+      "category": "denimShirts",
+      "title": "Denim Shirts",
+      "description": "280 GSM French terry, brushed interior for warmth",
+      "image": "https://i.ibb.co.com/yBP6pfB2/Denim-Shirts.png"
+    },
+    {
+      "id": 8,
+      "category": "denimShorts",
+      "title": "Denim Shorts",
+      "description": "Classic crewneck, 300 GSM cotton-polyester blend",
+      "image": "https://i.ibb.co.com/wh71rQx7/Denim-Shorts.png"
+    },
+    {
+      "id": 9,
+      "category": "denimSkirts",
+      "title": "Denim Skirts",
+      "description": "Cotton-polyester blend, kangaroo pocket, adjustable drawstrings",
+      "image": "https://i.ibb.co.com/LdD5qy0X/Denim-Skirts.png"
+    },
+    {
+      "id": 10,
+      "category": "denimWorkWears",
+      "title": "Denim Work Wears",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/gL4nckPt/Denim-Work-Wears.png"
+    }
+  ]
+}

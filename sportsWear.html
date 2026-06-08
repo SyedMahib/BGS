@@ -1101,26 +1101,26 @@
               Share your sportswear and athleisure requirements and we'll provide factory options, samples, and competitive pricing.
             </p>
 
-            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6" id="sportsForm" enctype="multipart/form-data">
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="name">Full Name</label>
-                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your full name">
+                <input type="text" id="name" name="Name" required class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your full name">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="email">Email Address</label>
-                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your email address">
+                <input type="email" id="email" name="Email" required class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your email address">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="company">Company Name</label>
-                <input type="text" id="company" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your company name">
+                <input type="text" id="company" name="Company" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your company name">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="phone">Phone Number</label>
-                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your phone number">
+                <input type="tel" id="phone" name="Phone" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your phone number">
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="product">Product Interest</label>
-                <select id="product" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
+                <select id="product" name="Product Interest" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
                   <option value="">Select product category</option>
                   <option value="joggers">Joggers & Training Pants</option>
                   <option value="hoodies">Hoodies & Sweatshirts</option>
@@ -1133,7 +1133,7 @@
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="performance">Performance Level</label>
-                <select id="performance" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
+                <select id="performance" name="Performance Level" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
                   <option value="">Select performance level</option>
                   <option value="basic">Basic Level</option>
                   <option value="performance">Performance Level</option>
@@ -1143,7 +1143,7 @@
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="technology">Key Technologies Needed</label>
-                <select id="technology" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
+                <select id="technology" name="Key Technologies" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
                   <option value="">Select key technologies</option>
                   <option value="moisture">Moisture-Wicking</option>
                   <option value="stretch">4-Way Stretch</option>
@@ -1155,12 +1155,19 @@
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="message">Project Details</label>
-                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Please provide details about your project, including quantity, performance requirements, technology preferences, design specifications, timeline, and any specific requirements..."></textarea>
+                <textarea id="message" name="Message" rows="4" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Please provide details about your project, including quantity, performance requirements, technology preferences, design specifications, timeline, and any specific requirements..."></textarea>
               </div>
-              <div class="md:col-span-2 flex justify-center">
-                <button type="submit" class="rounded-full px-8 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
-                  <span>Submit Inquiry</span>
-                  <i class="fa-regular fa-paper-plane"></i>
+              <div class="md:col-span-2">
+                <label class="block text-text-muted text-sm font-medium mb-2" for="attachment">Attach Files <span class="font-normal">(Tech packs, spec sheets, images — optional)</span></label>
+                <input type="file" id="attachment" name="Attachment" multiple
+                  accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.zip"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main text-sm file:mr-3 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-accent-amber file:text-gray-900 hover:file:bg-accent-amber-dark">
+              </div>
+              <div class="md:col-span-2 flex flex-col items-center gap-3">
+                <span id="sportsFormStatus" class="text-sm hidden"></span>
+                <button type="submit" id="sportsSubmitBtn" class="rounded-full px-8 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
+                  <span id="sportsSubmitText">Submit Inquiry</span>
+                  <i class="fa-regular fa-paper-plane" id="sportsSubmitIcon"></i>
                 </button>
               </div>
             </form>

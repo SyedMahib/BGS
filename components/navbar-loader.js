@@ -25,7 +25,7 @@
     ? scriptTag.src.replace('navbar-loader.js', '')
     : '/components/';
 
-  fetch(basePath + 'navbar.html')
+  fetch(basePath + 'navbar.html?v=' + Date.now())
     .then(function (res) {
       if (!res.ok) throw new Error('Could not load navbar: ' + res.status);
       return res.text();

@@ -1,0 +1,110 @@
+{
+  "categories": [
+    {
+      "id": "mensTrainingTeamwear",
+      "label": "Men's Training & Teamwear"
+    },
+    {
+      "id": "womensGymStudio",
+      "label": "Women's Gym & Studio"
+    },
+    {
+      "id": "outdoorFitnessRunning",
+      "label": "Outdoor Fitness & Running"
+    },
+    {
+      "id": "tracksuitsAthleisure",
+      "label": "Tracksuits & Athleisure"
+    },
+    {
+      "id": "specialtyModestActivewear",
+      "label": "Specialty & Modest Activewear"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "mensTrainingTeamwear",
+      "title": "Football/Soccer Kit",
+      "description": "Breathable polyester mesh, moisture-wicking technology, lightweight match fit",
+      "image": "https://i.ibb.co.com/gLZFdDHk/1.png"
+    },
+    {
+      "id": 2,
+      "category": "tracksuitsAthleisure",
+      "title": "Tracksuit",
+      "description": "Premium 1/4 zip pullover and matching track pants with contrast side panels",
+      "image": "https://i.ibb.co.com/ds3pj4rK/2.png"
+    },
+    {
+      "id": 3,
+      "category": "mensTrainingTeamwear",
+      "title": "Sleeveless Training Kit",
+      "description": "Sleeveless tank and shorts combo featuring a sublimation halftone dot design",
+      "image": "https://i.ibb.co.com/gbqPSFf2/3.png"
+    },
+    {
+      "id": 4,
+      "category": "outdoorFitnessRunning",
+      "title": "Running/Training Set",
+      "description": "Quick-dry performance t-shirt with reflective accents and lightweight running shorts",
+      "image": "https://i.ibb.co.com/RkK2dLVD/4.png"
+    },
+    {
+      "id": 5,
+      "category": "tracksuitsAthleisure",
+      "title": "Loungewear / Training Set",
+      "description": "Soft melange heathered crewneck tee paired with tapered athletic joggers",
+      "image": "https://i.ibb.co.com/qMNYB3Bv/5.png"
+    },
+    {
+      "id": 6,
+      "category": "specialtyModestActivewear",
+      "title": "Modest Athletic Wear",
+      "description": "Full-coverage sports suit featuring a scoop neck top, athletic skirt, and flare pants",
+      "image": "https://i.ibb.co.com/8n3JQ212/6.png"
+    },
+    {
+      "id": 7,
+      "category": "mensTrainingTeamwear",
+      "title": "Sleeveless Jersey Kit",
+      "description": "Vibrant sleeveless compression top with abstract geometric graphics and matching shorts",
+      "image": "https://i.ibb.co.com/hRnGMSBM/7.png"
+    },
+    {
+      "id": 8,
+      "category": "womensGymStudio",
+      "title": "Activewear Tank and Leggings Set",
+      "description": "Loose-fit racerback gym tank paired with high-waisted graphic compression leggings",
+      "image": "https://i.ibb.co.com/NdFj8qR6/8.png"
+    },
+    {
+      "id": 9,
+      "category": "womensGymStudio",
+      "title": "Yoga / Gym Set",
+      "description": "Low-impact scoop-neck sports bra and matching high-waisted pastel yoga pants",
+      "image": "https://i.ibb.co.com/V0DM14rf/9.png"
+    },
+    {
+      "id": 10,
+      "category": "womensGymStudio",
+      "title": "Performance Sports Bra and Leggings Set",
+      "description": "High-support supportive racerback bra and premium black compression tights",
+      "image": "https://i.ibb.co.com/KpZJ7nbY/10.png"
+    },
+    {
+      "id": 11,
+      "category": "outdoorFitnessRunning",
+      "title": "Women's Training Jacket and Leggings Set",
+      "description": "Slim-fit full-zip mock neck jacket with utility pockets and high-rise running tights",
+      "image": "https://i.ibb.co.com/21g4rCYd/11.png"
+    },
+    {
+      "id": 12,
+      "category": "outdoorFitnessRunning",
+      "title": "Women's Layered Cold-Weather Set",
+      "description": "Weather-resistant athletic vest paired with a thumbhole long-sleeve top and leggings",
+      "image": "https://i.ibb.co.com/9mTxfCnB/12.png"
+    }
+  ]
+}

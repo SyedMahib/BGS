@@ -1,0 +1,162 @@
+{
+  "categories": [
+    {
+      "id": "outdoorIndoorWorkWears",
+      "label": "Outdoor-Indoor Work Wears"
+    },
+    {
+      "id": "medicalUniforms",
+      "label": "Medical Uniforms"
+    },
+    {
+      "id": "chefsGowns",
+      "label": "Chefs Gowns"
+    },
+    {
+      "id": "schoolUniforms",
+      "label": "School Uniforms"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "outdoorIndoorWorkWears",
+      "title": "Outdoor-Indoor Work Wears",
+      "description": "100% combed cotton, 180 GSM, ring-spun fabric",
+      "image": "https://i.ibb.co.com/r2JSmVpK/1.png"
+    },
+    {
+      "id": 2,
+      "category": "outdoorIndoorWorkWears",
+      "title": "Outdoor-Indoor Work Wears",
+      "description": "GOTS certified organic cotton, sustainable production",
+      "image": "https://i.ibb.co.com/6JVK2vkM/2.png"
+    },
+    {
+      "id": 3,
+      "category": "outdoorIndoorWorkWears",
+      "title": "Outdoor-Indoor Work Wears",
+      "description": "Moisture-wicking polyester blend, athletic cut",
+      "image": "https://i.ibb.co.com/nMVtwZRN/3.png"
+    },
+    {
+      "id": 4,
+      "category": "outdoorIndoorWorkWears",
+      "title": "Outdoor-Indoor Work Wears",
+      "description": "Pique knit fabric, ribbed collar, three-button placket",
+      "image": "https://i.ibb.co.com/5xjM3277/4.png"
+    },
+    {
+      "id": 5,
+      "category": "outdoorIndoorWorkWears",
+      "title": "Outdoor-Indoor Work Wears",
+      "description": "Moisture-wicking fabric, UV protection, athletic fit",
+      "image": "https://i.ibb.co.com/rKhhX4yx/5.png"
+    },
+    {
+      "id": 6,
+      "category": "outdoorIndoorWorkWears",
+      "title": "Outdoor-Indoor Work Wears",
+      "description": "Structured pique knit, embroidery-ready, office-suitable fit",
+      "image": "https://i.ibb.co.com/sfs9YM6/6.png"
+    },
+    {
+      "id": 7,
+      "category": "medicalUniforms",
+      "title": "Medical Uniforms",
+      "description": "280 GSM French terry, brushed interior for warmth",
+      "image": "https://i.ibb.co.com/jv1YyHzJ/Doctor-s-Gown.png"
+    },
+    {
+      "id": 8,
+      "category": "medicalUniforms",
+      "title": "Medical Uniforms",
+      "description": "Classic crewneck, 300 GSM cotton-polyester blend",
+      "image": "https://i.ibb.co.com/jv1YyHzJ/Doctor-s-Gown.png"
+    },
+    {
+      "id": 9,
+      "category": "medicalUniforms",
+      "title": "Medical Uniforms",
+      "description": "Cotton-polyester blend, kangaroo pocket, adjustable drawstrings",
+      "image": "https://i.ibb.co.com/r27G9tTR/Doctor-s-Scrub-2.png"
+    },
+    {
+      "id": 10,
+      "category": "medicalUniforms",
+      "title": "Medical Uniforms",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/KjKgbnL7/Doctor-s-Scrub-3.png"
+    },
+     {
+      "id": 11,
+      "category": "medicalUniforms",
+      "title": "Medical Uniforms",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/WvW7H6Sh/Nurse-Uniform-3.png"
+    },
+     {
+      "id": 12,
+      "category": "medicalUniforms",
+      "title": "Medical Uniforms",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/YTZcMkbc/Nurse-Uniform-4.png"
+    },
+     {
+      "id": 13,
+      "category": "chefsGowns",
+      "title": "Chefs Gowns",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/gbkCgbFF/1.png"
+    },
+     {
+      "id": 14,
+      "category": "chefsGowns",
+      "title": "Chefs Gowns",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/sv48dd8n/2.png"
+    },
+     {
+      "id": 15,
+      "category": "chefsGowns",
+      "title": "Chefs Gowns",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/nq8c3Svs/3.png"
+     },
+     {
+      "id": 16,
+      "category": "chefsGowns",
+      "title": "Chefs Gowns",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/S4vYLFPM/4.png"
+     },
+     {
+      "id": 17,
+      "category": "schoolUniforms",
+      "title": "School Uniforms",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/Vcf8VPT7/School-Uniform-1.png"
+     },
+     {
+      "id": 18,
+      "category": "schoolUniforms",
+      "title": "School Uniforms",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/G37gtFvY/School-Uniform-2.png"
+     },
+     {
+      "id": 19,
+      "category": "schoolUniforms",
+      "title": "School Uniforms",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/sMC7n8d/School-Uniform-3.png"
+     },
+     {
+      "id": 20,
+      "category": "schoolUniforms",
+      "title": "School Uniforms",
+      "description": "Full-zip closure, fleece-lined, ribbed cuffs and hem",
+      "image": "https://i.ibb.co.com/4q9GsrB/School-Uniform-4.png"
+     }
+  ]
+}

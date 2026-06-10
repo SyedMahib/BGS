@@ -1292,11 +1292,64 @@
     }
 
     // Form submission handling
-    document.querySelector('form').addEventListener('submit', function(e) {
+    document.getElementById('sportsForm').addEventListener('submit', async function (e) {
       e.preventDefault();
-      alert('Thank you for your inquiry! We will get back to you shortly.');
-      this.reset();
+
+      const btn = document.getElementById('sportsSubmitBtn');
+      const submitText = document.getElementById('sportsSubmitText');
+      const submitIcon = document.getElementById('sportsSubmitIcon');
+      const statusEl = document.getElementById('sportsFormStatus');
+
+      btn.disabled = true;
+      submitText.textContent = 'Sending...';
+      submitIcon.className = 'fa-solid fa-spinner fa-spin';
+      statusEl.classList.add('hidden');
+
+      try {
+        const formData = new FormData(this);
+
+        const response = await fetch('/.netlify/functions/submit-form', {
+          method: 'POST',
+          body: formData,
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          submitText.textContent = 'Inquiry Sent!';
+          submitIcon.className = 'fa-solid fa-check';
+          btn.classList.remove('bg-accent-amber');
+          btn.classList.add('bg-green-500');
+          statusEl.textContent = "We'll get back to you within 1–2 working days.";
+          statusEl.className = 'text-sm text-green-500';
+          statusEl.classList.remove('hidden');
+          this.reset();
+
+          setTimeout(() => {
+            btn.disabled = false;
+            submitText.textContent = 'Submit Inquiry';
+            submitIcon.className = 'fa-regular fa-paper-plane';
+            btn.classList.add('bg-accent-amber');
+            btn.classList.remove('bg-green-500');
+            statusEl.classList.add('hidden');
+          }, 5000);
+        } else {
+          throw new Error('Submission failed');
+        }
+      } catch (err) {
+        btn.disabled = false;
+        submitText.textContent = 'Submit Inquiry';
+        submitIcon.className = 'fa-regular fa-paper-plane';
+        statusEl.textContent = 'Something went wrong. Please email us directly at info@bdbgs.com';
+        statusEl.className = 'text-sm text-red-500';
+        statusEl.classList.remove('hidden');
+      }
     });
+
+    // Touch device optimization
+    if ('ontouchstart' in window) {
+      document.body.classList.add('touch-device');
+    }
   </script>
 </body>
 

@@ -20,6 +20,21 @@
     width: 65%;
   }
 
+  .link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #D99E3F;
+    transition: width 0.25s ease;
+  }
+
+  .link:hover::after {
+    width: 65%;
+  }
+
   /* ── Products Dropdown (Desktop) ── */
   .nav-dropdown {
     position: relative;
@@ -326,8 +341,8 @@
               </div>
             </div>
 
-            <a href="/#factories" class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Factories</a>
-            <a href="/#sustainability" class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Sustainability</a>
+            <a href="/#factories" class="link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Factories</a>
+            <a href="/#sustainability" class="link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Sustainability</a>
             <a href="/ContactUs.html" class="nav-link relative pb-1 text-text-muted font-medium hover:text-white transition-colors">Contact</a>
           </div>
 

@@ -40,6 +40,12 @@
 
       placeholder.innerHTML = htmlWithoutScripts;
 
+      // Set live copyright year
+      const yearEl = placeholder.querySelector('#bgs-footer-year');
+      if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+      }
+
       // Re-run any scripts after injection
       scriptContents.forEach(function (content) {
         const script = document.createElement('script');

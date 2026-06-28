@@ -777,6 +777,39 @@
       margin-bottom: 0.5rem;
     }
 
+    .feature-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: rgba(217, 158, 63, 0.2);
+      border: 1px solid rgba(217, 158, 63, 0.3);
+      border-radius: 20px;
+      font-size: 0.75rem;
+      color: #D99E3F;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .durability-level {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      font-size: 0.875rem;
+    }
+
+    .level-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .level-standard { background: #4CAF50; }
+    .level-mid      { background: #FF9800; }
+    .level-premium  { background: #D99E3F; }
+
     .sweater-gradient {
       background: linear-gradient(135deg, #2a1a1a 0%, #1a0a0a 100%);
     }
@@ -975,6 +1008,139 @@
             <i class="fa-solid fa-arrow-right ml-2"></i>
           </button>
         </div> -->
+      </div>
+    </section>
+
+    <!-- YARN & FABRIC SECTION -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Advanced Sweater Yarns</h2>
+        <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
+          We work with a curated range of premium yarns selected for warmth, softness, stitch definition, and long-term wear performance across all sweater styles.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-crown text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Cashmere & Cashmere Blends</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Pure 2-ply and 4-ply cashmere, and cashmere-merino blends offering exceptional softness, warmth, and a lightweight luxurious feel.
+            </p>
+            <div class="feature-badge">Ultra-Soft</div>
+            <div class="feature-badge">Lightweight</div>
+            <div class="feature-badge">Luxury</div>
+          </div>
+
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-mountain text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Merino & Wool Blends</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Fine merino wool and wool-acrylic blends that provide excellent elasticity, warmth retention, and superior stitch definition for structured knits.
+            </p>
+            <div class="feature-badge">Warm</div>
+            <div class="feature-badge">Elastic</div>
+            <div class="feature-badge">Shape-Holding</div>
+          </div>
+
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-leaf text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Alpaca & Natural Fibres</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Baby alpaca and alpaca-wool blends with a naturally hypoallergenic, silky texture — ideal for premium and eco-conscious sweater collections.
+            </p>
+            <div class="feature-badge">Hypoallergenic</div>
+            <div class="feature-badge">Natural</div>
+            <div class="feature-badge">Silky Drape</div>
+          </div>
+
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-recycle text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Cotton & Recycled Blends</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Cotton-acrylic and recycled fibre blends offering affordability, easy care, and colour vibrancy — suited for casual and high-volume sweater programs.
+            </p>
+            <div class="feature-badge">Easy Care</div>
+            <div class="feature-badge">Colourfast</div>
+            <div class="feature-badge">Sustainable</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALITY TIERS SECTION -->
+    <section class="py-16 bg-bg-panel-soft">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Sweater Quality Tiers</h2>
+        <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
+          We produce sweaters across three quality tiers to match your brand's positioning, target price point, and production volume requirements.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Essential Knits</h3>
+              <div class="durability-level">
+                <div class="level-dot level-standard"></div>
+                <span>Standard</span>
+              </div>
+            </div>
+            <p class="text-text-muted text-sm mb-4">
+              Well-constructed sweaters in acrylic, cotton, or wool blends built for everyday wear and high-volume programs with consistent quality and clean finishing.
+            </p>
+            <div class="text-text-muted text-sm">
+              <strong>Best For:</strong> Mass retail, branded basics, corporate gifting, seasonal collections
+            </div>
+            <div class="mt-4 text-text-muted text-sm">
+              <strong>Features:</strong> Machine washable yarns, standard gauge knitting, linked seams, accurate sizing
+            </div>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Premium Knitwear</h3>
+              <div class="durability-level">
+                <div class="level-dot level-mid"></div>
+                <span>Mid-Range</span>
+              </div>
+            </div>
+            <p class="text-text-muted text-sm mb-4">
+              Elevated construction using merino, wool blends, or fine cotton yarns with superior stitch detail, refined finishing, and a noticeably better hand feel.
+            </p>
+            <div class="text-text-muted text-sm">
+              <strong>Best For:</strong> Fashion retail, lifestyle brands, private label, mid-premium collections
+            </div>
+            <div class="mt-4 text-text-muted text-sm">
+              <strong>Features:</strong> Fine gauge options, hand-linked seams, garment washing, woven care labels
+            </div>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="400">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Luxury Sweaters</h3>
+              <div class="durability-level">
+                <div class="level-dot level-premium"></div>
+                <span>Luxury</span>
+              </div>
+            </div>
+            <p class="text-text-muted text-sm mb-4">
+              The finest sweater construction using pure cashmere, baby alpaca, or top-grade merino with hand-finishing, full-fashion shaping, and bespoke detailing.
+            </p>
+            <div class="text-text-muted text-sm">
+              <strong>Best For:</strong> Designer labels, luxury retail, capsule collections, high-end gifting programs
+            </div>
+            <div class="mt-4 text-text-muted text-sm">
+              <strong>Features:</strong> Full-fashion knitting, hand finishing, custom yarn sourcing, premium packaging
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

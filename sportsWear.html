@@ -296,14 +296,14 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3));
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
     }
 
     .product-badge {
       position: absolute;
       top: 12px;
       left: 12px;
-      background: rgba(0,0,0,0.7);
+      background: rgba(0, 0, 0, 0.7);
       color: white;
       padding: 4px 8px;
       border-radius: 4px;
@@ -577,7 +577,9 @@
     }
 
     /* Loader styles */
-    .page-loader { backdrop-filter: blur(10px); }
+    .page-loader {
+      backdrop-filter: blur(10px);
+    }
 
     .loader-spinner {
       width: 50px;
@@ -589,7 +591,11 @@
       margin: 0 auto 1rem;
     }
 
-    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
     .tech-badge {
       display: inline-block;
@@ -634,9 +640,17 @@
       border-radius: 50%;
     }
 
-    .level-basic { background: #4CAF50; }
-    .level-performance { background: #FF9800; }
-    .level-elite { background: #F44336; }
+    .level-basic {
+      background: #4CAF50;
+    }
+
+    .level-performance {
+      background: #FF9800;
+    }
+
+    .level-elite {
+      background: #F44336;
+    }
   </style>
 </head>
 
@@ -668,14 +682,17 @@
 
       <div class="container mx-auto px-4 sm:px-6 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
-          <div class="inline-block mb-4 px-4 py-1 rounded-full bg-accent-amber/20 border border-accent-amber/30 text-accent-amber text-sm font-medium">
+          <div
+            class="inline-block mb-4 px-4 py-1 rounded-full bg-accent-amber/20 border border-accent-amber/30 text-accent-amber text-sm font-medium">
             SPORTSWEAR & ATHLEISURE
           </div>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold font-montserrat leading-tight mb-4" data-aos="fade-up">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold font-montserrat leading-tight mb-4"
+            data-aos="fade-up">
             Performance & Style Combined
           </h1>
           <p class="text-text-muted text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-            Joggers, hoodies, tracksuits, and performance tops developed with comfort, movement, and modern athleisure design in mind.
+            Joggers, hoodies, tracksuits, and performance tops developed with comfort, movement, and modern athleisure
+            design in mind.
           </p>
           <div class="mt-8 flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
             <a href="#inquiry"
@@ -696,15 +713,24 @@
     <!-- PRODUCT OVERVIEW -->
     <section class="py-16">
       <div class="container mx-auto px-4 sm:px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Left Column - Only Text Content -->
           <div data-aos="fade-right">
-            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-6 gradient-underline">Performance-Driven Activewear</h2>
+            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-6 gradient-underline">Performance-Driven
+              Activewear</h2>
             <p class="text-text-muted mb-6">
-              Our sportswear and athleisure collection combines cutting-edge performance technologies with contemporary fashion aesthetics, creating garments that perform during workouts while maintaining style for everyday wear.
+              Our sportswear and athleisure collection combines cutting-edge performance technologies with contemporary
+              fashion aesthetics, creating garments that perform during workouts while maintaining style for everyday
+              wear.
             </p>
-            <p class="text-text-muted mb-8">
-              We specialize in creating activewear that moves with your body, wicks moisture, and provides maximum comfort whether you're training hard or enjoying casual activities.
+            <p class="text-text-muted">
+              We specialize in creating activewear that moves with your body, wicks moisture, and provides maximum
+              comfort whether you're training hard or enjoying casual activities.
             </p>
+          </div>
+
+          <!-- Right Column - Only the 4 Feature Cards -->
+          <div data-aos="fade-left">
             <div class="grid md:grid-cols-2 gap-4">
               <div class="product-feature">
                 <div class="sport-feature-icon">
@@ -744,37 +770,6 @@
               </div>
             </div>
           </div>
-          <div data-aos="fade-left" class="relative">
-            <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft">
-              <h3 class="text-xl font-semibold mb-4">Product Specifications</h3>
-              <table class="spec-table">
-                <tr>
-                  <td>Product Types</td>
-                  <td>Joggers, Hoodies, Tracksuits, Performance Wear</td>
-                </tr>
-                <tr>
-                  <td>Fabric Technologies</td>
-                  <td>Moisture-wicking, Stretch, Breathable, Quick-dry</td>
-                </tr>
-                <tr>
-                  <td>Performance Levels</td>
-                  <td>Basic, Performance, Elite</td>
-                </tr>
-                <tr>
-                  <td>Minimum Order</td>
-                  <td>300 pieces per style/color</td>
-                </tr>
-                <tr>
-                  <td>Production Time</td>
-                  <td>30-45 days after sample approval</td>
-                </tr>
-                <tr>
-                  <td>Sizes Available</td>
-                  <td>XS-3XL, or as per customer specification</td>
-                </tr>
-              </table>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -782,8 +777,10 @@
     <!-- PRODUCT CATEGORIES GALLERY -->
     <section id="products" class="py-16 bg-bg-panel-soft">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Sportswear Product Gallery</h2>
-        <p class="text-text-muted max-w-2xl mx-auto text-center mb-8 md:mb-12" data-aos="fade-down" data-aos-delay="100">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center"
+          data-aos="fade-down">Sportswear Product Gallery</h2>
+        <p class="text-text-muted max-w-2xl mx-auto text-center mb-8 md:mb-12" data-aos="fade-down"
+          data-aos-delay="100">
           Browse our sportswear and athleisure collection through our categorized visual gallery
         </p>
 
@@ -820,26 +817,30 @@
     <!-- FABRIC TECHNOLOGIES SECTION -->
     <section class="py-16">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Advanced Fabric Technologies</h2>
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center"
+          data-aos="fade-down">Advanced Fabric Technologies</h2>
         <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
           We utilize cutting-edge fabric technologies to create sportswear that performs at the highest level.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="200">
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up"
+            data-aos-delay="200">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-droplet text-gray-900"></i>
             </div>
             <h3 class="text-lg font-semibold mb-2">Moisture-Wicking</h3>
             <p class="text-text-muted text-sm mb-4">
-              Advanced fabrics that pull moisture away from the skin to keep you dry and comfortable during intense activities.
+              Advanced fabrics that pull moisture away from the skin to keep you dry and comfortable during intense
+              activities.
             </p>
             <div class="tech-badge">Quick Dry</div>
             <div class="tech-badge">Stay Dry</div>
             <div class="tech-badge">Comfort</div>
           </div>
 
-          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="300">
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up"
+            data-aos-delay="300">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-arrows-alt text-gray-900"></i>
             </div>
@@ -852,7 +853,8 @@
             <div class="tech-badge">Freedom</div>
           </div>
 
-          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="400">
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up"
+            data-aos-delay="400">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-wind text-gray-900"></i>
             </div>
@@ -865,7 +867,8 @@
             <div class="tech-badge">Cooling</div>
           </div>
 
-          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="500">
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up"
+            data-aos-delay="500">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-shield-alt text-gray-900"></i>
             </div>
@@ -884,13 +887,15 @@
     <!-- PERFORMANCE LEVELS SECTION -->
     <section class="py-16 bg-bg-panel-soft">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Performance Levels</h2>
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center"
+          data-aos="fade-down">Performance Levels</h2>
         <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
           We offer sportswear across different performance levels to meet various activity requirements and budgets.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-delay="200">
             <div class="flex items-center justify-between mb-4">
               <h3 class="text-lg font-semibold">Basic Level</h3>
               <div class="performance-level">
@@ -899,7 +904,8 @@
               </div>
             </div>
             <p class="text-text-muted text-sm mb-4">
-              Essential sportswear for casual activities, light workouts, and everyday athleisure wear with comfort-focused features.
+              Essential sportswear for casual activities, light workouts, and everyday athleisure wear with
+              comfort-focused features.
             </p>
             <div class="text-text-muted text-sm">
               <strong>Applications:</strong> Casual wear, light exercise, daily activities, loungewear
@@ -909,7 +915,8 @@
             </div>
           </div>
 
-          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-delay="300">
             <div class="flex items-center justify-between mb-4">
               <h3 class="text-lg font-semibold">Performance Level</h3>
               <div class="performance-level">
@@ -918,7 +925,8 @@
               </div>
             </div>
             <p class="text-text-muted text-sm mb-4">
-              Advanced sportswear for regular training, gym workouts, and sports activities with enhanced technical features.
+              Advanced sportswear for regular training, gym workouts, and sports activities with enhanced technical
+              features.
             </p>
             <div class="text-text-muted text-sm">
               <strong>Applications:</strong> Gym training, running, sports, regular workouts
@@ -928,7 +936,8 @@
             </div>
           </div>
 
-          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="400">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-delay="400">
             <div class="flex items-center justify-between mb-4">
               <h3 class="text-lg font-semibold">Elite Level</h3>
               <div class="performance-level">
@@ -937,7 +946,8 @@
               </div>
             </div>
             <p class="text-text-muted text-sm mb-4">
-              Premium sportswear for professional athletes, intense training, and competitive sports with cutting-edge technologies.
+              Premium sportswear for professional athletes, intense training, and competitive sports with cutting-edge
+              technologies.
             </p>
             <div class="text-text-muted text-sm">
               <strong>Applications:</strong> Professional sports, competition, intense training, endurance
@@ -955,31 +965,42 @@
       <div class="container mx-auto px-4 sm:px-6">
         <div class="max-w-4xl mx-auto">
           <div class="bg-bg-panel rounded-2xl p-8 border border-border-soft" data-aos="fade-up">
-            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center">Request Sportswear Quote</h2>
+            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center">Request
+              Sportswear Quote</h2>
             <p class="text-text-muted text-center mb-8">
-              Share your sportswear and athleisure requirements and we'll provide factory options, samples, and competitive pricing.
+              Share your sportswear and athleisure requirements and we'll provide factory options, samples, and
+              competitive pricing.
             </p>
 
             <form class="grid grid-cols-1 md:grid-cols-2 gap-6" id="sportsForm" enctype="multipart/form-data">
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="name">Full Name</label>
-                <input type="text" id="name" name="Name" required class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your full name">
+                <input type="text" id="name" name="Name" required
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent"
+                  placeholder="Your full name">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="email">Email Address</label>
-                <input type="email" id="email" name="Email" required class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your email address">
+                <input type="email" id="email" name="Email" required
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent"
+                  placeholder="Your email address">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="company">Company Name</label>
-                <input type="text" id="company" name="Company" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your company name">
+                <input type="text" id="company" name="Company"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent"
+                  placeholder="Your company name">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="Phone" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your phone number">
+                <input type="tel" id="phone" name="Phone"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent"
+                  placeholder="Your phone number">
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="product">Product Interest</label>
-                <select id="product" name="Product Interest" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
+                <select id="product" name="Product Interest"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
                   <option value="">Select product category</option>
                   <option value="joggers">Joggers & Training Pants</option>
                   <option value="hoodies">Hoodies & Sweatshirts</option>
@@ -991,8 +1012,10 @@
                 </select>
               </div>
               <div class="md:col-span-2">
-                <label class="block text-text-muted text-sm font-medium mb-2" for="performance">Performance Level</label>
-                <select id="performance" name="Performance Level" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
+                <label class="block text-text-muted text-sm font-medium mb-2" for="performance">Performance
+                  Level</label>
+                <select id="performance" name="Performance Level"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
                   <option value="">Select performance level</option>
                   <option value="basic">Basic Level</option>
                   <option value="performance">Performance Level</option>
@@ -1001,8 +1024,10 @@
                 </select>
               </div>
               <div class="md:col-span-2">
-                <label class="block text-text-muted text-sm font-medium mb-2" for="technology">Key Technologies Needed</label>
-                <select id="technology" name="Key Technologies" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
+                <label class="block text-text-muted text-sm font-medium mb-2" for="technology">Key Technologies
+                  Needed</label>
+                <select id="technology" name="Key Technologies"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
                   <option value="">Select key technologies</option>
                   <option value="moisture">Moisture-Wicking</option>
                   <option value="stretch">4-Way Stretch</option>
@@ -1014,17 +1039,21 @@
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="message">Project Details</label>
-                <textarea id="message" name="Message" rows="4" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Please provide details about your project, including quantity, performance requirements, technology preferences, design specifications, timeline, and any specific requirements..."></textarea>
+                <textarea id="message" name="Message" rows="4"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent"
+                  placeholder="Please provide details about your project, including quantity, performance requirements, technology preferences, design specifications, timeline, and any specific requirements..."></textarea>
               </div>
               <div class="md:col-span-2">
-                <label class="block text-text-muted text-sm font-medium mb-2" for="attachment">Attach Files <span class="font-normal">(Tech packs, spec sheets, images — optional)</span></label>
+                <label class="block text-text-muted text-sm font-medium mb-2" for="attachment">Attach Files <span
+                    class="font-normal">(Tech packs, spec sheets, images — optional)</span></label>
                 <input type="file" id="attachment" name="Attachment" multiple
                   accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.zip"
                   class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main text-sm file:mr-3 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-accent-amber file:text-gray-900 hover:file:bg-accent-amber-dark">
               </div>
               <div class="md:col-span-2 flex flex-col items-center gap-3">
                 <span id="sportsFormStatus" class="text-sm hidden"></span>
-                <button type="submit" id="sportsSubmitBtn" class="rounded-full px-8 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
+                <button type="submit" id="sportsSubmitBtn"
+                  class="rounded-full px-8 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
                   <span id="sportsSubmitText">Submit Inquiry</span>
                   <i class="fa-regular fa-paper-plane" id="sportsSubmitIcon"></i>
                 </button>
@@ -1038,11 +1067,14 @@
     <!-- CTA SECTION -->
     <section class="py-16 bg-gradient-to-br from-accent-amber to-[#f5c56d] text-gray-900">
       <div class="container mx-auto px-4 sm:px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-8" data-aos="zoom-in" data-aos-duration="800">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8" data-aos="zoom-in"
+          data-aos-duration="800">
           <div>
-            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-2 text-center md:text-left">Ready to source quality sportswear?</h2>
+            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-2 text-center md:text-left">Ready to source
+              quality sportswear?</h2>
             <p class="text-[#3b2a0b] max-w-md text-center md:text-left">
-              Contact us today to discuss your sportswear and athleisure requirements and get started with samples and pricing.
+              Contact us today to discuss your sportswear and athleisure requirements and get started with samples and
+              pricing.
             </p>
           </div>
           <div class="flex flex-wrap gap-3 justify-center">

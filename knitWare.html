@@ -662,6 +662,38 @@
       margin-bottom: 0.5rem;
     }
 
+    .feature-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: rgba(217, 158, 63, 0.2);
+      border: 1px solid rgba(217, 158, 63, 0.3);
+      border-radius: 20px;
+      font-size: 0.75rem;
+      color: #D99E3F;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .durability-level {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      font-size: 0.875rem;
+    }
+
+    .level-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .level-standard { background: #4CAF50; }
+    .level-heavy    { background: #FF9800; }
+    .level-premium  { background: #F44336; }
+
     .knit-gradient {
       background: linear-gradient(135deg, #2a4d5e 0%, #1a3b4a 100%);
     }
@@ -854,6 +886,139 @@
         <div id="galleryEmpty" class="hidden text-center py-16 text-text-muted">
           <i class="fa-solid fa-image text-4xl mb-4 opacity-30"></i>
           <p class="text-sm">No products found in this category yet.</p>
+        </div>
+      </div>
+    </section>
+
+        <!-- FABRIC TECHNOLOGIES SECTION -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Advanced Knitwear Fabrics</h2>
+        <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
+          We work with a wide range of premium knit fabrics engineered for comfort, stretch, and lasting softness across every garment type.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-leaf text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">100% Cotton Jersey</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Classic single-jersey cotton knit with a soft hand feel and excellent breathability, the backbone of premium t-shirts and casual tops.
+            </p>
+            <div class="feature-badge">Breathable</div>
+            <div class="feature-badge">Soft Hand Feel</div>
+            <div class="feature-badge">Natural Fiber</div>
+          </div>
+
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-layer-group text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Cotton-Polyester Blends</h3>
+            <p class="text-text-muted text-sm mb-4">
+              CVC and PC blends that combine cotton's comfort with polyester's shape retention and moisture-wicking properties for high-performance knitwear.
+            </p>
+            <div class="feature-badge">Shape Retention</div>
+            <div class="feature-badge">Moisture Wicking</div>
+            <div class="feature-badge">Durable</div>
+          </div>
+
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-wind text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">French Terry & Fleece</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Looped or brushed interior knit fabrics that provide warmth and comfort, ideal for sweatshirts, hoodies, and loungewear.
+            </p>
+            <div class="feature-badge">Warm & Cozy</div>
+            <div class="feature-badge">Soft Interior</div>
+            <div class="feature-badge">Versatile</div>
+          </div>
+
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-seedling text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Organic & Recycled</h3>
+            <p class="text-text-muted text-sm mb-4">
+              GOTS-certified organic cotton and recycled polyester knit fabrics for eco-conscious brands looking to reduce their environmental footprint.
+            </p>
+            <div class="feature-badge">GOTS Certified</div>
+            <div class="feature-badge">Eco-Friendly</div>
+            <div class="feature-badge">Sustainable</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALITY TIERS SECTION -->
+    <section class="py-16 bg-bg-panel-soft">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Knitwear Quality Tiers</h2>
+        <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
+          We offer knitwear across three quality tiers to match your brand positioning, target market, and price point requirements.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Everyday Basics</h3>
+              <div class="durability-level">
+                <div class="level-dot level-standard"></div>
+                <span>Standard</span>
+              </div>
+            </div>
+            <p class="text-text-muted text-sm mb-4">
+              Comfortable, reliable knitwear built for everyday casual wear with consistent construction and clean finishing at accessible price points.
+            </p>
+            <div class="text-text-muted text-sm">
+              <strong>Best For:</strong> Branded merchandise, team uniforms, casual retail, promotional wear
+            </div>
+            <div class="mt-4 text-text-muted text-sm">
+              <strong>Features:</strong> Consistent GSM, clean seams, standard print compatibility, good color retention
+            </div>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Mid-Market</h3>
+              <div class="durability-level">
+                <div class="level-dot level-heavy"></div>
+                <span>Premium</span>
+              </div>
+            </div>
+            <p class="text-text-muted text-sm mb-4">
+              Enhanced fabric weights, superior softness, and refined finishing details for brands targeting the mid-to-premium retail segment.
+            </p>
+            <div class="text-text-muted text-sm">
+              <strong>Best For:</strong> Fashion retail, lifestyle brands, activewear, private label collections
+            </div>
+            <div class="mt-4 text-text-muted text-sm">
+              <strong>Features:</strong> Combed or ring-spun cotton, side-seam construction, garment washing options
+            </div>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="400">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Luxury Knitwear</h3>
+              <div class="durability-level">
+                <div class="level-dot level-premium"></div>
+                <span>Luxury</span>
+              </div>
+            </div>
+            <p class="text-text-muted text-sm mb-4">
+              The finest knit constructions using premium yarns, specialty finishes, and meticulous detail work for high-end and designer-level collections.
+            </p>
+            <div class="text-text-muted text-sm">
+              <strong>Best For:</strong> Designer labels, luxury retail, high-end sportswear, export-quality collections
+            </div>
+            <div class="mt-4 text-text-muted text-sm">
+              <strong>Features:</strong> Premium combed cotton or modal, full-fashion knitting, enzyme wash, custom labels
+            </div>
+          </div>
         </div>
       </div>
     </section>

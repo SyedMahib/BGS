@@ -790,6 +790,39 @@
       margin-bottom: 0.5rem;
     }
 
+    .feature-badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: rgba(217, 158, 63, 0.2);
+      border: 1px solid rgba(217, 158, 63, 0.3);
+      border-radius: 20px;
+      font-size: 0.75rem;
+      color: #D99E3F;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .durability-level {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      font-size: 0.875rem;
+    }
+
+    .level-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .level-standard { background: #4CAF50; }
+    .level-refined  { background: #FF9800; }
+    .level-premium  { background: #D99E3F; }
+
     .woven-gradient {
       background: linear-gradient(135deg, #2a1a1a 0%, #1a0a0a 100%);
     }
@@ -992,6 +1025,139 @@
             <i class="fa-solid fa-arrow-right ml-2"></i>
           </button>
         </div> -->
+      </div>
+    </section>
+
+    <!-- FABRIC TECHNOLOGIES SECTION -->
+    <section class="py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Advanced Woven Fabrics</h2>
+        <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
+          We source and work with a curated range of woven fabrics chosen for their hand feel, drape, structure, and suitability across our apparel categories.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-sun text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Cotton & Cotton Blends</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Poplin, Oxford, twill, and chambray weaves in 100% cotton or cotton-poly blends — the foundation of our shirts, blouses, and casual wear.
+            </p>
+            <div class="feature-badge">Breathable</div>
+            <div class="feature-badge">Versatile</div>
+            <div class="feature-badge">Easy Care</div>
+          </div>
+
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-feather text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Linen & Linen Blends</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Pure linen and linen-cotton blends with a natural texture and exceptional breathability, ideal for summer collections and resort wear.
+            </p>
+            <div class="feature-badge">Lightweight</div>
+            <div class="feature-badge">Natural Fiber</div>
+            <div class="feature-badge">Textured</div>
+          </div>
+
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-gem text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Twill & Suiting Fabrics</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Structured twills, gabardines, and suiting weaves in wool, poly-viscose, and stretch blends for trousers, blazers, and formal wear.
+            </p>
+            <div class="feature-badge">Structured</div>
+            <div class="feature-badge">Shape-Holding</div>
+            <div class="feature-badge">Formal</div>
+          </div>
+
+          <div class="fabric-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="500">
+            <div class="card-header-icon mb-4">
+              <i class="fa-solid fa-wind text-gray-900"></i>
+            </div>
+            <h3 class="text-lg font-semibold mb-2">Viscose & Satin Weaves</h3>
+            <p class="text-text-muted text-sm mb-4">
+              Fluid viscose, crepe, and satin-weave fabrics with a luxurious drape, perfect for blouses, skirts, dresses, and evening wear.
+            </p>
+            <div class="feature-badge">Fluid Drape</div>
+            <div class="feature-badge">Elegant</div>
+            <div class="feature-badge">Soft Hand Feel</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALITY TIERS SECTION -->
+    <section class="py-16 bg-bg-panel-soft">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Construction Quality Tiers</h2>
+        <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
+          We produce woven apparel across three construction tiers to match your brand's market level, quality expectations, and MOQ requirements.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Commercial Grade</h3>
+              <div class="durability-level">
+                <div class="level-dot level-standard"></div>
+                <span>Standard</span>
+              </div>
+            </div>
+            <p class="text-text-muted text-sm mb-4">
+              Clean, consistent woven garments built for volume and value — reliable construction, accurate sizing, and solid everyday wear performance.
+            </p>
+            <div class="text-text-muted text-sm">
+              <strong>Best For:</strong> Mass retail, branded basics, corporate shirts, uniform programs
+            </div>
+            <div class="mt-4 text-text-muted text-sm">
+              <strong>Features:</strong> Standard seam finishing, fused interlinings, accurate pattern grading
+            </div>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Refined Tailoring</h3>
+              <div class="durability-level">
+                <div class="level-dot level-refined"></div>
+                <span>Refined</span>
+              </div>
+            </div>
+            <p class="text-text-muted text-sm mb-4">
+              Elevated construction with attention to detail — cleaner seams, quality interlinings, and superior pressing for a polished mid-to-premium result.
+            </p>
+            <div class="text-text-muted text-sm">
+              <strong>Best For:</strong> Fashion retail, private label, office wear, contemporary brands
+            </div>
+            <div class="mt-4 text-text-muted text-sm">
+              <strong>Features:</strong> Flat-felled seams, woven labels, hand-pressed finishing, fabric-matched buttons
+            </div>
+          </div>
+
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="400">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold">Premium Couture</h3>
+              <div class="durability-level">
+                <div class="level-dot level-premium"></div>
+                <span>Premium</span>
+              </div>
+            </div>
+            <p class="text-text-muted text-sm mb-4">
+              The highest level of woven construction — full canvas or half canvas suiting, hand-stitched details, and luxury finishing for designer-grade output.
+            </p>
+            <div class="text-text-muted text-sm">
+              <strong>Best For:</strong> Designer labels, luxury retail, bespoke collections, export-quality formal wear
+            </div>
+            <div class="mt-4 text-text-muted text-sm">
+              <strong>Features:</strong> Hand finishing, canvas chest pieces, premium linings, custom trims
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -298,14 +298,14 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3));
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
     }
 
     .product-badge {
       position: absolute;
       top: 12px;
       left: 12px;
-      background: rgba(0,0,0,0.7);
+      background: rgba(0, 0, 0, 0.7);
       color: white;
       padding: 4px 8px;
       border-radius: 4px;
@@ -601,7 +601,9 @@
     }
 
     /* Loader styles */
-    .page-loader { backdrop-filter: blur(10px); }
+    .page-loader {
+      backdrop-filter: blur(10px);
+    }
 
     .loader-spinner {
       width: 50px;
@@ -613,7 +615,11 @@
       margin: 0 auto 1rem;
     }
 
-    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
 
     /* Dynamic Gallery Styles */
     .category-tab.active {
@@ -632,27 +638,60 @@
 
     /* Tablet Landscape */
     @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-      .category-tabs { gap: 0.5rem; }
-      .category-tab { padding: 0.4rem 0.8rem; font-size: 0.7rem; }
+      .category-tabs {
+        gap: 0.5rem;
+      }
+
+      .category-tab {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+      }
     }
 
     /* Mobile Landscape */
     @media (min-width: 568px) and (max-width: 767px) and (orientation: landscape) {
-      .category-tabs { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 0.5rem; gap: 0.25rem; }
-      .category-tab { padding: 0.3rem 0.6rem; font-size: 0.65rem; white-space: nowrap; flex-shrink: 0; }
+      .category-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        gap: 0.25rem;
+      }
+
+      .category-tab {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.65rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
     }
 
     /* Mobile Portrait */
     @media (max-width: 567px) {
-      .category-tabs { flex-wrap: wrap; justify-content: center; gap: 0.4rem; }
-      .category-tab { padding: 0.4rem 0.8rem; font-size: 0.7rem; }
-      .mobile-slider-menu { width: 85%; }
+      .category-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem;
+      }
+
+      .category-tab {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.7rem;
+      }
+
+      .mobile-slider-menu {
+        width: 85%;
+      }
     }
 
     /* Touch device optimizations */
     @media (hover: none) and (pointer: coarse) {
-      .gallery-item:hover { transform: none; }
-      .card-hover:hover { transform: none; }
+      .gallery-item:hover {
+        transform: none;
+      }
+
+      .card-hover:hover {
+        transform: none;
+      }
     }
   </style>
 </head>
@@ -685,14 +724,17 @@
 
       <div class="container mx-auto px-4 sm:px-6 relative z-10">
         <div class="max-w-4xl mx-auto text-center">
-          <div class="inline-block mb-4 px-4 py-1 rounded-full bg-accent-amber/20 border border-accent-amber/30 text-accent-amber text-sm font-medium">
+          <div
+            class="inline-block mb-4 px-4 py-1 rounded-full bg-accent-amber/20 border border-accent-amber/30 text-accent-amber text-sm font-medium">
             ACCESSORIES
           </div>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold font-montserrat leading-tight mb-4" data-aos="fade-up">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold font-montserrat leading-tight mb-4"
+            data-aos="fade-up">
             Fashion Accessories Collection
           </h1>
           <p class="text-text-muted text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-            Hats, caps, bags, scarves, and other complementary accessories that complete the apparel collection with attention to detail and brand consistency.
+            Hats, caps, bags, scarves, and other complementary accessories that complete the apparel collection with
+            attention to detail and brand consistency.
           </p>
           <div class="mt-8 flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
             <a href="#inquiry"
@@ -713,15 +755,24 @@
     <!-- PRODUCT OVERVIEW -->
     <section class="py-16">
       <div class="container mx-auto px-4 sm:px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Left Column - Only Text Content -->
           <div data-aos="fade-right">
-            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-6 gradient-underline">Complementing Fashion Collections</h2>
+            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-6 gradient-underline">Complementing Fashion
+              Collections</h2>
             <p class="text-text-muted mb-6">
-              Our accessories collection is designed to perfectly complement apparel lines, providing complete wardrobe solutions. We specialize in creating accessories that enhance brand identity while maintaining functionality and style.
+              Our accessories collection is designed to perfectly complement apparel lines, providing complete wardrobe
+              solutions. We specialize in creating accessories that enhance brand identity while maintaining
+              functionality and style.
             </p>
-            <p class="text-text-muted mb-8">
-              From headwear to bags, each accessory is crafted with attention to detail, using quality materials and precise manufacturing techniques to ensure durability and aesthetic appeal.
+            <p class="text-text-muted">
+              From headwear to bags, each accessory is crafted with attention to detail, using quality materials and
+              precise manufacturing techniques to ensure durability and aesthetic appeal.
             </p>
+          </div>
+
+          <!-- Right Column - Only the 4 Feature Cards -->
+          <div data-aos="fade-left">
             <div class="grid md:grid-cols-2 gap-4">
               <div class="product-feature">
                 <div class="accessories-feature-icon">
@@ -761,37 +812,6 @@
               </div>
             </div>
           </div>
-          <div data-aos="fade-left" class="relative">
-            <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft">
-              <h3 class="text-xl font-semibold mb-4">Product Specifications</h3>
-              <table class="spec-table">
-                <tr>
-                  <td>Product Types</td>
-                  <td>Hats, Caps, Bags, Scarves, Belts, Gloves, Ties, Socks</td>
-                </tr>
-                <tr>
-                  <td>Material Options</td>
-                  <td>Cotton, Denim, Leather, Canvas, Wool, Polyester blends</td>
-                </tr>
-                <tr>
-                  <td>Minimum Order</td>
-                  <td>300 pieces per style/color</td>
-                </tr>
-                <tr>
-                  <td>Production Time</td>
-                  <td>30-45 days after sample approval</td>
-                </tr>
-                <tr>
-                  <td>Customization</td>
-                  <td>Logo embroidery, printing, patchwork, color matching</td>
-                </tr>
-                <tr>
-                  <td>Packaging</td>
-                  <td>Custom packaging available per brand requirements</td>
-                </tr>
-              </table>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -816,10 +836,14 @@
         <div id="galleryGrid"
           class="gallery-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           <!-- Skeleton loaders shown while fetching -->
-          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
-          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
-          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
-          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square"></div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square">
+          </div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square">
+          </div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square">
+          </div>
+          <div class="gallery-skeleton rounded-2xl border border-border-soft bg-bg-panel animate-pulse aspect-square">
+          </div>
         </div>
 
         <!-- Empty state -->
@@ -842,13 +866,15 @@
     <!-- MATERIAL TYPES SECTION -->
     <section class="py-16">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Material Options</h2>
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center"
+          data-aos="fade-down">Material Options</h2>
         <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
           We work with various quality materials to create durable and stylish accessories.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="material-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="200">
+          <div class="material-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up"
+            data-aos-delay="200">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-leaf text-gray-900"></i>
             </div>
@@ -861,7 +887,8 @@
             <div class="accessory-badge">Canvas</div>
           </div>
 
-          <div class="material-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="300">
+          <div class="material-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up"
+            data-aos-delay="300">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-cow text-gray-900"></i>
             </div>
@@ -874,7 +901,8 @@
             <div class="accessory-badge">Synthetic</div>
           </div>
 
-          <div class="material-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up" data-aos-delay="400">
+          <div class="material-card bg-bg-panel rounded-2xl p-6 border border-border-soft" data-aos="fade-up"
+            data-aos-delay="400">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-recycle text-gray-900"></i>
             </div>
@@ -893,13 +921,15 @@
     <!-- CUSTOMIZATION SECTION -->
     <section class="py-16 bg-bg-panel-soft">
       <div class="container mx-auto px-4 sm:px-6">
-        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center" data-aos="fade-down">Customization Options</h2>
+        <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center"
+          data-aos="fade-down">Customization Options</h2>
         <p class="text-text-muted max-w-2xl mx-auto text-center mb-10" data-aos="fade-down" data-aos-delay="100">
           We offer various customization options to match your brand identity and requirements.
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-delay="200">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-thread text-gray-900"></i>
             </div>
@@ -909,7 +939,8 @@
             </p>
           </div>
 
-          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="300">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-delay="300">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-print text-gray-900"></i>
             </div>
@@ -919,7 +950,8 @@
             </p>
           </div>
 
-          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="400">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-delay="400">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-palette text-gray-900"></i>
             </div>
@@ -929,7 +961,8 @@
             </p>
           </div>
 
-          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up" data-aos-delay="500">
+          <div class="bg-bg-panel rounded-2xl p-6 border border-border-soft card-hover" data-aos="fade-up"
+            data-aos-delay="500">
             <div class="card-header-icon mb-4">
               <i class="fa-solid fa-box text-gray-900"></i>
             </div>
@@ -947,7 +980,8 @@
       <div class="container mx-auto px-4 sm:px-6">
         <div class="max-w-4xl mx-auto">
           <div class="bg-bg-panel rounded-2xl p-8 border border-border-soft" data-aos="fade-up">
-            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center">Request Accessories Quote</h2>
+            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-3 gradient-underline text-center">Request
+              Accessories Quote</h2>
             <p class="text-text-muted text-center mb-8">
               Share your accessories requirements and we'll provide factory options, samples, and competitive pricing.
             </p>
@@ -955,23 +989,32 @@
             <form class="grid grid-cols-1 md:grid-cols-2 gap-6" id="accessoriesForm" enctype="multipart/form-data">
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="name">Full Name</label>
-                <input type="text" id="name" name="Name" required class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your full name">
+                <input type="text" id="name" name="Name" required
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent"
+                  placeholder="Your full name">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="email">Email Address</label>
-                <input type="email" id="email" name="Email" required class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your email address">
+                <input type="email" id="email" name="Email" required
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent"
+                  placeholder="Your email address">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="company">Company Name</label>
-                <input type="text" id="company" name="Company" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your company name">
+                <input type="text" id="company" name="Company"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent"
+                  placeholder="Your company name">
               </div>
               <div>
                 <label class="block text-text-muted text-sm font-medium mb-2" for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="Phone" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Your phone number">
+                <input type="tel" id="phone" name="Phone"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent"
+                  placeholder="Your phone number">
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="product">Product Interest</label>
-                <select id="product" name="Product Interest" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
+                <select id="product" name="Product Interest"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
                   <option value="">Select product category</option>
                   <option value="hats">Hats & Caps</option>
                   <option value="bags">Bags & Totes</option>
@@ -984,7 +1027,8 @@
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="material">Preferred Material</label>
-                <select id="material" name="Preferred Material" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
+                <select id="material" name="Preferred Material"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent">
                   <option value="">Select material type</option>
                   <option value="cotton">Cotton/Canvas</option>
                   <option value="denim">Denim</option>
@@ -997,17 +1041,21 @@
               </div>
               <div class="md:col-span-2">
                 <label class="block text-text-muted text-sm font-medium mb-2" for="message">Project Details</label>
-                <textarea id="message" name="Message" rows="4" class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent" placeholder="Please provide details about your project, including quantity, specific accessories needed, material preferences, customization requirements (logo, colors, printing), packaging needs, timeline, and any specific requirements..."></textarea>
+                <textarea id="message" name="Message" rows="4"
+                  class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main focus:outline-none focus:ring-2 focus:ring-accent-amber/50 focus:border-transparent"
+                  placeholder="Please provide details about your project, including quantity, specific accessories needed, material preferences, customization requirements (logo, colors, printing), packaging needs, timeline, and any specific requirements..."></textarea>
               </div>
               <div class="md:col-span-2">
-                <label class="block text-text-muted text-sm font-medium mb-2" for="attachment">Attach Files <span class="font-normal">(Tech packs, spec sheets, images — optional)</span></label>
+                <label class="block text-text-muted text-sm font-medium mb-2" for="attachment">Attach Files <span
+                    class="font-normal">(Tech packs, spec sheets, images — optional)</span></label>
                 <input type="file" id="attachment" name="Attachment" multiple
                   accept=".pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.zip"
                   class="w-full px-4 py-3 rounded-lg bg-bg-panel-soft border border-border-soft text-text-main text-sm file:mr-3 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-accent-amber file:text-gray-900 hover:file:bg-accent-amber-dark">
               </div>
               <div class="md:col-span-2 flex flex-col items-center gap-3">
                 <span id="accessoriesFormStatus" class="text-sm hidden"></span>
-                <button type="submit" id="accessoriesSubmitBtn" class="rounded-full px-8 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
+                <button type="submit" id="accessoriesSubmitBtn"
+                  class="rounded-full px-8 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest bg-accent-amber text-gray-900 hover:bg-accent-amber-dark transition-all duration-300 btn-magnetic">
                   <span id="accessoriesSubmitText">Submit Inquiry</span>
                   <i class="fa-regular fa-paper-plane" id="accessoriesSubmitIcon"></i>
                 </button>
@@ -1021,9 +1069,11 @@
     <!-- CTA SECTION -->
     <section class="py-16 bg-gradient-to-br from-accent-amber to-[#f5c56d] text-gray-900">
       <div class="container mx-auto px-4 sm:px-6">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-8" data-aos="zoom-in" data-aos-duration="800">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8" data-aos="zoom-in"
+          data-aos-duration="800">
           <div>
-            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-2 text-center md:text-left">Ready to source quality accessories?</h2>
+            <h2 class="text-2xl md:text-3xl font-semibold font-montserrat mb-2 text-center md:text-left">Ready to source
+              quality accessories?</h2>
             <p class="text-[#3b2a0b] max-w-md text-center md:text-left">
               Contact us today to discuss your accessories requirements and complete your apparel collections.
             </p>
@@ -1034,7 +1084,8 @@
               <span>Request Samples</span>
               <i class="fa-regular fa-paper-plane"></i>
             </a>
-            <a target="_blank" href="https://wa.me/+8801760698817?text=Hello%20BGS%20Team%2C%20I%20would%20like%20to%20discuss%20accessories%20products."
+            <a target="_blank"
+              href="https://wa.me/+8801760698817?text=Hello%20BGS%20Team%2C%20I%20would%20like%20to%20discuss%20accessories%20products."
               class="rounded-full px-4 sm:px-6 py-3 flex items-center gap-2 text-sm font-semibold font-montserrat uppercase tracking-widest border border-gray-900 text-gray-900 hover:bg-gray-900/10 transition-all duration-300 btn-magnetic hover:bg-green-500 hover:text-white hover:border-green-500 hover:-translate-y-1 hover:duration-300 hoveease-in-out ">
               <i class="fa-brands fa-whatsapp"></i>
               <span>WhatsApp Us</span>
